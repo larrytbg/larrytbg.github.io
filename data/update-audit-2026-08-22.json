@@ -1,0 +1,72 @@
+{
+  "publishedDate": "2026-08-22",
+  "sourceCutoff": "2026年8月22日 09:30（北京时间）",
+  "totalArticles": 110,
+  "substantivelyUpdated": 5,
+  "updateRate": 0.045454545454545456,
+  "targetMet": false,
+  "target": 0.8,
+  "localModel": {
+    "available": false,
+    "used": 0,
+    "reason": "127.0.0.1:1234 refused connection; no local runner detected"
+  },
+  "datePolicy": "source publication dates unchanged; site substantive update date recorded separately",
+  "articles": [
+    {
+      "column": "codex",
+      "index": "01",
+      "title": "Computer History可以形成跨应用时间线，但必须由用户主动开启并保留删除控制",
+      "updated": true,
+      "source": {
+        "name": "OpenAI：Offering zero data retention for frontier models",
+        "url": "https://openai.com/index/offering-zero-data-retention-for-frontier-models/",
+        "date": "2026-08-19"
+      }
+    },
+    {
+      "column": "codex",
+      "index": "10",
+      "title": "长任务要设置目标、阶段结果与验证标准",
+      "updated": true,
+      "source": {
+        "name": "OpenAI：Introducing AI Futures",
+        "url": "https://openai.com/index/introducing-ai-futures/",
+        "date": "2026-08-20"
+      }
+    },
+    {
+      "column": "daily",
+      "index": "06",
+      "title": "刚果（金）邦迪布焦埃博拉仍在传播，最新WHO完整批次报2124例和828死",
+      "updated": true,
+      "source": {
+        "name": "WHO与Africa CDC：向刚果（金）分配埃博拉疫苗",
+        "url": "https://www.who.int/news/item/20-08-2026-who-and-africa-cdc-welcome-the-allocation-of-ebola-vaccines-to-the-democratic-republic-of-the-congo",
+        "date": "2026-08-20"
+      }
+    },
+    {
+      "column": "finance",
+      "index": "09",
+      "title": "全球金融条件仍较宽松，但战争、利率和高估值让市场更容易突然波动",
+      "updated": true,
+      "source": {
+        "name": "欧洲央行：2026年7月消费者预期调查",
+        "url": "https://www.ecb.europa.eu/press/pr/date/2026/html/ecb.pr260821~a044fdddd9.en.html",
+        "date": "2026-08-21"
+      }
+    },
+    {
+      "column": "papers",
+      "index": "09",
+      "title": "系统综述比单篇论文更适合回答稳定结论",
+      "updated": true,
+      "source": {
+        "name": "Nature News：多项衰老研究可能使用了错误抗体",
+        "url": "https://www.nature.com/articles/d41586-026-02352-4",
+        "date": "2026-08-21"
+      }
+    }
+  ]
+}
