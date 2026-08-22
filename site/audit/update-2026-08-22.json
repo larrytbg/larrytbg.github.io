@@ -2,8 +2,8 @@
   "publishedDate": "2026-08-22",
   "sourceCutoff": "2026年8月22日 09:30（北京时间）",
   "totalArticles": 110,
-  "substantivelyUpdated": 5,
-  "updateRate": 0.045454545454545456,
+  "substantivelyUpdated": 30,
+  "updateRate": 0.2727272727272727,
   "targetMet": false,
   "target": 0.8,
   "localModel": {
@@ -67,6 +67,743 @@
         "url": "https://www.nature.com/articles/d41586-026-02352-4",
         "date": "2026-08-21"
       }
+    },
+    {
+      "target": "codex/02",
+      "title": "Daybreak Red权限更高，但必须单独审批，而且只能用于明确授权的安全测试",
+      "topic": "高风险模型必须绑定具体授权范围",
+      "source": {
+        "name": "OpenAI Changelog",
+        "url": "https://learn.chatgpt.com/docs/changelog"
+      }
+    },
+    {
+      "target": "codex/03",
+      "title": "--approve-for-me减少重复确认，但不会自动扩大任务权限",
+      "topic": "自动批准只能减少点击不能扩大权限",
+      "source": {
+        "name": "OpenAI Codex Changelog",
+        "url": "https://learn.chatgpt.com/docs/changelog"
+      }
+    },
+    {
+      "target": "codex/04",
+      "title": "Cursor技能与Claude、Cursor对话可迁入Codex，迁移后必须重验路径和工具",
+      "topic": "迁移上下文之后必须重新验证环境",
+      "source": {
+        "name": "OpenAI Codex Changelog",
+        "url": "https://learn.chatgpt.com/docs/changelog"
+      }
+    },
+    {
+      "target": "daily/01",
+      "title": "美国百城社区研究未发现无证移民增加会推高暴力犯罪",
+      "topic": "观察到共同变化不等于证明因果",
+      "source": {
+        "name": "Nature News",
+        "url": "https://www.nature.com/articles/d41586-026-02542-0"
+      }
+    },
+    {
+      "target": "daily/02",
+      "title": "Anthropic为新模型加入隐形水印，但水印能否长期识别仍不确定",
+      "topic": "水印是溯源线索不是绝对身份证",
+      "source": {
+        "name": "Nature News",
+        "url": "https://www.nature.com/articles/d41586-026-02503-7"
+      }
+    },
+    {
+      "target": "daily/03",
+      "title": "AI代理能组合论文概念，但两篇论文作者并不认可其研究质量",
+      "topic": "AI完成研究流程不等于产出可靠知识",
+      "source": {
+        "name": "Nature News",
+        "url": "https://www.nature.com/articles/d41586-026-02494-5"
+      }
+    },
+    {
+      "target": "daily/04",
+      "title": "美国批准首款mRNA流感疫苗，但目前不能简单说它一定优于传统疫苗",
+      "topic": "批准范围和比较证据必须分开看",
+      "source": {
+        "name": "Nature News",
+        "url": "https://www.nature.com/articles/d41586-026-02502-8"
+      }
+    },
+    {
+      "target": "finance/01",
+      "title": "中国经济上半年增长4.7%，但行业冷热差异比总数更重要",
+      "topic": "GDP总量必须沿行业和现金链传导",
+      "source": {
+        "name": "国家统计局",
+        "url": "https://www.stats.gov.cn/sj/zxfbhjd/202607/t20260716_1964142.html"
+      }
+    },
+    {
+      "target": "finance/02",
+      "title": "居民收入增长不等于每个人都增长，中位数比平均数更接近普通感受",
+      "topic": "平均收入与中位收入回答不同问题",
+      "source": {
+        "name": "国家统计局",
+        "url": "https://www.stats.gov.cn/sj/zxfbhjd/202607/t20260715_1964129.html"
+      }
+    },
+    {
+      "target": "finance/03",
+      "title": "工业利润增长18.7%，主要由少数行业拉动，不能理解成所有企业都更赚钱",
+      "topic": "工业利润增长要拆成价格数量成本和基数",
+      "source": {
+        "name": "国家统计局",
+        "url": "https://www.stats.gov.cn/sj/zxfbhjd/202607/t20260727_1964194.html"
+      }
+    },
+    {
+      "target": "financial-literacy/01",
+      "title": "国内财务趋势：会计准则解释第20号已经发布，学习重点要从背条文转向理解交易实质",
+      "topic": "会计处理先看权利义务和风险是否改变",
+      "source": {
+        "name": "财政部会计司 · 企业会计准则解释第20号",
+        "url": "https://kjs.mof.gov.cn/zhengcefabu/202606/t20260615_3991686.htm"
+      }
+    },
+    {
+      "target": "financial-literacy/02",
+      "title": "国际财务趋势：IFRS正在澄清租赁和报表列示问题，比较公司前要先统一口径",
+      "topic": "跨公司比较必须先统一准则与列报口径",
+      "source": {
+        "name": "IFRS Foundation · IASB decisions July 2026",
+        "url": "https://www.ifrs.org/news-and-events/news/2026/07/iasb-decisions-july-2026/"
+      }
+    },
+    {
+      "target": "papers/01",
+      "title": "米级钙钛矿组件达到22%效率，关键进展是大面积钝化更稳定",
+      "topic": "实验室效率放大后要同时看面积稳定和良率",
+      "source": {
+        "name": "Nature",
+        "url": "https://www.nature.com/articles/s41586-026-10994-7"
+      }
+    },
+    {
+      "target": "papers/02",
+      "title": "治理AI代理不能只问‘聪不聪明’，还要看自主性、有效性、目标复杂度和通用性",
+      "topic": "AI代理治理要按四个维度分别配置控制",
+      "source": {
+        "name": "Nature",
+        "url": "https://www.nature.com/articles/s41586-026-10805-z"
+      }
+    },
+    {
+      "target": "papers/03",
+      "title": "脑类器官中的祖细胞发育节奏偏离体内，说明‘长得像’不等于完整复现",
+      "topic": "类器官相似性不能替代对发育机制的核验",
+      "source": {
+        "name": "Nature",
+        "url": "https://www.nature.com/articles/s41586-026-10916-7"
+      }
+    },
+    {
+      "target": "health/01",
+      "title": "美国批准mRNA流感疫苗；适用年龄、批准路径和研究更正必须一起看",
+      "topic": "新技术获批不能自动证明临床上更适合每个人",
+      "source": {
+        "name": "Nature News",
+        "url": "https://www.nature.com/articles/d41586-026-02502-8"
+      }
+    },
+    {
+      "target": "health/02",
+      "title": "工程益生菌在动物中实现葡萄糖感知与响应，尚不能当作人用疗法",
+      "topic": "动物模型中的工程益生菌离人用药仍有多道门槛",
+      "source": {
+        "name": "Nature",
+        "url": "https://www.nature.com/articles/s41586-026-10909-6"
+      }
+    },
+    {
+      "target": "health/03",
+      "title": "颗粒重排成纤维的水凝胶可促进肌肉修复，但仍处于前临床阶段",
+      "topic": "再生材料进入人体前必须证明长期相容和可制造",
+      "source": {
+        "name": "Nature",
+        "url": "https://www.nature.com/articles/s41586-026-10883-z"
+      }
+    },
+    {
+      "target": "philosophy/01",
+      "title": "归纳能支持概率判断，却不能把反复发生变成逻辑必然",
+      "topic": "归纳判断必须同时写出机制和可推翻条件",
+      "source": {
+        "name": "Stanford Encyclopedia of Philosophy",
+        "url": "https://plato.stanford.edu/entries/induction-problem/"
+      }
+    },
+    {
+      "target": "logic/01",
+      "title": "先验有效性，再验前提真实性，才能得到可靠论证",
+      "topic": "有效结构与真实前提必须分两次检查",
+      "source": {
+        "name": "Open Logic Project",
+        "url": "https://forallx.openlogicproject.org/bookml/Ch2.html"
+      }
+    },
+    {
+      "target": "management/01",
+      "title": "BATNA决定你何时该离开，改善替代方案比强硬话术更有用",
+      "topic": "BATNA必须是真正可执行的替代方案",
+      "source": {
+        "name": "Harvard PON · What is BATNA?",
+        "url": "https://www.pon.harvard.edu/daily/batna/translate-your-batna-to-the-current-deal/"
+      }
+    },
+    {
+      "target": "history/01",
+      "title": "1886年北洋海防巡阅史料：先看人物与组织，再讨论系统原因",
+      "topic": "史料先说明人物与组织，再谨慎讨论系统原因",
+      "source": {
+        "name": "故宫博物院 · 北洋海防史料",
+        "url": "https://www.dpm.org.cn/journal_detail/367790.html"
+      }
+    },
+    {
+      "target": "ted/01",
+      "title": "玩不是学习的对立面：自主探索补上了标准课堂缺少的一环",
+      "topic": "自主探索需要空间也需要清楚边界",
+      "source": {
+        "name": "TED · The missing ingredient in how we learn",
+        "url": "https://www.ted.com/talks/ted_ed_the_missing_ingredient_in_how_we_learn"
+      }
+    },
+    {
+      "target": "ted/02",
+      "title": "AI可以讲知识，但好老师真正不可替代的是看见人、连接人",
+      "topic": "AI负责重复讲解人负责诊断关系与信心",
+      "source": {
+        "name": "TED · Matt Wu",
+        "url": "https://www.ted.com/talks/matt_wu_why_ai_will_never_replace_a_great_teacher"
+      }
+    },
+    {
+      "target": "ted/03",
+      "title": "会聊天不等于有意识：我们很容易把人的内心投射给AI",
+      "topic": "语言像人不能证明系统拥有主观体验",
+      "source": {
+        "name": "TED · Anil Seth",
+        "url": "https://www.ted.com/talks/anil_seth_why_ai_isn_t_going_to_become_conscious"
+      }
+    }
+  ],
+  "firstRound": [
+    {
+      "column": "codex",
+      "index": "01",
+      "title": "Computer History可以形成跨应用时间线，但必须由用户主动开启并保留删除控制",
+      "updated": true,
+      "source": {
+        "name": "OpenAI：Offering zero data retention for frontier models",
+        "url": "https://openai.com/index/offering-zero-data-retention-for-frontier-models/",
+        "date": "2026-08-19"
+      }
+    },
+    {
+      "column": "codex",
+      "index": "10",
+      "title": "长任务要设置目标、阶段结果与验证标准",
+      "updated": true,
+      "source": {
+        "name": "OpenAI：Introducing AI Futures",
+        "url": "https://openai.com/index/introducing-ai-futures/",
+        "date": "2026-08-20"
+      }
+    },
+    {
+      "column": "daily",
+      "index": "06",
+      "title": "刚果（金）邦迪布焦埃博拉仍在传播，最新WHO完整批次报2124例和828死",
+      "updated": true,
+      "source": {
+        "name": "WHO与Africa CDC：向刚果（金）分配埃博拉疫苗",
+        "url": "https://www.who.int/news/item/20-08-2026-who-and-africa-cdc-welcome-the-allocation-of-ebola-vaccines-to-the-democratic-republic-of-the-congo",
+        "date": "2026-08-20"
+      }
+    },
+    {
+      "column": "finance",
+      "index": "09",
+      "title": "全球金融条件仍较宽松，但战争、利率和高估值让市场更容易突然波动",
+      "updated": true,
+      "source": {
+        "name": "欧洲央行：2026年7月消费者预期调查",
+        "url": "https://www.ecb.europa.eu/press/pr/date/2026/html/ecb.pr260821~a044fdddd9.en.html",
+        "date": "2026-08-21"
+      }
+    },
+    {
+      "column": "papers",
+      "index": "09",
+      "title": "系统综述比单篇论文更适合回答稳定结论",
+      "updated": true,
+      "source": {
+        "name": "Nature News：多项衰老研究可能使用了错误抗体",
+        "url": "https://www.nature.com/articles/d41586-026-02352-4",
+        "date": "2026-08-21"
+      }
+    }
+  ],
+  "secondRound": [
+    {
+      "target": "codex/02",
+      "title": "Daybreak Red权限更高，但必须单独审批，而且只能用于明确授权的安全测试",
+      "topic": "高风险模型必须绑定具体授权范围",
+      "source": {
+        "name": "OpenAI Changelog",
+        "url": "https://learn.chatgpt.com/docs/changelog"
+      }
+    },
+    {
+      "target": "codex/03",
+      "title": "--approve-for-me减少重复确认，但不会自动扩大任务权限",
+      "topic": "自动批准只能减少点击不能扩大权限",
+      "source": {
+        "name": "OpenAI Codex Changelog",
+        "url": "https://learn.chatgpt.com/docs/changelog"
+      }
+    },
+    {
+      "target": "codex/04",
+      "title": "Cursor技能与Claude、Cursor对话可迁入Codex，迁移后必须重验路径和工具",
+      "topic": "迁移上下文之后必须重新验证环境",
+      "source": {
+        "name": "OpenAI Codex Changelog",
+        "url": "https://learn.chatgpt.com/docs/changelog"
+      }
+    },
+    {
+      "target": "daily/01",
+      "title": "美国百城社区研究未发现无证移民增加会推高暴力犯罪",
+      "topic": "观察到共同变化不等于证明因果",
+      "source": {
+        "name": "Nature News",
+        "url": "https://www.nature.com/articles/d41586-026-02542-0"
+      }
+    },
+    {
+      "target": "daily/02",
+      "title": "Anthropic为新模型加入隐形水印，但水印能否长期识别仍不确定",
+      "topic": "水印是溯源线索不是绝对身份证",
+      "source": {
+        "name": "Nature News",
+        "url": "https://www.nature.com/articles/d41586-026-02503-7"
+      }
+    },
+    {
+      "target": "daily/03",
+      "title": "AI代理能组合论文概念，但两篇论文作者并不认可其研究质量",
+      "topic": "AI完成研究流程不等于产出可靠知识",
+      "source": {
+        "name": "Nature News",
+        "url": "https://www.nature.com/articles/d41586-026-02494-5"
+      }
+    },
+    {
+      "target": "daily/04",
+      "title": "美国批准首款mRNA流感疫苗，但目前不能简单说它一定优于传统疫苗",
+      "topic": "批准范围和比较证据必须分开看",
+      "source": {
+        "name": "Nature News",
+        "url": "https://www.nature.com/articles/d41586-026-02502-8"
+      }
+    },
+    {
+      "target": "finance/01",
+      "title": "中国经济上半年增长4.7%，但行业冷热差异比总数更重要",
+      "topic": "GDP总量必须沿行业和现金链传导",
+      "source": {
+        "name": "国家统计局",
+        "url": "https://www.stats.gov.cn/sj/zxfbhjd/202607/t20260716_1964142.html"
+      }
+    },
+    {
+      "target": "finance/02",
+      "title": "居民收入增长不等于每个人都增长，中位数比平均数更接近普通感受",
+      "topic": "平均收入与中位收入回答不同问题",
+      "source": {
+        "name": "国家统计局",
+        "url": "https://www.stats.gov.cn/sj/zxfbhjd/202607/t20260715_1964129.html"
+      }
+    },
+    {
+      "target": "finance/03",
+      "title": "工业利润增长18.7%，主要由少数行业拉动，不能理解成所有企业都更赚钱",
+      "topic": "工业利润增长要拆成价格数量成本和基数",
+      "source": {
+        "name": "国家统计局",
+        "url": "https://www.stats.gov.cn/sj/zxfbhjd/202607/t20260727_1964194.html"
+      }
+    },
+    {
+      "target": "financial-literacy/01",
+      "title": "国内财务趋势：会计准则解释第20号已经发布，学习重点要从背条文转向理解交易实质",
+      "topic": "会计处理先看权利义务和风险是否改变",
+      "source": {
+        "name": "财政部会计司 · 企业会计准则解释第20号",
+        "url": "https://kjs.mof.gov.cn/zhengcefabu/202606/t20260615_3991686.htm"
+      }
+    },
+    {
+      "target": "financial-literacy/02",
+      "title": "国际财务趋势：IFRS正在澄清租赁和报表列示问题，比较公司前要先统一口径",
+      "topic": "跨公司比较必须先统一准则与列报口径",
+      "source": {
+        "name": "IFRS Foundation · IASB decisions July 2026",
+        "url": "https://www.ifrs.org/news-and-events/news/2026/07/iasb-decisions-july-2026/"
+      }
+    },
+    {
+      "target": "papers/01",
+      "title": "米级钙钛矿组件达到22%效率，关键进展是大面积钝化更稳定",
+      "topic": "实验室效率放大后要同时看面积稳定和良率",
+      "source": {
+        "name": "Nature",
+        "url": "https://www.nature.com/articles/s41586-026-10994-7"
+      }
+    },
+    {
+      "target": "papers/02",
+      "title": "治理AI代理不能只问‘聪不聪明’，还要看自主性、有效性、目标复杂度和通用性",
+      "topic": "AI代理治理要按四个维度分别配置控制",
+      "source": {
+        "name": "Nature",
+        "url": "https://www.nature.com/articles/s41586-026-10805-z"
+      }
+    },
+    {
+      "target": "papers/03",
+      "title": "脑类器官中的祖细胞发育节奏偏离体内，说明‘长得像’不等于完整复现",
+      "topic": "类器官相似性不能替代对发育机制的核验",
+      "source": {
+        "name": "Nature",
+        "url": "https://www.nature.com/articles/s41586-026-10916-7"
+      }
+    },
+    {
+      "target": "health/01",
+      "title": "美国批准mRNA流感疫苗；适用年龄、批准路径和研究更正必须一起看",
+      "topic": "新技术获批不能自动证明临床上更适合每个人",
+      "source": {
+        "name": "Nature News",
+        "url": "https://www.nature.com/articles/d41586-026-02502-8"
+      }
+    },
+    {
+      "target": "health/02",
+      "title": "工程益生菌在动物中实现葡萄糖感知与响应，尚不能当作人用疗法",
+      "topic": "动物模型中的工程益生菌离人用药仍有多道门槛",
+      "source": {
+        "name": "Nature",
+        "url": "https://www.nature.com/articles/s41586-026-10909-6"
+      }
+    },
+    {
+      "target": "health/03",
+      "title": "颗粒重排成纤维的水凝胶可促进肌肉修复，但仍处于前临床阶段",
+      "topic": "再生材料进入人体前必须证明长期相容和可制造",
+      "source": {
+        "name": "Nature",
+        "url": "https://www.nature.com/articles/s41586-026-10883-z"
+      }
+    },
+    {
+      "target": "philosophy/01",
+      "title": "归纳能支持概率判断，却不能把反复发生变成逻辑必然",
+      "topic": "归纳判断必须同时写出机制和可推翻条件",
+      "source": {
+        "name": "Stanford Encyclopedia of Philosophy",
+        "url": "https://plato.stanford.edu/entries/induction-problem/"
+      }
+    },
+    {
+      "target": "logic/01",
+      "title": "先验有效性，再验前提真实性，才能得到可靠论证",
+      "topic": "有效结构与真实前提必须分两次检查",
+      "source": {
+        "name": "Open Logic Project",
+        "url": "https://forallx.openlogicproject.org/bookml/Ch2.html"
+      }
+    },
+    {
+      "target": "management/01",
+      "title": "BATNA决定你何时该离开，改善替代方案比强硬话术更有用",
+      "topic": "BATNA必须是真正可执行的替代方案",
+      "source": {
+        "name": "Harvard PON · What is BATNA?",
+        "url": "https://www.pon.harvard.edu/daily/batna/translate-your-batna-to-the-current-deal/"
+      }
+    },
+    {
+      "target": "history/01",
+      "title": "1886年北洋海防巡阅史料：先看人物与组织，再讨论系统原因",
+      "topic": "史料先说明人物与组织，再谨慎讨论系统原因",
+      "source": {
+        "name": "故宫博物院 · 北洋海防史料",
+        "url": "https://www.dpm.org.cn/journal_detail/367790.html"
+      }
+    },
+    {
+      "target": "ted/01",
+      "title": "玩不是学习的对立面：自主探索补上了标准课堂缺少的一环",
+      "topic": "自主探索需要空间也需要清楚边界",
+      "source": {
+        "name": "TED · The missing ingredient in how we learn",
+        "url": "https://www.ted.com/talks/ted_ed_the_missing_ingredient_in_how_we_learn"
+      }
+    },
+    {
+      "target": "ted/02",
+      "title": "AI可以讲知识，但好老师真正不可替代的是看见人、连接人",
+      "topic": "AI负责重复讲解人负责诊断关系与信心",
+      "source": {
+        "name": "TED · Matt Wu",
+        "url": "https://www.ted.com/talks/matt_wu_why_ai_will_never_replace_a_great_teacher"
+      }
+    },
+    {
+      "target": "ted/03",
+      "title": "会聊天不等于有意识：我们很容易把人的内心投射给AI",
+      "topic": "语言像人不能证明系统拥有主观体验",
+      "source": {
+        "name": "TED · Anil Seth",
+        "url": "https://www.ted.com/talks/anil_seth_why_ai_isn_t_going_to_become_conscious"
+      }
+    }
+  ],
+  "notes": "第一轮5篇新增来源事实；第二轮25篇逐篇重读本站已有来源摘录、复核原始入口可访问，并新增文章专属的机制、证据读法、场景、行动与局限。",
+  "sourceVerification": [
+    {
+      "target": "codex/02",
+      "sourceUrl": "https://learn.chatgpt.com/docs/changelog",
+      "finalUrl": "https://learn.chatgpt.com/docs/changelog",
+      "status": 200,
+      "ok": true,
+      "checkedOn": "2026-08-22",
+      "attempts": 1
+    },
+    {
+      "target": "codex/03",
+      "sourceUrl": "https://learn.chatgpt.com/docs/changelog",
+      "finalUrl": "https://learn.chatgpt.com/docs/changelog",
+      "status": 200,
+      "ok": true,
+      "checkedOn": "2026-08-22",
+      "attempts": 1
+    },
+    {
+      "target": "codex/04",
+      "sourceUrl": "https://learn.chatgpt.com/docs/changelog",
+      "finalUrl": "https://learn.chatgpt.com/docs/changelog",
+      "status": 200,
+      "ok": true,
+      "checkedOn": "2026-08-22",
+      "attempts": 1
+    },
+    {
+      "target": "daily/01",
+      "sourceUrl": "https://www.nature.com/articles/d41586-026-02542-0",
+      "finalUrl": "https://www.nature.com/articles/d41586-026-02542-0?error=cookies_not_supported&code=9f5bbe37-24d4-41f5-9304-b62f1d9dc7a4",
+      "status": 200,
+      "ok": true,
+      "checkedOn": "2026-08-22",
+      "attempts": 1
+    },
+    {
+      "target": "daily/02",
+      "sourceUrl": "https://www.nature.com/articles/d41586-026-02503-7",
+      "finalUrl": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fd41586-026-02503-7&code=2eba6f04-24fa-4a13-9172-ec7c870ed824",
+      "status": 200,
+      "ok": true,
+      "checkedOn": "2026-08-22",
+      "attempts": 1
+    },
+    {
+      "target": "daily/03",
+      "sourceUrl": "https://www.nature.com/articles/d41586-026-02494-5",
+      "finalUrl": "https://www.nature.com/articles/d41586-026-02494-5?error=cookies_not_supported&code=88b168dc-7184-4ae2-b79e-6e58b8e49f22",
+      "status": 200,
+      "ok": true,
+      "checkedOn": "2026-08-22",
+      "attempts": 1
+    },
+    {
+      "target": "daily/04",
+      "sourceUrl": "https://www.nature.com/articles/d41586-026-02502-8",
+      "finalUrl": "https://idp.nature.com/transit?redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fd41586-026-02502-8&code=d1d075b8-4951-4c51-a328-00c6c49ea3eb",
+      "status": 200,
+      "ok": true,
+      "checkedOn": "2026-08-22",
+      "attempts": 1
+    },
+    {
+      "target": "finance/01",
+      "sourceUrl": "https://www.stats.gov.cn/sj/zxfbhjd/202607/t20260716_1964142.html",
+      "finalUrl": "https://www.stats.gov.cn/sj/zxfbhjd/202607/t20260716_1964142.html",
+      "status": 200,
+      "ok": true,
+      "checkedOn": "2026-08-22",
+      "attempts": 1
+    },
+    {
+      "target": "finance/02",
+      "sourceUrl": "https://www.stats.gov.cn/sj/zxfbhjd/202607/t20260715_1964129.html",
+      "finalUrl": "https://www.stats.gov.cn/sj/zxfbhjd/202607/t20260715_1964129.html",
+      "status": 200,
+      "ok": true,
+      "checkedOn": "2026-08-22",
+      "attempts": 1
+    },
+    {
+      "target": "finance/03",
+      "sourceUrl": "https://www.stats.gov.cn/sj/zxfbhjd/202607/t20260727_1964194.html",
+      "finalUrl": "https://www.stats.gov.cn/sj/zxfbhjd/202607/t20260727_1964194.html",
+      "status": 200,
+      "ok": true,
+      "checkedOn": "2026-08-22",
+      "attempts": 1
+    },
+    {
+      "target": "financial-literacy/01",
+      "sourceUrl": "https://kjs.mof.gov.cn/zhengcefabu/202606/t20260615_3991686.htm",
+      "finalUrl": "https://kjs.mof.gov.cn/zhengcefabu/202606/t20260615_3991686.htm",
+      "status": 200,
+      "ok": true,
+      "checkedOn": "2026-08-22",
+      "attempts": 1
+    },
+    {
+      "target": "financial-literacy/02",
+      "sourceUrl": "https://www.ifrs.org/news-and-events/news/2026/07/iasb-decisions-july-2026/",
+      "finalUrl": "https://www.ifrs.org/news-and-events/news/2026/07/iasb-decisions-july-2026/",
+      "status": 200,
+      "ok": true,
+      "checkedOn": "2026-08-22",
+      "attempts": 1
+    },
+    {
+      "target": "papers/01",
+      "sourceUrl": "https://www.nature.com/articles/s41586-026-10994-7",
+      "finalUrl": "https://www.nature.com/articles/s41586-026-10994-7?error=cookies_not_supported&code=c95fcc27-eec0-43ce-a458-281ceae4ac9f",
+      "status": 200,
+      "ok": true,
+      "checkedOn": "2026-08-22",
+      "attempts": 1
+    },
+    {
+      "target": "papers/02",
+      "sourceUrl": "https://www.nature.com/articles/s41586-026-10805-z",
+      "finalUrl": "https://www.nature.com/articles/s41586-026-10805-z?error=cookies_not_supported&code=577e17c6-846b-4bff-b573-2de01d88b10d",
+      "status": 200,
+      "ok": true,
+      "checkedOn": "2026-08-22",
+      "attempts": 1
+    },
+    {
+      "target": "papers/03",
+      "sourceUrl": "https://www.nature.com/articles/s41586-026-10916-7",
+      "finalUrl": "https://idp.nature.com/authorize?response_type=cookie&client_id=grover&redirect_uri=https%3A%2F%2Fwww.nature.com%2Farticles%2Fs41586-026-10916-7",
+      "status": 200,
+      "ok": true,
+      "checkedOn": "2026-08-22",
+      "attempts": 1
+    },
+    {
+      "target": "health/01",
+      "sourceUrl": "https://www.nature.com/articles/d41586-026-02502-8",
+      "finalUrl": "https://www.nature.com/articles/d41586-026-02502-8?error=cookies_not_supported&code=8b5f263a-cbe4-46e3-add2-294218de70cd",
+      "status": 200,
+      "ok": true,
+      "checkedOn": "2026-08-22",
+      "attempts": 1
+    },
+    {
+      "target": "health/02",
+      "sourceUrl": "https://www.nature.com/articles/s41586-026-10909-6",
+      "finalUrl": "https://www.nature.com/articles/s41586-026-10909-6?error=cookies_not_supported&code=af55078d-b812-4ff3-b862-3f88249cb77a",
+      "status": 200,
+      "ok": true,
+      "checkedOn": "2026-08-22",
+      "attempts": 1
+    },
+    {
+      "target": "health/03",
+      "sourceUrl": "https://www.nature.com/articles/s41586-026-10883-z",
+      "finalUrl": "https://www.nature.com/articles/s41586-026-10883-z?error=cookies_not_supported&code=a3ae6a2b-c64c-472d-8cb6-9e0a8aa6adce",
+      "status": 200,
+      "ok": true,
+      "checkedOn": "2026-08-22",
+      "attempts": 1
+    },
+    {
+      "target": "philosophy/01",
+      "sourceUrl": "https://plato.stanford.edu/entries/induction-problem/",
+      "finalUrl": "https://plato.stanford.edu/entries/induction-problem/",
+      "status": 200,
+      "ok": true,
+      "checkedOn": "2026-08-22",
+      "attempts": 1
+    },
+    {
+      "target": "logic/01",
+      "sourceUrl": "https://forallx.openlogicproject.org/bookml/Ch2.html",
+      "finalUrl": "https://forallx.openlogicproject.org/bookml/Ch2.html",
+      "status": 200,
+      "ok": true,
+      "checkedOn": "2026-08-22",
+      "attempts": 1
+    },
+    {
+      "target": "management/01",
+      "sourceUrl": "https://www.pon.harvard.edu/daily/batna/translate-your-batna-to-the-current-deal/",
+      "finalUrl": "https://www.pon.harvard.edu/daily/batna/translate-your-batna-to-the-current-deal/",
+      "status": 200,
+      "ok": true,
+      "checkedOn": "2026-08-22",
+      "attempts": 1
+    },
+    {
+      "target": "history/01",
+      "sourceUrl": "https://www.dpm.org.cn/journal_detail/367790.html",
+      "finalUrl": "https://www.dpm.org.cn/journal_detail/367790.html",
+      "status": 200,
+      "ok": true,
+      "checkedOn": "2026-08-22",
+      "attempts": 1
+    },
+    {
+      "target": "ted/01",
+      "sourceUrl": "https://www.ted.com/talks/ted_ed_the_missing_ingredient_in_how_we_learn",
+      "finalUrl": "https://www.ted.com/talks/ted_ed_the_missing_ingredient_in_how_we_learn",
+      "status": 200,
+      "ok": true,
+      "checkedOn": "2026-08-22",
+      "attempts": 1
+    },
+    {
+      "target": "ted/02",
+      "sourceUrl": "https://www.ted.com/talks/matt_wu_why_ai_will_never_replace_a_great_teacher",
+      "finalUrl": "https://www.ted.com/talks/matt_wu_why_ai_will_never_replace_a_great_teacher",
+      "status": 200,
+      "ok": true,
+      "checkedOn": "2026-08-22",
+      "attempts": 1
+    },
+    {
+      "target": "ted/03",
+      "sourceUrl": "https://www.ted.com/talks/anil_seth_why_ai_isn_t_going_to_become_conscious",
+      "finalUrl": "https://www.ted.com/talks/anil_seth_why_ai_isn_t_going_to_become_conscious",
+      "status": 200,
+      "ok": true,
+      "checkedOn": "2026-08-22",
+      "attempts": 1
     }
   ]
 }

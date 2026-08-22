@@ -64,8 +64,8 @@ assert.match(briefing, /https:\/\/openai\.com\/index\/offering-zero-data-retenti
 assert.match(briefing, /https:\/\/www\.nature\.com\/articles\/d41586-026-02352-4/);
 
 const audit = await readFile(path.join(site, "audit", "index.html"), "utf8");
-assert.match(audit, /5\s*\/\s*110/);
-assert.match(audit, /4\.5%/);
+assert.match(audit, /30\s*\/\s*110/);
+assert.match(audit, /27\.3%/);
 assert.match(audit, /未达到80%/);
 assert.match(audit, /本地模型[^<]*不可用/);
 
