@@ -1,4 +1,9 @@
 import assert from "node:assert/strict";
+import { execFileSync } from "node:child_process";
+import { mkdtemp, mkdir, rm, writeFile } from "node:fs/promises";
+import os from "node:os";
+import path from "node:path";
+import { findTitleFirstSeen } from "../scripts/lib/article-ledger.mjs";
 import {
   extractArticleRecord,
   renderDetailDates,
@@ -47,5 +52,33 @@ const withAllDates = renderDetailDates(detail, {
 assert.match(withAllDates, /本站首次发布：2026-08-08/);
 assert.match(withAllDates, /本站最后更新：2026-08-23/);
 assert.match(withAllDates, /原文发布：2026-08-21/);
+
+const repo = await mkdtemp(path.join(os.tmpdir(), "article-ledger-"));
+try {
+  execFileSync("git", ["init"], { cwd: repo, stdio: "ignore" });
+  execFileSync("git", ["config", "user.name", "Timeline Test"], { cwd: repo });
+  execFileSync("git", ["config", "user.email", "timeline@example.com"], { cwd: repo });
+  const articlePath = path.join(repo, "site", "column", "daily", "01", "index.html");
+  await mkdir(path.dirname(articlePath), { recursive: true });
+  await writeFile(articlePath, "<h1>旧文章</h1>", "utf8");
+  execFileSync("git", ["add", "."], { cwd: repo });
+  execFileSync("git", ["commit", "-m", "old"], {
+    cwd: repo,
+    env: { ...process.env, GIT_AUTHOR_DATE: "2026-08-01T00:00:00+08:00", GIT_COMMITTER_DATE: "2026-08-01T00:00:00+08:00" },
+    stdio: "ignore",
+  });
+  await writeFile(articlePath, "<h1>当前文章</h1>", "utf8");
+  execFileSync("git", ["add", "."], { cwd: repo });
+  execFileSync("git", ["commit", "-m", "current"], {
+    cwd: repo,
+    env: { ...process.env, GIT_AUTHOR_DATE: "2026-08-02T00:00:00+08:00", GIT_COMMITTER_DATE: "2026-08-02T00:00:00+08:00" },
+    stdio: "ignore",
+  });
+  const firstSeen = findTitleFirstSeen({ repo, file: "site/column/daily/01/index.html", title: "当前文章" });
+  assert.equal(firstSeen.date, "2026-08-02");
+  assert.match(firstSeen.commit, /^[a-f0-9]{40}$/);
+} finally {
+  await rm(repo, { recursive: true, force: true });
+}
 
 console.log("article timeline checks passed");

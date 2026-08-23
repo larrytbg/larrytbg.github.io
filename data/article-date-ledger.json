@@ -1,0 +1,885 @@
+{
+  "version": 1,
+  "articles": {
+    "codex/01": {
+      "title": "Computer History可以形成跨应用时间线，但必须由用户主动开启并保留删除控制",
+      "publishedOn": "2026-08-14",
+      "updatedOn": null,
+      "sourcePublishedOn": null,
+      "evidence": "git-current-title-first-seen",
+      "commit": "b6b29c0d17f9d48557497ea1caa19dd5bbca6d73"
+    },
+    "codex/02": {
+      "title": "Daybreak Red权限更高，但必须单独审批，而且只能用于明确授权的安全测试",
+      "publishedOn": "2026-08-11",
+      "updatedOn": null,
+      "sourcePublishedOn": null,
+      "evidence": "git-current-title-first-seen",
+      "commit": "b21a9ea0086e259d00428b9ffb435441c30926d3"
+    },
+    "codex/03": {
+      "title": "--approve-for-me减少重复确认，但不会自动扩大任务权限",
+      "publishedOn": "2026-08-10",
+      "updatedOn": null,
+      "sourcePublishedOn": null,
+      "evidence": "git-current-title-first-seen",
+      "commit": "23adeaf6a1e140d99387e185df77829cfda55737"
+    },
+    "codex/04": {
+      "title": "Cursor技能与Claude、Cursor对话可迁入Codex，迁移后必须重验路径和工具",
+      "publishedOn": "2026-08-10",
+      "updatedOn": null,
+      "sourcePublishedOn": null,
+      "evidence": "git-current-title-first-seen",
+      "commit": "23adeaf6a1e140d99387e185df77829cfda55737"
+    },
+    "codex/05": {
+      "title": "MCP 2026-07-28支持分页发现和多轮调用，复杂工具链更容易保持响应",
+      "publishedOn": "2026-08-10",
+      "updatedOn": null,
+      "sourcePublishedOn": null,
+      "evidence": "git-current-title-first-seen",
+      "commit": "23adeaf6a1e140d99387e185df77829cfda55737"
+    },
+    "codex/06": {
+      "title": "Amazon Bedrock新增缓存网页搜索与远程压缩，长上下文成本更可控",
+      "publishedOn": "2026-08-10",
+      "updatedOn": null,
+      "sourcePublishedOn": null,
+      "evidence": "git-current-title-first-seen",
+      "commit": "23adeaf6a1e140d99387e185df77829cfda55737"
+    },
+    "codex/07": {
+      "title": "命令显示和会话回放会遮盖完整密钥，降低误泄露风险",
+      "publishedOn": "2026-08-10",
+      "updatedOn": null,
+      "sourcePublishedOn": null,
+      "evidence": "git-current-title-first-seen",
+      "commit": "23adeaf6a1e140d99387e185df77829cfda55737"
+    },
+    "codex/08": {
+      "title": "Windows后台进程中断和路径处理得到修复，长任务恢复更稳定",
+      "publishedOn": "2026-08-10",
+      "updatedOn": null,
+      "sourcePublishedOn": null,
+      "evidence": "git-current-title-first-seen",
+      "commit": "23adeaf6a1e140d99387e185df77829cfda55737"
+    },
+    "codex/09": {
+      "title": "用插件和连接器扩展外部资料与工具",
+      "publishedOn": "2026-08-09",
+      "updatedOn": null,
+      "sourcePublishedOn": null,
+      "evidence": "git-current-title-first-seen",
+      "commit": "45bebd360a7cdef9e170a090625aebe427fc6dee"
+    },
+    "codex/10": {
+      "title": "长任务要设置目标、阶段结果与验证标准",
+      "publishedOn": "2026-08-09",
+      "updatedOn": null,
+      "sourcePublishedOn": null,
+      "evidence": "git-current-title-first-seen",
+      "commit": "45bebd360a7cdef9e170a090625aebe427fc6dee"
+    },
+    "daily/01": {
+      "title": "美国百城社区研究未发现无证移民增加会推高暴力犯罪",
+      "publishedOn": "2026-08-16",
+      "updatedOn": null,
+      "sourcePublishedOn": "2026-08-14",
+      "evidence": "git-current-title-first-seen",
+      "commit": "533ae0551f03e6546cc62b87904bcf180e53f980"
+    },
+    "daily/02": {
+      "title": "Anthropic为新模型加入隐形水印，但水印能否长期识别仍不确定",
+      "publishedOn": "2026-08-16",
+      "updatedOn": null,
+      "sourcePublishedOn": "2026-08-13",
+      "evidence": "git-current-title-first-seen",
+      "commit": "533ae0551f03e6546cc62b87904bcf180e53f980"
+    },
+    "daily/03": {
+      "title": "AI代理能组合论文概念，但两篇论文作者并不认可其研究质量",
+      "publishedOn": "2026-08-16",
+      "updatedOn": null,
+      "sourcePublishedOn": "2026-08-13",
+      "evidence": "git-current-title-first-seen",
+      "commit": "533ae0551f03e6546cc62b87904bcf180e53f980"
+    },
+    "daily/04": {
+      "title": "美国批准首款mRNA流感疫苗，但目前不能简单说它一定优于传统疫苗",
+      "publishedOn": "2026-08-16",
+      "updatedOn": null,
+      "sourcePublishedOn": "2026-08-13",
+      "evidence": "git-current-title-first-seen",
+      "commit": "533ae0551f03e6546cc62b87904bcf180e53f980"
+    },
+    "daily/05": {
+      "title": "钙钛矿组件做到0.72平方米和22%效率，但量产仍要看长期一致性",
+      "publishedOn": "2026-08-16",
+      "updatedOn": null,
+      "sourcePublishedOn": "2026-08-12",
+      "evidence": "git-current-title-first-seen",
+      "commit": "533ae0551f03e6546cc62b87904bcf180e53f980"
+    },
+    "daily/06": {
+      "title": "刚果（金）邦迪布焦埃博拉仍在传播，最新WHO完整批次报2124例和828死",
+      "publishedOn": "2026-08-10",
+      "updatedOn": null,
+      "sourcePublishedOn": "2026-07-17",
+      "evidence": "git-current-title-first-seen",
+      "commit": "23adeaf6a1e140d99387e185df77829cfda55737"
+    },
+    "daily/07": {
+      "title": "欧盟AI沙盒进入法定落地阶段，但各成员国完成度不能只凭期限判断",
+      "publishedOn": "2026-08-10",
+      "updatedOn": null,
+      "sourcePublishedOn": null,
+      "evidence": "git-current-title-first-seen",
+      "commit": "23adeaf6a1e140d99387e185df77829cfda55737"
+    },
+    "daily/08": {
+      "title": "贸易风险判断要同时看数量、价格和政策，单看关税标题容易误判",
+      "publishedOn": "2026-08-10",
+      "updatedOn": null,
+      "sourcePublishedOn": null,
+      "evidence": "git-current-title-first-seen",
+      "commit": "23adeaf6a1e140d99387e185df77829cfda55737"
+    },
+    "daily/09": {
+      "title": "科技新闻要区分产品发布、演示与规模化使用",
+      "publishedOn": "2026-08-09",
+      "updatedOn": null,
+      "sourcePublishedOn": null,
+      "evidence": "git-current-title-first-seen",
+      "commit": "45bebd360a7cdef9e170a090625aebe427fc6dee"
+    },
+    "daily/10": {
+      "title": "地缘事件要沿能源、贸易、金融与政策四条路径观察",
+      "publishedOn": "2026-08-09",
+      "updatedOn": null,
+      "sourcePublishedOn": null,
+      "evidence": "git-current-title-first-seen",
+      "commit": "45bebd360a7cdef9e170a090625aebe427fc6dee"
+    },
+    "finance/01": {
+      "title": "中国经济上半年增长4.7%，但行业冷热差异比总数更重要",
+      "publishedOn": "2026-08-11",
+      "updatedOn": null,
+      "sourcePublishedOn": null,
+      "evidence": "git-current-title-first-seen",
+      "commit": "b21a9ea0086e259d00428b9ffb435441c30926d3"
+    },
+    "finance/02": {
+      "title": "居民收入增长不等于每个人都增长，中位数比平均数更接近普通感受",
+      "publishedOn": "2026-08-11",
+      "updatedOn": null,
+      "sourcePublishedOn": null,
+      "evidence": "git-current-title-first-seen",
+      "commit": "b21a9ea0086e259d00428b9ffb435441c30926d3"
+    },
+    "finance/03": {
+      "title": "工业利润增长18.7%，主要由少数行业拉动，不能理解成所有企业都更赚钱",
+      "publishedOn": "2026-08-11",
+      "updatedOn": null,
+      "sourcePublishedOn": null,
+      "evidence": "git-current-title-first-seen",
+      "commit": "b21a9ea0086e259d00428b9ffb435441c30926d3"
+    },
+    "finance/04": {
+      "title": "看A股一天涨跌意义有限，成交额和估值要与企业盈利一起看",
+      "publishedOn": "2026-08-11",
+      "updatedOn": null,
+      "sourcePublishedOn": null,
+      "evidence": "git-current-title-first-seen",
+      "commit": "b21a9ea0086e259d00428b9ffb435441c30926d3"
+    },
+    "finance/05": {
+      "title": "金融监管公告要先看适用对象和生效时间，不要把行业规则误当个人政策",
+      "publishedOn": "2026-08-11",
+      "updatedOn": null,
+      "sourcePublishedOn": null,
+      "evidence": "git-current-title-first-seen",
+      "commit": "b21a9ea0086e259d00428b9ffb435441c30926d3"
+    },
+    "finance/06": {
+      "title": "美国7月生产者价格环比持平，但服务和建筑上涨说明成本压力并未全面消失",
+      "publishedOn": "2026-08-14",
+      "updatedOn": null,
+      "sourcePublishedOn": "2026-08-13",
+      "evidence": "git-current-title-first-seen",
+      "commit": "b6b29c0d17f9d48557497ea1caa19dd5bbca6d73"
+    },
+    "finance/07": {
+      "title": "关税退款可能改善企业现金流，但法律执行完成前仍属于不确定资产",
+      "publishedOn": "2026-08-12",
+      "updatedOn": null,
+      "sourcePublishedOn": "2026-08-11",
+      "evidence": "git-current-title-first-seen",
+      "commit": "5c7534c87aac2018d06ca3642534fd75dab00d13"
+    },
+    "finance/08": {
+      "title": "金融制裁替代部分军事压力，最终效果取决于银行、买家和第三国执行",
+      "publishedOn": "2026-08-12",
+      "updatedOn": null,
+      "sourcePublishedOn": "2026-08-11",
+      "evidence": "git-current-title-first-seen",
+      "commit": "5c7534c87aac2018d06ca3642534fd75dab00d13"
+    },
+    "finance/09": {
+      "title": "全球金融条件仍较宽松，但战争、利率和高估值让市场更容易突然波动",
+      "publishedOn": "2026-08-11",
+      "updatedOn": null,
+      "sourcePublishedOn": null,
+      "evidence": "git-current-title-first-seen",
+      "commit": "b21a9ea0086e259d00428b9ffb435441c30926d3"
+    },
+    "finance/10": {
+      "title": "油价上涨会同时影响通胀和利率，但持续时间比单日涨幅更重要",
+      "publishedOn": "2026-08-11",
+      "updatedOn": null,
+      "sourcePublishedOn": "2026-08-06",
+      "evidence": "git-current-title-first-seen",
+      "commit": "b21a9ea0086e259d00428b9ffb435441c30926d3"
+    },
+    "financial-literacy/01": {
+      "title": "国内财务趋势：会计准则解释第20号已经发布，学习重点要从背条文转向理解交易实质",
+      "publishedOn": "2026-08-15",
+      "updatedOn": null,
+      "sourcePublishedOn": "2026-06-15",
+      "evidence": "git-current-title-first-seen",
+      "commit": "dbc88f54526d34276eb8d546b64cd265136e1a3f"
+    },
+    "financial-literacy/02": {
+      "title": "国际财务趋势：IFRS正在澄清租赁和报表列示问题，比较公司前要先统一口径",
+      "publishedOn": "2026-08-15",
+      "updatedOn": null,
+      "sourcePublishedOn": null,
+      "evidence": "git-current-title-first-seen",
+      "commit": "dbc88f54526d34276eb8d546b64cd265136e1a3f"
+    },
+    "financial-literacy/03": {
+      "title": "中级财务：确认、计量和估计决定数字何时进入报表",
+      "publishedOn": "2026-08-15",
+      "updatedOn": null,
+      "sourcePublishedOn": null,
+      "evidence": "git-current-title-first-seen",
+      "commit": "dbc88f54526d34276eb8d546b64cd265136e1a3f"
+    },
+    "financial-literacy/04": {
+      "title": "中级财务：三张报表必须联读，利润不等于现金",
+      "publishedOn": "2026-08-15",
+      "updatedOn": null,
+      "sourcePublishedOn": null,
+      "evidence": "git-current-title-first-seen",
+      "commit": "dbc88f54526d34276eb8d546b64cd265136e1a3f"
+    },
+    "financial-literacy/05": {
+      "title": "中级财务：租赁要同时看使用权、负债、费用和现金流",
+      "publishedOn": "2026-08-15",
+      "updatedOn": null,
+      "sourcePublishedOn": null,
+      "evidence": "git-current-title-first-seen",
+      "commit": "dbc88f54526d34276eb8d546b64cd265136e1a3f"
+    },
+    "financial-literacy/06": {
+      "title": "中级经济法：合同成立、生效和履行是三个不同问题",
+      "publishedOn": "2026-08-15",
+      "updatedOn": null,
+      "sourcePublishedOn": "2020-05-28",
+      "evidence": "git-current-title-first-seen",
+      "commit": "dbc88f54526d34276eb8d546b64cd265136e1a3f"
+    },
+    "financial-literacy/07": {
+      "title": "中级经济法：公司治理要分清股东、董事和管理层的权责",
+      "publishedOn": "2026-08-15",
+      "updatedOn": null,
+      "sourcePublishedOn": "2023-12-29",
+      "evidence": "git-current-title-first-seen",
+      "commit": "dbc88f54526d34276eb8d546b64cd265136e1a3f"
+    },
+    "financial-literacy/08": {
+      "title": "中级经济法：财务披露不是可选说明，重要遗漏也会形成责任",
+      "publishedOn": "2026-08-15",
+      "updatedOn": null,
+      "sourcePublishedOn": null,
+      "evidence": "git-current-title-first-seen",
+      "commit": "dbc88f54526d34276eb8d546b64cd265136e1a3f"
+    },
+    "financial-literacy/09": {
+      "title": "中级财务管理：预算差异和营运资金要追到业务原因",
+      "publishedOn": "2026-08-15",
+      "updatedOn": null,
+      "sourcePublishedOn": null,
+      "evidence": "git-current-title-first-seen",
+      "commit": "dbc88f54526d34276eb8d546b64cd265136e1a3f"
+    },
+    "financial-literacy/10": {
+      "title": "中级财务管理：净现值把未来现金换算成今天可比较的价值",
+      "publishedOn": "2026-08-15",
+      "updatedOn": null,
+      "sourcePublishedOn": null,
+      "evidence": "git-current-title-first-seen",
+      "commit": "dbc88f54526d34276eb8d546b64cd265136e1a3f"
+    },
+    "health/01": {
+      "title": "美国批准mRNA流感疫苗；适用年龄、批准路径和研究更正必须一起看",
+      "publishedOn": "2026-08-16",
+      "updatedOn": null,
+      "sourcePublishedOn": "2026-08-13",
+      "evidence": "git-current-title-first-seen",
+      "commit": "533ae0551f03e6546cc62b87904bcf180e53f980"
+    },
+    "health/02": {
+      "title": "工程益生菌在动物中实现葡萄糖感知与响应，尚不能当作人用疗法",
+      "publishedOn": "2026-08-16",
+      "updatedOn": null,
+      "sourcePublishedOn": "2026-08-12",
+      "evidence": "git-current-title-first-seen",
+      "commit": "533ae0551f03e6546cc62b87904bcf180e53f980"
+    },
+    "health/03": {
+      "title": "颗粒重排成纤维的水凝胶可促进肌肉修复，但仍处于前临床阶段",
+      "publishedOn": "2026-08-10",
+      "updatedOn": null,
+      "sourcePublishedOn": "2026-08-05",
+      "evidence": "git-current-title-first-seen",
+      "commit": "23adeaf6a1e140d99387e185df77829cfda55737"
+    },
+    "health/04": {
+      "title": "刺激可重新激活特定人脑细胞组合，但受限样本不能支持日常认知增强",
+      "publishedOn": "2026-08-10",
+      "updatedOn": null,
+      "sourcePublishedOn": "2026-08-05",
+      "evidence": "git-current-title-first-seen",
+      "commit": "23adeaf6a1e140d99387e185df77829cfda55737"
+    },
+    "health/05": {
+      "title": "星形胶质细胞CD40与MHC-II可能推动中枢炎症，尚不能直接指导换药",
+      "publishedOn": "2026-08-10",
+      "updatedOn": null,
+      "sourcePublishedOn": "2026-08-05",
+      "evidence": "git-current-title-first-seen",
+      "commit": "23adeaf6a1e140d99387e185df77829cfda55737"
+    },
+    "health/06": {
+      "title": "长新冠综合门诊与疲劳改善相关，额外多器官MRI在12周未显示优势",
+      "publishedOn": "2026-08-10",
+      "updatedOn": null,
+      "sourcePublishedOn": "2026-07-28",
+      "evidence": "git-current-title-first-seen",
+      "commit": "23adeaf6a1e140d99387e185df77829cfda55737"
+    },
+    "health/07": {
+      "title": "Retina4IRD把遗传性视网膜病Top-5诊断准确率提高到88.5%，仍需基因检测确认",
+      "publishedOn": "2026-08-10",
+      "updatedOn": null,
+      "sourcePublishedOn": "2026-07-24",
+      "evidence": "git-current-title-first-seen",
+      "commit": "23adeaf6a1e140d99387e185df77829cfda55737"
+    },
+    "health/08": {
+      "title": "Apitegromab在24周少损失1.9公斤瘦体重，但尚未证明长期功能获益",
+      "publishedOn": "2026-08-10",
+      "updatedOn": null,
+      "sourcePublishedOn": "2026-06-12",
+      "evidence": "git-current-title-first-seen",
+      "commit": "23adeaf6a1e140d99387e185df77829cfda55737"
+    },
+    "health/09": {
+      "title": "疫苗决策要区分个人保护与群体传播",
+      "publishedOn": "2026-08-09",
+      "updatedOn": null,
+      "sourcePublishedOn": null,
+      "evidence": "git-current-title-first-seen",
+      "commit": "45bebd360a7cdef9e170a090625aebe427fc6dee"
+    },
+    "health/10": {
+      "title": "健康筛查并非项目越多越好",
+      "publishedOn": "2026-08-09",
+      "updatedOn": null,
+      "sourcePublishedOn": null,
+      "evidence": "git-current-title-first-seen",
+      "commit": "45bebd360a7cdef9e170a090625aebe427fc6dee"
+    },
+    "history/01": {
+      "title": "1886年北洋海防巡阅史料：先看人物与组织，再讨论系统原因",
+      "publishedOn": "2026-08-22",
+      "updatedOn": null,
+      "sourcePublishedOn": null,
+      "evidence": "git-current-title-first-seen",
+      "commit": "7d30362abd1793ff7d28a5e3cc692f4d86036921"
+    },
+    "history/02": {
+      "title": "王安石变法提醒：目标正确仍可能被考核、能力和利益关系改变",
+      "publishedOn": "2026-08-10",
+      "updatedOn": null,
+      "sourcePublishedOn": null,
+      "evidence": "git-current-title-first-seen",
+      "commit": "23adeaf6a1e140d99387e185df77829cfda55737"
+    },
+    "history/03": {
+      "title": "张居正考成法说明：晋升后应建立责任和检查闭环，而不是亲自救火",
+      "publishedOn": "2026-08-10",
+      "updatedOn": null,
+      "sourcePublishedOn": null,
+      "evidence": "git-current-title-first-seen",
+      "commit": "23adeaf6a1e140d99387e185df77829cfda55737"
+    },
+    "history/04": {
+      "title": "古巴导弹危机说明：有效施压必须配套沟通、暂停和体面退出",
+      "publishedOn": "2026-08-10",
+      "updatedOn": null,
+      "sourcePublishedOn": null,
+      "evidence": "git-current-title-first-seen",
+      "commit": "23adeaf6a1e140d99387e185df77829cfda55737"
+    },
+    "history/05": {
+      "title": "凡尔赛体系说明：签字只解决当下，长期稳定还需要执行与修订机制",
+      "publishedOn": "2026-08-10",
+      "updatedOn": null,
+      "sourcePublishedOn": null,
+      "evidence": "git-current-title-first-seen",
+      "commit": "23adeaf6a1e140d99387e185df77829cfda55737"
+    },
+    "history/06": {
+      "title": "苏轼的多次起落说明：多重能力和关系能降低单一职位风险",
+      "publishedOn": "2026-08-10",
+      "updatedOn": null,
+      "sourcePublishedOn": null,
+      "evidence": "git-current-title-first-seen",
+      "commit": "23adeaf6a1e140d99387e185df77829cfda55737"
+    },
+    "history/07": {
+      "title": "司马迁说明：长期使命必须落实为作品和边界，不能等同无限忍耐",
+      "publishedOn": "2026-08-10",
+      "updatedOn": null,
+      "sourcePublishedOn": null,
+      "evidence": "git-current-title-first-seen",
+      "commit": "23adeaf6a1e140d99387e185df77829cfda55737"
+    },
+    "history/08": {
+      "title": "张骞出使说明：原目标失败后，应单独评估信息、关系和路线资产",
+      "publishedOn": "2026-08-10",
+      "updatedOn": null,
+      "sourcePublishedOn": null,
+      "evidence": "git-current-title-first-seen",
+      "commit": "23adeaf6a1e140d99387e185df77829cfda55737"
+    },
+    "history/09": {
+      "title": "郑和远航的关键不是个人胆识，而是组织、补给与伙伴网络",
+      "publishedOn": "2026-08-09",
+      "updatedOn": null,
+      "sourcePublishedOn": null,
+      "evidence": "git-current-title-first-seen",
+      "commit": "45bebd360a7cdef9e170a090625aebe427fc6dee"
+    },
+    "history/10": {
+      "title": "居里夫人的成就与伤害共同提醒：热爱必须配套安全和恢复机制",
+      "publishedOn": "2026-08-09",
+      "updatedOn": null,
+      "sourcePublishedOn": null,
+      "evidence": "git-current-title-first-seen",
+      "commit": "45bebd360a7cdef9e170a090625aebe427fc6dee"
+    },
+    "logic/01": {
+      "title": "先验有效性，再验前提真实性，才能得到可靠论证",
+      "publishedOn": "2026-08-10",
+      "updatedOn": null,
+      "sourcePublishedOn": null,
+      "evidence": "git-current-title-first-seen",
+      "commit": "23adeaf6a1e140d99387e185df77829cfda55737"
+    },
+    "logic/02": {
+      "title": "必要条件回答‘缺了行不行’，充分条件回答‘有了够不够’",
+      "publishedOn": "2026-08-10",
+      "updatedOn": null,
+      "sourcePublishedOn": null,
+      "evidence": "git-current-title-first-seen",
+      "commit": "23adeaf6a1e140d99387e185df77829cfda55737"
+    },
+    "logic/03": {
+      "title": "原命题只与逆否命题等价，不能从结果直接倒推原因",
+      "publishedOn": "2026-08-10",
+      "updatedOn": null,
+      "sourcePublishedOn": null,
+      "evidence": "git-current-title-first-seen",
+      "commit": "23adeaf6a1e140d99387e185df77829cfda55737"
+    },
+    "logic/04": {
+      "title": "一个反例能推翻严格全称命题，却不能由一个例子证明所有",
+      "publishedOn": "2026-08-10",
+      "updatedOn": null,
+      "sourcePublishedOn": null,
+      "evidence": "git-current-title-first-seen",
+      "commit": "23adeaf6a1e140d99387e185df77829cfda55737"
+    },
+    "logic/05": {
+      "title": "真值表能穷举简单条件组合，但不负责证明现实前提",
+      "publishedOn": "2026-08-10",
+      "updatedOn": null,
+      "sourcePublishedOn": null,
+      "evidence": "git-current-title-first-seen",
+      "commit": "23adeaf6a1e140d99387e185df77829cfda55737"
+    },
+    "logic/06": {
+      "title": "肯定后件会把多种可能原因误写成唯一原因",
+      "publishedOn": "2026-08-10",
+      "updatedOn": null,
+      "sourcePublishedOn": null,
+      "evidence": "git-current-title-first-seen",
+      "commit": "23adeaf6a1e140d99387e185df77829cfda55737"
+    },
+    "logic/07": {
+      "title": "错误二分把多方案压成两极，破解方法是寻找分阶段和附条件选择",
+      "publishedOn": "2026-08-10",
+      "updatedOn": null,
+      "sourcePublishedOn": null,
+      "evidence": "git-current-title-first-seen",
+      "commit": "23adeaf6a1e140d99387e185df77829cfda55737"
+    },
+    "logic/08": {
+      "title": "相关关系要升级为因果判断，还需时间顺序、比较和机制",
+      "publishedOn": "2026-08-10",
+      "updatedOn": null,
+      "sourcePublishedOn": null,
+      "evidence": "git-current-title-first-seen",
+      "commit": "23adeaf6a1e140d99387e185df77829cfda55737"
+    },
+    "logic/09": {
+      "title": "忽视基础率会让罕见事件的判断严重偏差",
+      "publishedOn": "2026-08-09",
+      "updatedOn": null,
+      "sourcePublishedOn": null,
+      "evidence": "git-current-title-first-seen",
+      "commit": "45bebd360a7cdef9e170a090625aebe427fc6dee"
+    },
+    "logic/10": {
+      "title": "先把对方观点说到最强，再进行反驳",
+      "publishedOn": "2026-08-09",
+      "updatedOn": null,
+      "sourcePublishedOn": null,
+      "evidence": "git-current-title-first-seen",
+      "commit": "45bebd360a7cdef9e170a090625aebe427fc6dee"
+    },
+    "management/01": {
+      "title": "BATNA决定你何时该离开，改善替代方案比强硬话术更有用",
+      "publishedOn": "2026-08-10",
+      "updatedOn": null,
+      "sourcePublishedOn": null,
+      "evidence": "git-current-title-first-seen",
+      "commit": "23adeaf6a1e140d99387e185df77829cfda55737"
+    },
+    "management/02": {
+      "title": "从立场追到利益，才能把零和冲突改造成条件交换",
+      "publishedOn": "2026-08-10",
+      "updatedOn": null,
+      "sourcePublishedOn": null,
+      "evidence": "git-current-title-first-seen",
+      "commit": "23adeaf6a1e140d99387e185df77829cfda55737"
+    },
+    "management/03": {
+      "title": "职场权力来自资源、信息、专业性和退出能力，不只来自职级",
+      "publishedOn": "2026-08-10",
+      "updatedOn": null,
+      "sourcePublishedOn": null,
+      "evidence": "git-current-title-first-seen",
+      "commit": "23adeaf6a1e140d99387e185df77829cfda55737"
+    },
+    "management/04": {
+      "title": "一页谈判准备表应同时写目标、底线、双方BATNA和交换条件",
+      "publishedOn": "2026-08-10",
+      "updatedOn": null,
+      "sourcePublishedOn": null,
+      "evidence": "git-current-title-first-seen",
+      "commit": "23adeaf6a1e140d99387e185df77829cfda55737"
+    },
+    "management/05": {
+      "title": "达成协议不是目标，协议必须优于不签时的最佳方案",
+      "publishedOn": "2026-08-10",
+      "updatedOn": null,
+      "sourcePublishedOn": null,
+      "evidence": "git-current-title-first-seen",
+      "commit": "23adeaf6a1e140d99387e185df77829cfda55737"
+    },
+    "management/06": {
+      "title": "利益相关者地图按权力、态度和证据更新，不给同事贴永久标签",
+      "publishedOn": "2026-08-10",
+      "updatedOn": null,
+      "sourcePublishedOn": null,
+      "evidence": "git-current-title-first-seen",
+      "commit": "23adeaf6a1e140d99387e185df77829cfda55737"
+    },
+    "management/07": {
+      "title": "授权必须同时下放责任和决策权，并写清何时需要请示",
+      "publishedOn": "2026-08-10",
+      "updatedOn": null,
+      "sourcePublishedOn": null,
+      "evidence": "git-current-title-first-seen",
+      "commit": "23adeaf6a1e140d99387e185df77829cfda55737"
+    },
+    "management/08": {
+      "title": "冲突升级应分级推进并保留降级通道，紧急违法和安全风险除外",
+      "publishedOn": "2026-08-10",
+      "updatedOn": null,
+      "sourcePublishedOn": null,
+      "evidence": "git-current-title-first-seen",
+      "commit": "23adeaf6a1e140d99387e185df77829cfda55737"
+    },
+    "management/09": {
+      "title": "心理安全必须与高标准并存：允许报错，不等于允许不负责",
+      "publishedOn": "2026-08-09",
+      "updatedOn": null,
+      "sourcePublishedOn": null,
+      "evidence": "git-current-title-first-seen",
+      "commit": "45bebd360a7cdef9e170a090625aebe427fc6dee"
+    },
+    "management/10": {
+      "title": "项目启动前做预演失败，结束后复盘事实，形成前后两道防线",
+      "publishedOn": "2026-08-09",
+      "updatedOn": null,
+      "sourcePublishedOn": null,
+      "evidence": "git-current-title-first-seen",
+      "commit": "45bebd360a7cdef9e170a090625aebe427fc6dee"
+    },
+    "papers/01": {
+      "title": "米级钙钛矿组件达到22%效率，关键进展是大面积钝化更稳定",
+      "publishedOn": "2026-08-16",
+      "updatedOn": null,
+      "sourcePublishedOn": "2026-08-12",
+      "evidence": "git-current-title-first-seen",
+      "commit": "533ae0551f03e6546cc62b87904bcf180e53f980"
+    },
+    "papers/02": {
+      "title": "治理AI代理不能只问‘聪不聪明’，还要看自主性、有效性、目标复杂度和通用性",
+      "publishedOn": "2026-08-16",
+      "updatedOn": null,
+      "sourcePublishedOn": "2026-08-12",
+      "evidence": "git-current-title-first-seen",
+      "commit": "533ae0551f03e6546cc62b87904bcf180e53f980"
+    },
+    "papers/03": {
+      "title": "脑类器官中的祖细胞发育节奏偏离体内，说明‘长得像’不等于完整复现",
+      "publishedOn": "2026-08-16",
+      "updatedOn": null,
+      "sourcePublishedOn": "2026-08-12",
+      "evidence": "git-current-title-first-seen",
+      "commit": "533ae0551f03e6546cc62b87904bcf180e53f980"
+    },
+    "papers/04": {
+      "title": "工程益生菌能在小鼠和猴子中感知葡萄糖并响应，但离人用治疗仍很远",
+      "publishedOn": "2026-08-16",
+      "updatedOn": null,
+      "sourcePublishedOn": "2026-08-12",
+      "evidence": "git-current-title-first-seen",
+      "commit": "533ae0551f03e6546cc62b87904bcf180e53f980"
+    },
+    "papers/05": {
+      "title": "ZFP36L2连接组织修复与结直肠癌适应性，现阶段仍是机制线索",
+      "publishedOn": "2026-08-10",
+      "updatedOn": null,
+      "sourcePublishedOn": "2026-08-05",
+      "evidence": "git-current-title-first-seen",
+      "commit": "23adeaf6a1e140d99387e185df77829cfda55737"
+    },
+    "papers/06": {
+      "title": "体细胞突变可追踪人类小胶质细胞来源，提供衰老谱系图但不是疾病预测",
+      "publishedOn": "2026-08-10",
+      "updatedOn": null,
+      "sourcePublishedOn": "2026-07-30",
+      "evidence": "git-current-title-first-seen",
+      "commit": "23adeaf6a1e140d99387e185df77829cfda55737"
+    },
+    "papers/07": {
+      "title": "硅自旋量子比特实现四体奇偶校验，接近纠错基本操作但离容错计算仍远",
+      "publishedOn": "2026-08-10",
+      "updatedOn": null,
+      "sourcePublishedOn": "2026-07-29",
+      "evidence": "git-current-title-first-seen",
+      "commit": "23adeaf6a1e140d99387e185df77829cfda55737"
+    },
+    "papers/08": {
+      "title": "酶促糖基化与酰胺化可降低多烯类毒性，仍需临床前安全和药效验证",
+      "publishedOn": "2026-08-10",
+      "updatedOn": null,
+      "sourcePublishedOn": "2026-07-29",
+      "evidence": "git-current-title-first-seen",
+      "commit": "23adeaf6a1e140d99387e185df77829cfda55737"
+    },
+    "papers/09": {
+      "title": "系统综述比单篇论文更适合回答稳定结论",
+      "publishedOn": "2026-08-09",
+      "updatedOn": null,
+      "sourcePublishedOn": null,
+      "evidence": "git-current-title-first-seen",
+      "commit": "45bebd360a7cdef9e170a090625aebe427fc6dee"
+    },
+    "papers/10": {
+      "title": "论文的限制部分不是客套话，而是结论边界",
+      "publishedOn": "2026-08-09",
+      "updatedOn": null,
+      "sourcePublishedOn": null,
+      "evidence": "git-current-title-first-seen",
+      "commit": "45bebd360a7cdef9e170a090625aebe427fc6dee"
+    },
+    "philosophy/01": {
+      "title": "归纳能支持概率判断，却不能把反复发生变成逻辑必然",
+      "publishedOn": "2026-08-10",
+      "updatedOn": null,
+      "sourcePublishedOn": null,
+      "evidence": "git-current-title-first-seen",
+      "commit": "23adeaf6a1e140d99387e185df77829cfda55737"
+    },
+    "philosophy/02": {
+      "title": "贝叶斯更新的核心是证据区分假设的能力，不是给直觉套上数字",
+      "publishedOn": "2026-08-10",
+      "updatedOn": null,
+      "sourcePublishedOn": null,
+      "evidence": "git-current-title-first-seen",
+      "commit": "23adeaf6a1e140d99387e185df77829cfda55737"
+    },
+    "philosophy/03": {
+      "title": "盖梯尔问题提醒：碰巧说对不等于真正知道",
+      "publishedOn": "2026-08-10",
+      "updatedOn": null,
+      "sourcePublishedOn": null,
+      "evidence": "git-current-title-first-seen",
+      "commit": "23adeaf6a1e140d99387e185df77829cfda55737"
+    },
+    "philosophy/04": {
+      "title": "可证伪性要求观点承担失败条件，但不能一条标准包办全部科学判断",
+      "publishedOn": "2026-08-10",
+      "updatedOn": null,
+      "sourcePublishedOn": null,
+      "evidence": "git-current-title-first-seen",
+      "commit": "23adeaf6a1e140d99387e185df77829cfda55737"
+    },
+    "philosophy/05": {
+      "title": "善意解释先还原最合理观点，再检验前提和证据",
+      "publishedOn": "2026-08-10",
+      "updatedOn": null,
+      "sourcePublishedOn": null,
+      "evidence": "git-current-title-first-seen",
+      "commit": "23adeaf6a1e140d99387e185df77829cfda55737"
+    },
+    "philosophy/06": {
+      "title": "苏格拉底式提问的目标是暴露定义和理由中的矛盾，不是把对话变成审讯",
+      "publishedOn": "2026-08-10",
+      "updatedOn": null,
+      "sourcePublishedOn": null,
+      "evidence": "git-current-title-first-seen",
+      "commit": "23adeaf6a1e140d99387e185df77829cfda55737"
+    },
+    "philosophy/07": {
+      "title": "功利主义要比较所有受影响者的长期后果，而不是简单多数表决",
+      "publishedOn": "2026-08-10",
+      "updatedOn": null,
+      "sourcePublishedOn": null,
+      "evidence": "git-current-title-first-seen",
+      "commit": "23adeaf6a1e140d99387e185df77829cfda55737"
+    },
+    "philosophy/08": {
+      "title": "义务论为结果计算设置底线：人不能只被当成实现目标的工具",
+      "publishedOn": "2026-08-10",
+      "updatedOn": null,
+      "sourcePublishedOn": null,
+      "evidence": "git-current-title-first-seen",
+      "commit": "23adeaf6a1e140d99387e185df77829cfda55737"
+    },
+    "philosophy/09": {
+      "title": "德性伦理追问的不是一次选择，而是要成为什么样的人",
+      "publishedOn": "2026-08-09",
+      "updatedOn": null,
+      "sourcePublishedOn": null,
+      "evidence": "git-current-title-first-seen",
+      "commit": "45bebd360a7cdef9e170a090625aebe427fc6dee"
+    },
+    "philosophy/10": {
+      "title": "存在主义提醒：选择会反过来塑造选择者自己",
+      "publishedOn": "2026-08-09",
+      "updatedOn": null,
+      "sourcePublishedOn": null,
+      "evidence": "git-current-title-first-seen",
+      "commit": "45bebd360a7cdef9e170a090625aebe427fc6dee"
+    },
+    "ted/01": {
+      "title": "玩不是学习的对立面：自主探索补上了标准课堂缺少的一环",
+      "publishedOn": "2026-08-11",
+      "updatedOn": null,
+      "sourcePublishedOn": null,
+      "evidence": "git-current-title-first-seen",
+      "commit": "647e7cf8215d3b426cef48c8e4ee676c178a9598"
+    },
+    "ted/02": {
+      "title": "AI可以讲知识，但好老师真正不可替代的是看见人、连接人",
+      "publishedOn": "2026-08-11",
+      "updatedOn": null,
+      "sourcePublishedOn": null,
+      "evidence": "git-current-title-first-seen",
+      "commit": "647e7cf8215d3b426cef48c8e4ee676c178a9598"
+    },
+    "ted/03": {
+      "title": "会聊天不等于有意识：我们很容易把人的内心投射给AI",
+      "publishedOn": "2026-08-11",
+      "updatedOn": null,
+      "sourcePublishedOn": null,
+      "evidence": "git-current-title-first-seen",
+      "commit": "647e7cf8215d3b426cef48c8e4ee676c178a9598"
+    },
+    "ted/04": {
+      "title": "可穿戴设备的价值不是数字越多，而是更早发现个人异常",
+      "publishedOn": "2026-08-11",
+      "updatedOn": null,
+      "sourcePublishedOn": null,
+      "evidence": "git-current-title-first-seen",
+      "commit": "647e7cf8215d3b426cef48c8e4ee676c178a9598"
+    },
+    "ted/05": {
+      "title": "铅中毒并未消失：找到污染源、停止暴露、修复环境才是完整方案",
+      "publishedOn": "2026-08-11",
+      "updatedOn": null,
+      "sourcePublishedOn": null,
+      "evidence": "git-current-title-first-seen",
+      "commit": "647e7cf8215d3b426cef48c8e4ee676c178a9598"
+    },
+    "ted/06": {
+      "title": "学校不该只奖励标准答案：创造力也需要被当成基本能力",
+      "publishedOn": "2026-08-11",
+      "updatedOn": null,
+      "sourcePublishedOn": null,
+      "evidence": "git-current-title-first-seen",
+      "commit": "647e7cf8215d3b426cef48c8e4ee676c178a9598"
+    },
+    "ted/07": {
+      "title": "拖延并非只是不自律：没有截止日期的人生目标反而更危险",
+      "publishedOn": "2026-08-11",
+      "updatedOn": null,
+      "sourcePublishedOn": null,
+      "evidence": "git-current-title-first-seen",
+      "commit": "647e7cf8215d3b426cef48c8e4ee676c178a9598"
+    },
+    "ted/08": {
+      "title": "“力量姿势”能否改变成败仍有争议，但姿态会影响感受与互动",
+      "publishedOn": "2026-08-11",
+      "updatedOn": null,
+      "sourcePublishedOn": null,
+      "evidence": "git-current-title-first-seen",
+      "commit": "647e7cf8215d3b426cef48c8e4ee676c178a9598"
+    },
+    "ted/09": {
+      "title": "脆弱不是毫无边界地暴露自己，而是愿意承担真实连接的风险",
+      "publishedOn": "2026-08-11",
+      "updatedOn": null,
+      "sourcePublishedOn": null,
+      "evidence": "git-current-title-first-seen",
+      "commit": "647e7cf8215d3b426cef48c8e4ee676c178a9598"
+    },
+    "ted/10": {
+      "title": "真正能激发行动的表达，往往先回答“为什么”，再说明做什么",
+      "publishedOn": "2026-08-11",
+      "updatedOn": null,
+      "sourcePublishedOn": null,
+      "evidence": "git-current-title-first-seen",
+      "commit": "647e7cf8215d3b426cef48c8e4ee676c178a9598"
+    }
+  }
+}
