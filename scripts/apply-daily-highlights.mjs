@@ -4,7 +4,9 @@ import {
   applyHighlightsToColumn,
   applyHighlightsToHome,
   normalizeHighlightEntries,
+  validateHighlightEvidence,
 } from "./lib/daily-highlights.mjs";
+import { extractArticleRecord } from "./lib/article-timeline.mjs";
 
 function parseArgs(values) {
   const args = {};
@@ -27,13 +29,25 @@ const auditPath = path.resolve(args.audit ?? path.join(root, "data", `update-aud
 await access(auditPath).catch(() => {
   throw new Error(`audit file not found: ${auditPath}`);
 });
+if (!args.baseline) throw new Error("baseline is required");
+const baselinePath = path.resolve(args.baseline);
 
 const audit = JSON.parse(await readFile(auditPath, "utf8"));
+const baseline = JSON.parse(await readFile(baselinePath, "utf8"));
+if (!baseline?.articles || typeof baseline.articles !== "object") throw new Error("invalid article baseline");
 const date = args.date ?? audit.date;
 if (args.date && audit.date && args.date !== audit.date) {
   throw new Error(`audit date mismatch: expected ${args.date}, got ${audit.date}`);
 }
 const entries = normalizeHighlightEntries({ ...audit, date });
+
+for (const entry of entries) {
+  const [column, index] = entry.target.split("/");
+  const detailPath = path.join(site, "column", column, index, "index.html");
+  const detail = await readFile(detailPath, "utf8");
+  const current = extractArticleRecord(detail, entry.target);
+  validateHighlightEvidence(entry, baseline.articles[entry.target], current, { date, currentHtml: detail });
+}
 
 const stylesheet = '<link rel="stylesheet" href="/assets/daily-highlights.css"/>';
 const ensureStylesheet = (html) => (html.includes(stylesheet) ? html : html.replace("</head>", `${stylesheet}</head>`));

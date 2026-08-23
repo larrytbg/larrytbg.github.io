@@ -7,6 +7,7 @@ import {
   applyHighlightsToHome,
   clearHighlightMarkup,
   normalizeHighlightEntries,
+  validateHighlightEvidence,
 } from "../scripts/lib/daily-highlights.mjs";
 
 const audit = {
@@ -105,6 +106,48 @@ assert.throws(
   /duplicate target/,
 );
 
+const baselineRecord = {
+  title: "旧标题",
+  semanticHash: "hash-before",
+  sourceUrls: ["https://example.com/old"],
+};
+assert.throws(
+  () => validateHighlightEvidence(
+    { target: "daily/01", changeType: "updated" },
+    baselineRecord,
+    { ...baselineRecord },
+    { date: "2026-08-23", currentHtml: "<article>未变</article>" },
+  ),
+  /no semantic article change/,
+);
+assert.throws(
+  () => validateHighlightEvidence(
+    { target: "daily/01", changeType: "updated" },
+    baselineRecord,
+    { ...baselineRecord, semanticHash: "hash-after" },
+    { date: "2026-08-23", currentHtml: "<article>只是换一种说法</article>" },
+  ),
+  /missing substantive evidence/,
+);
+assert.doesNotThrow(() => validateHighlightEvidence(
+  { target: "daily/01", changeType: "updated" },
+  baselineRecord,
+  { title: "旧标题", semanticHash: "hash-after", sourceUrls: ["https://example.com/old", "https://example.com/new"] },
+  { date: "2026-08-23", currentHtml: "<article>新增资料</article>" },
+));
+assert.doesNotThrow(() => validateHighlightEvidence(
+  { target: "daily/01", changeType: "updated" },
+  baselineRecord,
+  { ...baselineRecord, semanticHash: "hash-after" },
+  { date: "2026-08-23", currentHtml: '<section data-substantive-update="2026-08-23">新课程内容</section>' },
+));
+assert.doesNotThrow(() => validateHighlightEvidence(
+  { target: "daily/01", changeType: "new" },
+  baselineRecord,
+  { title: "今天的新标题", semanticHash: "hash-after", sourceUrls: ["https://example.com/today"] },
+  { date: "2026-08-23", currentHtml: "<article>新文章</article>" },
+));
+
 const missingAudit = spawnSync(
   process.execPath,
   ["scripts/apply-daily-highlights.mjs", "--date", "2026-08-23", "--audit", "missing.json"],
@@ -120,9 +163,42 @@ const tempSite = await mkdtemp(path.join(cacheRoot, "site-"));
 try {
   await mkdir(path.join(tempSite, "column", "daily"), { recursive: true });
   await mkdir(path.join(tempSite, "column", "logic"), { recursive: true });
+  await mkdir(path.join(tempSite, "column", "daily", "01"), { recursive: true });
+  await mkdir(path.join(tempSite, "column", "logic", "02"), { recursive: true });
   await writeFile(path.join(tempSite, "index.html"), `<html><head></head><body>${home}</body></html>`, "utf8");
   await writeFile(path.join(tempSite, "column", "daily", "index.html"), `<html><head></head><body>${column.replaceAll("logic", "daily")}</body></html>`, "utf8");
   await writeFile(path.join(tempSite, "column", "logic", "index.html"), `<html><head></head><body>${column}</body></html>`, "utf8");
+  await writeFile(
+    path.join(tempSite, "column", "daily", "01", "index.html"),
+    '<html><main class="reading-page"><header class="reading-hero"><h1>当天新资料</h1></header><article class="long-article"><p>新事实</p><section id="sources"><a href="https://example.com/new-daily">来源</a></section></article></main></html>',
+    "utf8",
+  );
+  await writeFile(
+    path.join(tempSite, "column", "logic", "02", "index.html"),
+    '<html><main class="reading-page"><header class="reading-hero"><h1>逻辑标题二</h1></header><article class="long-article"><p>新增反例</p><section id="sources"><a href="https://example.com/old-logic">旧来源</a><a href="https://example.com/new-logic">新来源</a></section></article></main></html>',
+    "utf8",
+  );
+  const baselinePath = path.join(tempSite, "baseline.json");
+  await writeFile(baselinePath, JSON.stringify({
+    capturedOn: "2026-08-23",
+    articles: {
+      "daily/01": { title: "昨天的资料", semanticHash: "old-daily-hash", sourceUrls: ["https://example.com/old-daily"] },
+      "logic/02": { title: "逻辑标题二", semanticHash: "old-logic-hash", sourceUrls: ["https://example.com/old-logic"] },
+    },
+  }), "utf8");
+
+  const noBaselineCli = spawnSync(
+    process.execPath,
+    [
+      path.join(root, "scripts", "apply-daily-highlights.mjs"),
+      "--date", "2026-08-23",
+      "--audit", path.join(root, "tests", "fixtures", "daily-highlight-audit.json"),
+      "--site", tempSite,
+    ],
+    { encoding: "utf8" },
+  );
+  assert.notEqual(noBaselineCli.status, 0);
+  assert.match(`${noBaselineCli.stdout}${noBaselineCli.stderr}`, /baseline is required/);
 
   const cli = spawnSync(
     process.execPath,
@@ -131,6 +207,7 @@ try {
       "--date", "2026-08-23",
       "--audit", path.join(root, "tests", "fixtures", "daily-highlight-audit.json"),
       "--site", tempSite,
+      "--baseline", baselinePath,
     ],
     { encoding: "utf8" },
   );
@@ -148,7 +225,7 @@ try {
   assert.equal((generatedLogic.match(/data-daily-highlight="updated"/g) ?? []).length, 1);
 
   const nextAuditPath = path.join(tempSite, "next-audit.json");
-  await writeFile(nextAuditPath, JSON.stringify({ date: "2026-08-24", articles: [audit.articles[1]] }), "utf8");
+  await writeFile(nextAuditPath, JSON.stringify({ date: "2026-08-24", articles: [] }), "utf8");
   const nextCli = spawnSync(
     process.execPath,
     [
@@ -156,6 +233,7 @@ try {
       "--date", "2026-08-24",
       "--audit", nextAuditPath,
       "--site", tempSite,
+      "--baseline", baselinePath,
     ],
     { encoding: "utf8" },
   );
@@ -168,11 +246,17 @@ try {
 
   const atomicSite = path.join(tempSite, "atomic-site");
   await mkdir(path.join(atomicSite, "column", "daily"), { recursive: true });
+  await mkdir(path.join(atomicSite, "column", "daily", "01"), { recursive: true });
   const atomicHome = `<html><head></head><body>${home}</body></html>`;
   await writeFile(path.join(atomicSite, "index.html"), atomicHome, "utf8");
   await writeFile(
     path.join(atomicSite, "column", "daily", "index.html"),
     '<html><head></head><body><article class="article-card"><a href="/column/daily/02">只有第二篇</a></article></body></html>',
+    "utf8",
+  );
+  await writeFile(
+    path.join(atomicSite, "column", "daily", "01", "index.html"),
+    '<html><main class="reading-page"><header class="reading-hero"><h1>当天新资料</h1></header><article class="long-article"><p>新事实</p><section id="sources"><a href="https://example.com/new-daily">来源</a></section></article></main></html>',
     "utf8",
   );
   const atomicAuditPath = path.join(tempSite, "atomic-audit.json");
@@ -184,6 +268,7 @@ try {
       "--date", "2026-08-25",
       "--audit", atomicAuditPath,
       "--site", atomicSite,
+      "--baseline", baselinePath,
     ],
     { encoding: "utf8" },
   );

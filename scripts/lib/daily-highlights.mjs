@@ -23,6 +23,36 @@ export function normalizeHighlightEntries(audit) {
   });
 }
 
+export function validateHighlightEvidence(entry, baseline, current, { date, currentHtml }) {
+  if (!current) throw new Error(`current article missing: ${entry.target}`);
+  if (!baseline) {
+    if (entry.changeType !== "new") throw new Error(`new article must use changeType new: ${entry.target}`);
+    return;
+  }
+  if (baseline.semanticHash === current.semanticHash) {
+    throw new Error(`no semantic article change: ${entry.target}`);
+  }
+
+  const previousSources = new Set(baseline.sourceUrls ?? []);
+  const currentSources = current.sourceUrls ?? [];
+  const newSources = currentSources.filter((url) => !previousSources.has(url));
+
+  if (entry.changeType === "new") {
+    const titleChanged = baseline.title !== current.title;
+    const primarySourceChanged = (baseline.sourceUrls?.[0] ?? null) !== (currentSources[0] ?? null);
+    if (!titleChanged && !primarySourceChanged) {
+      throw new Error(`missing new-article evidence: ${entry.target}`);
+    }
+    return;
+  }
+
+  const datedSection = currentHtml.includes(`data-substantive-update="${date}"`)
+    || currentHtml.includes(`data-substantive-update='${date}'`);
+  if (newSources.length === 0 && !datedSection) {
+    throw new Error(`missing substantive evidence: ${entry.target}`);
+  }
+}
+
 export function clearHighlightMarkup(input) {
   return input
     .replace(/\sdata-daily-highlight="(?:new|updated)"/g, "")
