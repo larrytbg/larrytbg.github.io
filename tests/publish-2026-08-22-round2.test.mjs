@@ -119,7 +119,8 @@ const baselineArchive = execFileSync("git", ["show", `${baseline}:site/archive/i
 assert.equal((archive.match(/<strong>2026\.08\.22<\/strong>/g) ?? []).length, 1);
 assert.match(archive, /30篇真实实质更新/);
 const stripCurrentEntry = (value) => value.replace(/<article class="archive-entry" data-archive-date="2026-08-22">[\s\S]*?<\/article>/, "");
-assert.equal(stripCurrentEntry(archive), stripCurrentEntry(baselineArchive), "8月22日之外的历史归档被改动");
+const normalizeLineEndings = (value) => value.replace(/\r\n/g, "\n");
+assert.equal(normalizeLineEndings(stripCurrentEntry(archive)), normalizeLineEndings(stripCurrentEntry(baselineArchive)), "8月22日之外的历史归档被改动");
 
 const index = await readFile(path.join(site, "index.html"), "utf8");
 assert.match(index, /30篇真实实质更新/);
