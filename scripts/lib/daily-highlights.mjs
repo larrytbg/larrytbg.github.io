@@ -39,15 +39,18 @@ export function applyHighlightsToHome(input, entries) {
 
   for (const entry of entries) {
     const [column, index] = entry.target.split("/");
+    let foundDirectoryItem = false;
     const directoryPattern = new RegExp(`(<a href="/column/${column}" class="directory-card[^>]*>[\\s\\S]*?<ul>)([\\s\\S]*?)(</ul>[\\s\\S]*?</a>)`);
     html = html.replace(directoryPattern, (whole, start, list, end) => {
-      const itemPattern = new RegExp(`<li class="([^"]*)"><span>${index}</span>`);
+      const itemPattern = new RegExp(`<li class="([^"]*)"><span>${index}</span><span class="directory-item-title">`);
       const markedList = list.replace(
         itemPattern,
-        `<li class="$1 is-daily-highlight" data-daily-highlight="${entry.changeType}"><span>${index}</span>${badge(entry.changeType)}`,
+        `<li class="$1 is-daily-highlight" data-daily-highlight="${entry.changeType}"><span>${index}</span><span class="directory-item-title">${badge(entry.changeType)}`,
       );
+      foundDirectoryItem = markedList !== list;
       return `${start}${markedList}${end}`;
     });
+    if (!foundDirectoryItem) throw new Error(`highlight target not found on home: ${entry.target}`);
 
     const todayPattern = new RegExp(`<a href="/column/${column}/${index}" class="([^"]*today-card[^"]*)">`);
     html = html.replace(
@@ -65,13 +68,20 @@ export function applyHighlightsToColumn(input, column, entries) {
   for (const entry of entries.filter(({ target }) => target.startsWith(`${column}/`))) {
     const [, index] = entry.target.split("/");
     const href = `href="/column/${column}/${index}"`;
+    let foundArticle = false;
     html = html.replace(/<article class="[^"]*article-card[^"]*">[\s\S]*?<\/article>/g, (article) => {
       if (!article.includes(href)) return article;
-      return article.replace(
+      const markedArticle = article.replace(
         /^<article class="([^"]*)">/,
-        `<article class="$1 is-daily-highlight" data-daily-highlight="${entry.changeType}">${badge(entry.changeType)}`,
+        `<article class="$1 is-daily-highlight" data-daily-highlight="${entry.changeType}">`,
+      ).replace(
+        '<div class="article-preview-main">',
+        `<div class="article-preview-main">${badge(entry.changeType)}`,
       );
+      foundArticle = markedArticle !== article && markedArticle.includes(badge(entry.changeType));
+      return markedArticle;
     });
+    if (!foundArticle) throw new Error(`highlight target not found in column ${column}: ${entry.target}`);
   }
 
   return html;

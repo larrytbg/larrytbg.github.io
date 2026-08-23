@@ -40,7 +40,9 @@ const ensureStylesheet = (html) => (html.includes(stylesheet) ? html : html.repl
 
 const homePath = path.join(site, "index.html");
 const home = await readFile(homePath, "utf8");
-await writeFile(homePath, ensureStylesheet(applyHighlightsToHome(home, entries)), "utf8");
+const pendingWrites = new Map([
+  [homePath, ensureStylesheet(applyHighlightsToHome(home, entries))],
+]);
 
 const columnsRoot = path.join(site, "column");
 const columns = (await readdir(columnsRoot, { withFileTypes: true }))
@@ -50,7 +52,11 @@ const columns = (await readdir(columnsRoot, { withFileTypes: true }))
 for (const column of columns) {
   const columnPath = path.join(columnsRoot, column, "index.html");
   const html = await readFile(columnPath, "utf8");
-  await writeFile(columnPath, ensureStylesheet(applyHighlightsToColumn(html, column, entries)), "utf8");
+  pendingWrites.set(columnPath, ensureStylesheet(applyHighlightsToColumn(html, column, entries)));
+}
+
+for (const [file, html] of pendingWrites) {
+  await writeFile(file, html, "utf8");
 }
 
 const counts = entries.reduce(

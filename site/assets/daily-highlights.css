@@ -21,6 +21,12 @@
   white-space: nowrap;
 }
 
+.today-card > .daily-highlight-badge {
+  color: #fff8e6;
+  font-size: 0.72rem;
+  line-height: 1.2;
+}
+
 @media (max-width: 520px) {
   .daily-highlight-badge {
     margin-bottom: 0.35rem;
