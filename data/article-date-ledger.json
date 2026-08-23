@@ -74,12 +74,11 @@
       "commit": "45bebd360a7cdef9e170a090625aebe427fc6dee"
     },
     "codex/10": {
-      "title": "长任务要设置目标、阶段结果与验证标准",
-      "publishedOn": "2026-08-09",
+      "title": "OpenAI暂停部分前沿训练，说明高能力模型要把隔离和监控放在速度前面",
+      "publishedOn": "2026-08-24",
       "updatedOn": null,
-      "sourcePublishedOn": null,
-      "evidence": "git-current-title-first-seen",
-      "commit": "45bebd360a7cdef9e170a090625aebe427fc6dee"
+      "sourcePublishedOn": "2026-08-18",
+      "evidence": "daily-audit"
     },
     "daily/01": {
       "title": "美国百城社区研究未发现无证移民增加会推高暴力犯罪",
@@ -154,12 +153,11 @@
       "commit": "45bebd360a7cdef9e170a090625aebe427fc6dee"
     },
     "daily/10": {
-      "title": "地缘事件要沿能源、贸易、金融与政策四条路径观察",
-      "publishedOn": "2026-08-09",
+      "title": "哈萨克斯坦首届库鲁尔泰选举完成投票，74.19%是初步投票率而非席位结果",
+      "publishedOn": "2026-08-24",
       "updatedOn": null,
-      "sourcePublishedOn": null,
-      "evidence": "git-current-title-first-seen",
-      "commit": "45bebd360a7cdef9e170a090625aebe427fc6dee"
+      "sourcePublishedOn": "2026-08-23",
+      "evidence": "daily-audit"
     },
     "finance/01": {
       "title": "中国经济上半年增长4.7%，但行业冷热差异比总数更重要",
@@ -234,12 +232,11 @@
       "commit": "b21a9ea0086e259d00428b9ffb435441c30926d3"
     },
     "finance/10": {
-      "title": "油价上涨会同时影响通胀和利率，但持续时间比单日涨幅更重要",
-      "publishedOn": "2026-08-11",
+      "title": "美加关税谈判破裂，50%关税已生效但实际冲击取决于覆盖清单",
+      "publishedOn": "2026-08-24",
       "updatedOn": null,
-      "sourcePublishedOn": "2026-08-06",
-      "evidence": "git-current-title-first-seen",
-      "commit": "b21a9ea0086e259d00428b9ffb435441c30926d3"
+      "sourcePublishedOn": "2026-08-23",
+      "evidence": "daily-audit"
     },
     "financial-literacy/01": {
       "title": "国内财务趋势：会计准则解释第20号已经发布，学习重点要从背条文转向理解交易实质",
@@ -394,12 +391,11 @@
       "commit": "45bebd360a7cdef9e170a090625aebe427fc6dee"
     },
     "health/10": {
-      "title": "健康筛查并非项目越多越好",
-      "publishedOn": "2026-08-09",
+      "title": "美国召回苜蓿芽苗菜，55人染病但污染源调查仍在进行",
+      "publishedOn": "2026-08-24",
       "updatedOn": null,
-      "sourcePublishedOn": null,
-      "evidence": "git-current-title-first-seen",
-      "commit": "45bebd360a7cdef9e170a090625aebe427fc6dee"
+      "sourcePublishedOn": "2026-08-22",
+      "evidence": "daily-audit"
     },
     "history/01": {
       "title": "1886年北洋海防巡阅史料：先看人物与组织，再讨论系统原因",
@@ -714,12 +710,11 @@
       "commit": "45bebd360a7cdef9e170a090625aebe427fc6dee"
     },
     "papers/10": {
-      "title": "论文的限制部分不是客套话，而是结论边界",
-      "publishedOn": "2026-08-09",
+      "title": "热电材料有了更明确的设计规则，但目前仍是理论框架",
+      "publishedOn": "2026-08-24",
       "updatedOn": null,
-      "sourcePublishedOn": null,
-      "evidence": "git-current-title-first-seen",
-      "commit": "45bebd360a7cdef9e170a090625aebe427fc6dee"
+      "sourcePublishedOn": "2026-07-17",
+      "evidence": "daily-audit"
     },
     "philosophy/01": {
       "title": "归纳能支持概率判断，却不能把反复发生变成逻辑必然",

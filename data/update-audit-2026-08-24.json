@@ -1,0 +1,124 @@
+{
+  "date": "2026-08-24",
+  "sourceCutoff": "2026年8月24日 07:45（北京时间）",
+  "totalArticles": 110,
+  "substantivelyUpdated": 5,
+  "updateRate": 0.045454545454545456,
+  "target": 0.8,
+  "targetMet": false,
+  "localModel": {
+    "available": false,
+    "used": 0,
+    "reason": "127.0.0.1:1234 refused connection"
+  },
+  "articles": [
+    {
+      "target": "daily/10",
+      "changeType": "new",
+      "changeSummary": "用哈萨克斯坦中央选举委员会等已核验资料替换原有泛化文章，新增具体事实、数字、白话解释、现实影响和局限。",
+      "title": "哈萨克斯坦首届库鲁尔泰选举完成投票，74.19%是初步投票率而非席位结果",
+      "sourceVerification": {
+        "ok": true,
+        "checkedAt": "2026年8月24日 07:45（北京时间）",
+        "sources": [
+          {
+            "name": "哈萨克斯坦中选委：20时初步投票率",
+            "url": "https://www.election.gov.kz/rus/news/releases/index.php?ID=10571"
+          },
+          {
+            "name": "哈萨克斯坦中选委：投票站开放",
+            "url": "https://www.election.gov.kz/rus/news/releases/index.php?ID=10535"
+          },
+          {
+            "name": "哈萨克斯坦中选委：首届库鲁尔泰选举说明",
+            "url": "https://election.gov.kz/eng/news/releases/index.php?ID=10256"
+          }
+        ]
+      }
+    },
+    {
+      "target": "health/10",
+      "changeType": "new",
+      "changeSummary": "用美国FDA等已核验资料替换原有泛化文章，新增具体事实、数字、白话解释、现实影响和局限。",
+      "title": "美国召回苜蓿芽苗菜，55人染病但污染源调查仍在进行",
+      "sourceVerification": {
+        "ok": true,
+        "checkedAt": "2026年8月24日 07:45（北京时间）",
+        "sources": [
+          {
+            "name": "FDA：Everything Sprouts苜蓿芽苗菜召回",
+            "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/everything-sprouts-llc-recalls-alfalfa-sprouts-due-potential-e-coli-and-salmonella-risk"
+          },
+          {
+            "name": "FDA：2026年8月芽苗菜多州暴发调查",
+            "url": "https://www.fda.gov/food/outbreaks-foodborne-illness/outbreak-investigation-shiga-toxin-producing-e-coli-salmonella-sprouts-august-2026"
+          }
+        ]
+      }
+    },
+    {
+      "target": "papers/10",
+      "changeType": "new",
+      "changeSummary": "用Materials Today Advances等已核验资料替换原有泛化文章，新增具体事实、数字、白话解释、现实影响和局限。",
+      "title": "热电材料有了更明确的设计规则，但目前仍是理论框架",
+      "sourceVerification": {
+        "ok": true,
+        "checkedAt": "2026年8月24日 07:45（北京时间）",
+        "sources": [
+          {
+            "name": "论文DOI：Ideal band structures for high-performance thermoelectric materials",
+            "url": "https://doi.org/10.1016/j.mtadv.2026.100896"
+          },
+          {
+            "name": "东京首都大学研究新闻稿",
+            "url": "https://www.eurekalert.org/news-releases/1140629"
+          }
+        ]
+      }
+    },
+    {
+      "target": "codex/10",
+      "changeType": "new",
+      "changeSummary": "用OpenAI等已核验资料替换原有泛化文章，新增具体事实、数字、白话解释、现实影响和局限。",
+      "title": "OpenAI暂停部分前沿训练，说明高能力模型要把隔离和监控放在速度前面",
+      "sourceVerification": {
+        "ok": true,
+        "checkedAt": "2026年8月24日 07:45（北京时间）",
+        "sources": [
+          {
+            "name": "OpenAI：Pacing model development in an era of cyber-critical capabilities",
+            "url": "https://openai.com/index/pacing-model-development-cyber-capabilities/"
+          }
+        ]
+      }
+    },
+    {
+      "target": "finance/10",
+      "changeType": "new",
+      "changeSummary": "用白宫公告＋美联社等已核验资料替换原有泛化文章，新增具体事实、数字、白话解释、现实影响和局限。",
+      "title": "美加关税谈判破裂，50%关税已生效但实际冲击取决于覆盖清单",
+      "sourceVerification": {
+        "ok": true,
+        "checkedAt": "2026年8月24日 07:45（北京时间）",
+        "sources": [
+          {
+            "name": "白宫：对部分加拿大商品加征额外关税的公告",
+            "url": "https://www.whitehouse.gov/presidential-actions/2026/07/imposing-additional-duties-to-offset-canadian-discrimination-against-the-commerce-of-the-united-states-with-respect-to-alcoholic-beverages/"
+          },
+          {
+            "name": "白宫：加拿大关税措施说明",
+            "url": "https://www.whitehouse.gov/fact-sheets/2026/07/fact-sheet-president-donald-j-trump-imposes-additional-tariffs-on-canada/"
+          },
+          {
+            "name": "美联社：美加谈判破裂与新关税",
+            "url": "https://apnews.com/article/857ef76b20a766e370d70176135b678e"
+          },
+          {
+            "name": "美联社：加拿大总理与经济胁迫争议",
+            "url": "https://apnews.com/article/a180ac85a70bbfb512ea59c224cb6c31"
+          }
+        ]
+      }
+    }
+  ]
+}
