@@ -84,6 +84,10 @@ const columnDates = [
 const renderedColumn = applyTimelineToColumn(columnDates, "daily", timelineEntries);
 assert.match(renderedColumn, /article-updated-date">本站发布：2026-08-08/);
 assert.match(renderedColumn, /article-updated-date">本站更新：2026-08-23/);
+assert.throws(
+  () => renderDirectoryDate('<h3><a href="/column/daily/01">缺少日期位置</a></h3>', timelineEntries["daily/01"]),
+  /public date marker not found/,
+);
 
 const repo = await mkdtemp(path.join(os.tmpdir(), "article-ledger-"));
 try {

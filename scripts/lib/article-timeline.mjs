@@ -53,6 +53,8 @@ export function renderDirectoryDate(html, timeline) {
   const value = timeline.updatedOn && timeline.updatedOn !== timeline.publishedOn
     ? `本站更新：${timeline.updatedOn}`
     : `本站发布：${timeline.publishedOn}`;
+  const hasMarker = /<small class="(?:(?:article|today|directory)-updated-date|directory-item-date)">/i.test(html);
+  if (!hasMarker) throw new Error("public date marker not found");
   return html.replace(
     /(<small class="(?:article|today|directory)-updated-date">)[\s\S]*?(<\/small>)/i,
     `$1${value}$2`,
