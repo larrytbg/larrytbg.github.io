@@ -1,4 +1,7 @@
 import assert from "node:assert/strict";
+import { spawnSync } from "node:child_process";
+import { mkdir, mkdtemp, readFile, rm, writeFile } from "node:fs/promises";
+import path from "node:path";
 import {
   applyHighlightsToColumn,
   applyHighlightsToHome,
@@ -88,5 +91,69 @@ assert.throws(
   }),
   /duplicate target/,
 );
+
+const missingAudit = spawnSync(
+  process.execPath,
+  ["scripts/apply-daily-highlights.mjs", "--date", "2026-08-23", "--audit", "missing.json"],
+  { encoding: "utf8" },
+);
+assert.notEqual(missingAudit.status, 0);
+assert.match(`${missingAudit.stdout}${missingAudit.stderr}`, /audit file not found/);
+
+const root = path.resolve(import.meta.dirname, "..");
+const cacheRoot = "D:\\CodexCache\\daily-highlights-tests";
+await mkdir(cacheRoot, { recursive: true });
+const tempSite = await mkdtemp(path.join(cacheRoot, "site-"));
+try {
+  await mkdir(path.join(tempSite, "column", "daily"), { recursive: true });
+  await mkdir(path.join(tempSite, "column", "logic"), { recursive: true });
+  await writeFile(path.join(tempSite, "index.html"), `<html><head></head><body>${home}</body></html>`, "utf8");
+  await writeFile(path.join(tempSite, "column", "daily", "index.html"), `<html><head></head><body>${column.replaceAll("logic", "daily")}</body></html>`, "utf8");
+  await writeFile(path.join(tempSite, "column", "logic", "index.html"), `<html><head></head><body>${column}</body></html>`, "utf8");
+
+  const cli = spawnSync(
+    process.execPath,
+    [
+      path.join(root, "scripts", "apply-daily-highlights.mjs"),
+      "--date", "2026-08-23",
+      "--audit", path.join(root, "tests", "fixtures", "daily-highlight-audit.json"),
+      "--site", tempSite,
+    ],
+    { encoding: "utf8" },
+  );
+  assert.equal(cli.status, 0, `${cli.stdout}${cli.stderr}`);
+  assert.match(cli.stdout, /daily highlights applied: 2 \(new 1, updated 1\)/);
+
+  const generatedHome = await readFile(path.join(tempSite, "index.html"), "utf8");
+  const generatedDaily = await readFile(path.join(tempSite, "column", "daily", "index.html"), "utf8");
+  const generatedLogic = await readFile(path.join(tempSite, "column", "logic", "index.html"), "utf8");
+  for (const html of [generatedHome, generatedDaily, generatedLogic]) {
+    assert.match(html, /\/assets\/daily-highlights\.css/);
+  }
+  assert.equal((generatedHome.match(/data-daily-highlight=/g) ?? []).length, 2);
+  assert.equal((generatedDaily.match(/data-daily-highlight="new"/g) ?? []).length, 1);
+  assert.equal((generatedLogic.match(/data-daily-highlight="updated"/g) ?? []).length, 1);
+
+  const nextAuditPath = path.join(tempSite, "next-audit.json");
+  await writeFile(nextAuditPath, JSON.stringify({ date: "2026-08-24", articles: [audit.articles[1]] }), "utf8");
+  const nextCli = spawnSync(
+    process.execPath,
+    [
+      path.join(root, "scripts", "apply-daily-highlights.mjs"),
+      "--date", "2026-08-24",
+      "--audit", nextAuditPath,
+      "--site", tempSite,
+    ],
+    { encoding: "utf8" },
+  );
+  assert.equal(nextCli.status, 0, `${nextCli.stdout}${nextCli.stderr}`);
+  const nextHome = await readFile(path.join(tempSite, "index.html"), "utf8");
+  const nextDaily = await readFile(path.join(tempSite, "column", "daily", "index.html"), "utf8");
+  assert.doesNotMatch(nextHome, /data-daily-highlight="new"/);
+  assert.doesNotMatch(nextDaily, /data-daily-highlight=/);
+  assert.equal((nextHome.match(/\/assets\/daily-highlights\.css/g) ?? []).length, 1);
+} finally {
+  await rm(tempSite, { recursive: true, force: true });
+}
 
 console.log("daily highlight unit checks passed");

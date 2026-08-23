@@ -1,0 +1,17 @@
+{
+  "date": "2026-08-23",
+  "articles": [
+    {
+      "target": "daily/01",
+      "changeType": "new",
+      "changeSummary": "替换为当天新资料",
+      "sourceVerification": { "ok": true }
+    },
+    {
+      "target": "logic/02",
+      "changeType": "updated",
+      "changeSummary": "新增反例和使用方法",
+      "sourceVerification": { "ok": true }
+    }
+  ]
+}

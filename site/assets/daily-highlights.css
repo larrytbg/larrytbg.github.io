@@ -1,0 +1,33 @@
+.is-daily-highlight {
+  position: relative;
+  background: linear-gradient(90deg, rgba(255, 218, 122, 0.22), rgba(255, 255, 255, 0));
+  box-shadow: inset 4px 0 0 #e5a72d;
+}
+
+.daily-highlight-badge {
+  display: inline-flex;
+  align-items: center;
+  flex: 0 0 auto;
+  width: max-content;
+  max-width: 100%;
+  margin: 0 0.45rem 0.25rem 0;
+  padding: 0.18rem 0.48rem;
+  border-radius: 999px;
+  background: #8d5400;
+  color: #fff8e6;
+  font-size: 0.72rem;
+  font-weight: 700;
+  line-height: 1.2;
+  white-space: nowrap;
+}
+
+@media (max-width: 520px) {
+  .daily-highlight-badge {
+    margin-bottom: 0.35rem;
+    font-size: 0.68rem;
+  }
+
+  .is-daily-highlight {
+    box-shadow: inset 3px 0 0 #e5a72d;
+  }
+}

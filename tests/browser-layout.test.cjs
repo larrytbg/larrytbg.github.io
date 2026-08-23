@@ -18,6 +18,7 @@ const routes = [
   try {
     for (const width of [390, 1440]) {
       const page = await browser.newPage({ viewport: { width, height: 900 } });
+      await page.route("https://cloud.umami.is/**", (route) => route.abort());
       for (const route of routes) {
         const response = await page.goto(`http://127.0.0.1:4173${route}`, { waitUntil: "domcontentloaded" });
         assert.equal(response?.status(), 200, `${route} HTTP状态异常`);
