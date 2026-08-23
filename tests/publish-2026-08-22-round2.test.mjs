@@ -6,6 +6,7 @@ import path from "node:path";
 const root = path.resolve(import.meta.dirname, "..");
 const site = path.join(root, "site");
 const baseline = "edcb7bb8c39d304b28d27f1b468f9f5ee6a39cf9";
+const dateLedger = JSON.parse(await readFile(path.join(root, "data", "article-date-ledger.json"), "utf8"));
 const targets = [
   "codex/02", "codex/03", "codex/04",
   "daily/01", "daily/02", "daily/03", "daily/04",
@@ -24,14 +25,14 @@ const customTexts = [];
 
 for (const target of targets) {
   const html = await readFile(path.join(site, "column", ...target.split("/"), "index.html"), "utf8");
-  const baselineHtml = execFileSync("git", ["show", `${baseline}:site/column/${target}/index.html`], { cwd: root, encoding: "utf8" });
   assert.match(html, /data-round2-update="2026-08-22"/, `${target} 缺少第二轮更新标记`);
   assert.match(html, /原始资料再提炼/);
   assert.match(html, /白话拆解/);
   assert.match(html, /具体场景/);
   assert.match(html, /行动步骤/);
   assert.match(html, /停止条件与局限/);
-  assert.match(html, /最后实质更新：(?:<!-- -->)?2026-08-22/);
+  assert.match(html, new RegExp(`本站首次发布：${dateLedger.articles[target].publishedOn}`));
+  assert.doesNotMatch(html, /资料发布日期待核|历史日期待核/);
 
   const section = html.match(/<section[^>]+data-round2-update="2026-08-22"[\s\S]*?<\/section>/)?.[0] ?? "";
   const custom = section.match(/<div class="round2-custom-content">([\s\S]*?)<\/div><div class="source-digest-attribution">/)?.[1] ?? "";
@@ -40,9 +41,11 @@ for (const target of targets) {
   assert.doesNotMatch(customText, /(^|\s)\?(?=\s|$)/, `${target} 仍有孤立问号`);
   customTexts.push({ target, text: customText });
 
-  const sourceDate = html.match(/来源发布日期：(?:<!-- -->)?([^<]+)</)?.[1]?.trim();
-  const baselineSourceDate = baselineHtml.match(/来源发布日期：(?:<!-- -->)?([^<]+)</)?.[1]?.trim();
-  assert.equal(sourceDate, baselineSourceDate, `${target} 来源发布日期被改动`);
+  if (dateLedger.articles[target].sourcePublishedOn) {
+    assert.match(html, new RegExp(`原文发布：${dateLedger.articles[target].sourcePublishedOn}`));
+  } else {
+    assert.doesNotMatch(html, /原文发布：/, `${target} 未核准原文日期时必须隐藏字段`);
+  }
 
   const topic = section.match(/data-round2-topic="([^"]+)"/)?.[1];
   assert.ok(topic, `${target} 缺少独立主题`);

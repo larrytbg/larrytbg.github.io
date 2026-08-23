@@ -22,14 +22,14 @@ const files = await articleFiles();
 assert.equal(files.length, 110, "必须保留11个知识专栏、每栏10篇，共110篇");
 
 let updated = 0;
-let sourceDatesChangedToToday = 0;
 const sourceUpdateLinks = new Set();
 for (const file of files) {
   const html = await readFile(file, "utf8");
   assert.doesNotMatch(html, /class="daily-learning-update"/, "不得用通用阅读模板冒充实质更新");
+  assert.match(html, /本站首次发布：\d{4}-\d{2}-\d{2}/, "每篇必须显示本站首次发布日期");
+  assert.doesNotMatch(html, /资料发布日期待核|历史日期待核/, "公开页面不得显示待核日期");
   if (html.includes('data-source-update="2026-08-22"')) {
     updated += 1;
-    assert.match(html, /最后实质更新：(?:<!-- -->)?2026-08-22/);
     assert.match(html, /新增来源事实/);
     assert.match(html, /原始资料说明了什么/);
     assert.match(html, /局限与下一步/);
@@ -37,12 +37,10 @@ for (const file of files) {
     assert.ok(link, `实质更新必须有逐篇原始来源：${file}`);
     sourceUpdateLinks.add(link);
   }
-  if (/来源发布日期：(?:<!-- -->)?2026-08-22/.test(html)) sourceDatesChangedToToday += 1;
 }
 
 assert.equal(updated, 5, "今天只统计5篇有新增原始来源和逐篇分析的真实更新");
 assert.equal(sourceUpdateLinks.size, 5, "5篇更新必须分别对应5个原始来源");
-assert.equal(sourceDatesChangedToToday, 0, "不能把本站更新日套成来源发布日期");
 
 const index = await readFile(path.join(site, "index.html"), "utf8");
 assert.match(index, /2026\.08\.22/);

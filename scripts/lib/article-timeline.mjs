@@ -16,11 +16,10 @@ function textContent(html) {
 }
 
 function articleCore(html) {
-  const title = html.match(/<h1[^>]*>([\s\S]*?)<\/h1>/i)?.[1] ?? "";
   const deck = html.match(/<p class="reading-deck"[^>]*>([\s\S]*?)<\/p>/i)?.[1] ?? "";
   const summary = html.match(/<div class="summary-blueprint"[^>]*>([\s\S]*?)<\/header>/i)?.[1] ?? "";
   const article = html.match(/<article class="long-article"[^>]*>([\s\S]*?)<\/article>/i)?.[1] ?? "";
-  return `${title}\n${deck}\n${summary}\n${article}`;
+  return `${deck}\n${summary}\n${article}`;
 }
 
 export function semanticArticleHash(html) {

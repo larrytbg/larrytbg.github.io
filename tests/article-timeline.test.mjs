@@ -26,6 +26,11 @@ const chromeOnly = detail
   .replace("最后实质更新：2026-08-22", "最后实质更新：2026-08-23")
   .replace('<main class="reading-page">', '<main class="reading-page"><span class="daily-highlight-badge">今日更新</span>');
 assert.equal(semanticArticleHash(detail), semanticArticleHash(chromeOnly));
+assert.equal(
+  semanticArticleHash(detail),
+  semanticArticleHash(detail.replace("<h1>示例文章</h1>", "<h1>只改标题</h1>")),
+  "只改标题不能算正文实质更新",
+);
 assert.notEqual(semanticArticleHash(detail), semanticArticleHash(detail.replace("数字是42", "数字是43")));
 
 const directory = '<h3><a href="/column/daily/01">示例文章</a><small class="article-updated-date">资料发布：资料发布日期待核</small></h3>';
