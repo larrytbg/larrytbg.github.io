@@ -55,9 +55,39 @@ export function renderDirectoryDate(html, timeline) {
     ? `本站更新：${timeline.updatedOn}`
     : `本站发布：${timeline.publishedOn}`;
   return html.replace(
-    /(<small class="article-updated-date">)[\s\S]*?(<\/small>)/i,
+    /(<small class="(?:article|today|directory)-updated-date">)[\s\S]*?(<\/small>)/i,
+    `$1${value}$2`,
+  ).replace(
+    /(<small class="directory-item-date">)[\s\S]*?(<\/small>)/i,
     `$1${value}$2`,
   );
+}
+
+export function applyTimelineToHome(input, timelines) {
+  let html = input.replace(/<a href="\/column\/([a-z0-9-]+)\/(\d{2})" class="[^"]*today-card[^"]*">[\s\S]*?<\/a>/gi, (card, column, index) => {
+    const timeline = timelines[`${column}/${index}`];
+    if (!timeline) throw new Error(`timeline target missing on home: ${column}/${index}`);
+    return renderDirectoryDate(card, timeline);
+  });
+
+  html = html.replace(/<a href="\/column\/([a-z0-9-]+)" class="[^"]*directory-card[^"]*">[\s\S]*?<\/a>/gi, (card, column) => card.replace(/<li\b[\s\S]*?<\/li>/gi, (item) => {
+    const indexText = textContent(item.match(/<span[^>]*>([\s\S]*?)<\/span>/i)?.[1] ?? "");
+    if (!/^\d{2}$/.test(indexText)) return item;
+    const timeline = timelines[`${column}/${indexText}`];
+    if (!timeline) throw new Error(`timeline target missing on home: ${column}/${indexText}`);
+    return renderDirectoryDate(item, timeline);
+  }));
+  return html;
+}
+
+export function applyTimelineToColumn(input, column, timelines) {
+  return input.replace(/<article class="[^"]*article-card[^"]*">[\s\S]*?<\/article>/gi, (article) => {
+    const index = article.match(new RegExp(`href="/column/${column}/(\\d{2})"`, "i"))?.[1];
+    if (!index) return article;
+    const timeline = timelines[`${column}/${index}`];
+    if (!timeline) throw new Error(`timeline target missing in column: ${column}/${index}`);
+    return renderDirectoryDate(article, timeline);
+  });
 }
 
 export function renderDetailDates(html, timeline) {
@@ -65,7 +95,7 @@ export function renderDetailDates(html, timeline) {
   const metaPattern = /(<div class="reading-meta"[^>]*>)([\s\S]*?)(<\/div>)/i;
   if (!metaPattern.test(html)) throw new Error("reading metadata not found");
 
-  return html.replace(metaPattern, (_whole, start, body, end) => {
+  let output = html.replace(metaPattern, (_whole, start, body, end) => {
     const retained = [...body.matchAll(/<span(?:\s[^>]*)?>[\s\S]*?<\/span>/gi)]
       .map((match) => match[0])
       .filter((span) => !dateLabelPattern.test(textContent(span)))
@@ -79,4 +109,10 @@ export function renderDetailDates(html, timeline) {
     ].join("");
     return `${start}${dates}${retained}${end}`;
   });
+  if (timeline.sourcePublishedOn) {
+    output = output.replace(/资料发布日期待核/g, timeline.sourcePublishedOn);
+  } else {
+    output = output.replace(/<!--\s*-->\s*·\s*发布于\s*<!--\s*-->\s*资料发布日期待核\s*<!--\s*-->/g, "");
+  }
+  return output;
 }
