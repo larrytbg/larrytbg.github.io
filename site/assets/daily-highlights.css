@@ -1,7 +1,7 @@
 .is-daily-highlight {
   position: relative;
-  background: linear-gradient(90deg, rgba(255, 218, 122, 0.22), rgba(255, 255, 255, 0));
-  box-shadow: inset 4px 0 0 #e5a72d;
+  background: linear-gradient(90deg, rgba(144, 197, 239, 0.28), rgba(255, 255, 255, 0));
+  box-shadow: inset 4px 0 0 #3c78a8;
 }
 
 .daily-highlight-badge {
@@ -13,8 +13,8 @@
   margin: 0 0.45rem 0.25rem 0;
   padding: 0.18rem 0.48rem;
   border-radius: 999px;
-  background: #8d5400;
-  color: #fff8e6;
+  background: #245f8c;
+  color: #f7fbff;
   font-size: 0.72rem;
   font-weight: 700;
   line-height: 1.2;
@@ -22,7 +22,7 @@
 }
 
 .today-card > .daily-highlight-badge {
-  color: #fff8e6;
+  color: #f7fbff;
   font-size: 0.72rem;
   line-height: 1.2;
 }
@@ -34,6 +34,6 @@
   }
 
   .is-daily-highlight {
-    box-shadow: inset 3px 0 0 #e5a72d;
+    box-shadow: inset 3px 0 0 #3c78a8;
   }
 }
