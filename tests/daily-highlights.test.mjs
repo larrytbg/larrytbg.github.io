@@ -186,6 +186,14 @@ try {
       "logic/02": { title: "逻辑标题二", semanticHash: "old-logic-hash", sourceUrls: ["https://example.com/old-logic"] },
     },
   }), "utf8");
+  const ledgerPath = path.join(tempSite, "ledger.json");
+  await writeFile(ledgerPath, JSON.stringify({
+    version: 1,
+    articles: {
+      "daily/01": { title: "昨天的资料", publishedOn: "2026-08-22", updatedOn: null, sourcePublishedOn: null },
+      "logic/02": { title: "逻辑标题二", publishedOn: "2026-08-10", updatedOn: null, sourcePublishedOn: null },
+    },
+  }), "utf8");
 
   const noBaselineCli = spawnSync(
     process.execPath,
@@ -200,6 +208,20 @@ try {
   assert.notEqual(noBaselineCli.status, 0);
   assert.match(`${noBaselineCli.stdout}${noBaselineCli.stderr}`, /baseline is required/);
 
+  const noLedgerCli = spawnSync(
+    process.execPath,
+    [
+      path.join(root, "scripts", "apply-daily-highlights.mjs"),
+      "--date", "2026-08-23",
+      "--audit", path.join(root, "tests", "fixtures", "daily-highlight-audit.json"),
+      "--site", tempSite,
+      "--baseline", baselinePath,
+    ],
+    { encoding: "utf8" },
+  );
+  assert.notEqual(noLedgerCli.status, 0);
+  assert.match(`${noLedgerCli.stdout}${noLedgerCli.stderr}`, /ledger is required/);
+
   const cli = spawnSync(
     process.execPath,
     [
@@ -208,6 +230,7 @@ try {
       "--audit", path.join(root, "tests", "fixtures", "daily-highlight-audit.json"),
       "--site", tempSite,
       "--baseline", baselinePath,
+      "--ledger", ledgerPath,
     ],
     { encoding: "utf8" },
   );
@@ -223,6 +246,11 @@ try {
   assert.equal((generatedHome.match(/data-daily-highlight=/g) ?? []).length, 3);
   assert.equal((generatedDaily.match(/data-daily-highlight="new"/g) ?? []).length, 1);
   assert.equal((generatedLogic.match(/data-daily-highlight="updated"/g) ?? []).length, 1);
+  const updatedLedger = JSON.parse(await readFile(ledgerPath, "utf8"));
+  assert.equal(updatedLedger.articles["daily/01"].publishedOn, "2026-08-23");
+  assert.equal(updatedLedger.articles["daily/01"].updatedOn, null);
+  assert.equal(updatedLedger.articles["logic/02"].publishedOn, "2026-08-10");
+  assert.equal(updatedLedger.articles["logic/02"].updatedOn, "2026-08-23");
 
   const nextAuditPath = path.join(tempSite, "next-audit.json");
   await writeFile(nextAuditPath, JSON.stringify({ date: "2026-08-24", articles: [] }), "utf8");
@@ -234,6 +262,7 @@ try {
       "--audit", nextAuditPath,
       "--site", tempSite,
       "--baseline", baselinePath,
+      "--ledger", ledgerPath,
     ],
     { encoding: "utf8" },
   );
@@ -269,6 +298,7 @@ try {
       "--audit", atomicAuditPath,
       "--site", atomicSite,
       "--baseline", baselinePath,
+      "--ledger", ledgerPath,
     ],
     { encoding: "utf8" },
   );

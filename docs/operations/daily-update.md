@@ -9,29 +9,53 @@
 
 ## 每日顺序
 
-1. 归档当前线上版本，读取上一日审计和文章日期台账。
-2. 依次扫描第一、第二、第三资源库；第二、第三库只在前一层不足时启用。
-3. 核验资料来源和原始发布日期，逐篇完成内容更新。
-4. 生成当天审计 JSON。每个可以高亮的文章记录必须包含：
+1. 归档当前线上版本，读取上一日审计和 `data/article-date-ledger.json`。
+2. 在修改任何正文前保存语义基线：
+
+   ```powershell
+   node scripts/capture-article-baseline.mjs --site site --date YYYY-MM-DD --out data/article-baseline-YYYY-MM-DD.json
+   ```
+
+3. 依次扫描第一、第二、第三资源库；第二、第三库只在前一层不足时启用。
+4. 核验资料来源，逐篇完成内容更新。原文日期能够核准时写入详情页，不能核准时隐藏，不写“待核”。
+5. 生成当天审计 JSON。每个可以高亮的文章记录必须包含：
    - `target`：如 `daily/03`；
    - `changeType`：`new` 或 `updated`；
    - `changeSummary`：逐篇真实变化；
    - `sourceVerification.ok`：必须为 `true`。
-5. 运行高亮生成命令：
+6. 使用更新前基线和日期台账运行高亮验证：
 
    ```powershell
-   node scripts/apply-daily-highlights.mjs --date YYYY-MM-DD --audit data/update-audit-YYYY-MM-DD.json
+   node scripts/apply-daily-highlights.mjs --date YYYY-MM-DD --audit data/update-audit-YYYY-MM-DD.json --site site --baseline data/article-baseline-YYYY-MM-DD.json --ledger data/article-date-ledger.json
    ```
 
-6. 运行内容验收、内部链接、390px 手机及 1440px 电脑布局测试。
-7. 测试全部通过后提交并推送 `main`，等待 GitHub Actions 成功，再检查正式网址。
-8. 向“手机消息推送”任务发送简短完工消息；没有服务端成功回执时记录为失败。
+   这一步会先验证正文真实差异，再更新文章的本站日期台账。已有文章如果没有新增来源，必须新增带当天日期的 `data-substantive-update="YYYY-MM-DD"` 实质内容区块，否则拒绝高亮。
+
+7. 把日期台账渲染到首页、专栏目录和文章详情页：
+
+   ```powershell
+   node scripts/apply-article-dates.mjs --site site --ledger data/article-date-ledger.json
+   ```
+
+8. 运行内容验收、内部链接、390px 手机及 1440px 电脑布局测试。
+9. 测试全部通过后提交并推送 `main`，等待 GitHub Actions 成功，再检查正式网址。
+10. 向“手机消息推送”任务发送简短完工消息；没有服务端成功回执时记录为失败。
+
+## 日期标准
+
+- 首页、今日必读和专栏目录以本站时间为主：新文章显示 `本站发布：YYYY-MM-DD`，真实补充新内容后显示 `本站更新：YYYY-MM-DD`。
+- 文章详情页显示本站首次发布、本站最后更新；原文日期只在能够核准时显示。
+- `资料发布日期待核` 和 `历史日期待核` 不得出现在公开页面。
+- 当前文章的首次本站发布日期来自 Git 中该标题第一次出现的日期；整站重新构建不得改变它。
 
 ## 高亮判定
 
 - `今日新增`：当天首次收录的新主题或新资料，即使复用了原有十项中的位置。
 - `今日更新`：原主题和主要资料不变，但事实、数据、机制、例子、方法、局限或课程内容发生实质变化。
 - 只改日期、排版、标点、标题或同义改写，不得进入当天高亮清单。
+- 重新总结旧资料、复查链接或重新部署，不得进入当天高亮清单。
+- 高亮程序必须比较更新前语义哈希；只有审计声明而没有正文差异时直接失败。
+- `今日新增` 必须能够证明标题或主要来源发生变化；`今日更新` 必须有新增来源，或有带当天日期的实质更新区块。
 - 每次运行先清除全部旧标记，再只添加当天审计中的标记；当天没有真实更新时标记数为 0。
 - 测试夹具只用于自动测试，严禁作为当天真实更新发布。
 
