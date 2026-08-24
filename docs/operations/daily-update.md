@@ -9,21 +9,23 @@
 
 ## 每日顺序
 
-1. 归档当前线上版本，读取上一日审计和 `data/article-date-ledger.json`。
-2. 在修改任何正文前保存语义基线：
+1. 读取私有登记表 `D:\CodexCache\self-learning-orchestration\task-orchestration.json` 和 `docs/operations/multi-model-orchestration.md`，确认总控、四个固定工作任务及唯一发布权；内部任务标识不得写入公开仓库，也不得每天新建替代任务。
+2. 归档当前线上版本，读取上一日审计和 `data/article-date-ledger.json`。
+3. 在修改任何正文前保存语义基线：
 
    ```powershell
    node scripts/capture-article-baseline.mjs --site site --date YYYY-MM-DD --out data/article-baseline-YYYY-MM-DD.json
    ```
 
-3. 依次扫描第一、第二、第三资源库；第二、第三库只在前一层不足时启用。
-4. 核验资料来源，逐篇完成内容更新。原文日期能够核准时写入详情页，不能核准时隐藏，不写“待核”。
-5. 生成当天审计 JSON。每个可以高亮的文章记录必须包含：
+4. 总控按多模型运行规则依次派发来源扫描、内容撰写、事实复核和网站工程任务。每个任务派发前运行 `capture-repo-guard.mjs`，返回后立即运行 `verify-repo-guard.mjs`；工作任务运行期间总控不得编辑仓库。四个工作任务按策略只通过回复交付中间结果，不得写入主项目；当前没有单任务操作系统级只读沙箱，因此任何分支、提交、索引、已跟踪或未跟踪文件内容变化都必须立刻停止。总控记录每个任务实际使用的模型、开始结束时间、交付状态和返工情况。
+5. 依次扫描第一、第二、第三资源库；第二、第三库只在前一层不足时启用。
+6. 总控核验资料来源并在主项目中逐篇完成内容更新。原文日期能够核准时写入详情页，不能核准时隐藏，不写“待核”。
+7. 生成当天审计 JSON。每个可以高亮的文章记录必须包含：
    - `target`：如 `daily/03`；
    - `changeType`：`new` 或 `updated`；
    - `changeSummary`：逐篇真实变化；
    - `sourceVerification.ok`：必须为 `true`。
-6. 使用更新前基线和日期台账运行高亮验证：
+8. 使用更新前基线和日期台账运行高亮验证：
 
    ```powershell
    node scripts/apply-daily-highlights.mjs --date YYYY-MM-DD --audit data/update-audit-YYYY-MM-DD.json --site site --baseline data/article-baseline-YYYY-MM-DD.json --ledger data/article-date-ledger.json
@@ -31,15 +33,15 @@
 
    这一步会先验证正文真实差异，再更新文章的本站日期台账。已有文章如果没有新增来源，必须新增带当天日期的 `data-substantive-update="YYYY-MM-DD"` 实质内容区块，否则拒绝高亮。
 
-7. 把日期台账渲染到首页、专栏目录和文章详情页：
+9. 把日期台账渲染到首页、专栏目录和文章详情页：
 
    ```powershell
    node scripts/apply-article-dates.mjs --site site --ledger data/article-date-ledger.json
    ```
 
-8. 运行内容验收、内部链接、390px 手机及 1440px 电脑布局测试。
-9. 测试全部通过后提交并推送 `main`，等待 GitHub Actions 成功，再检查正式网址。
-10. 向“手机消息推送”任务发送简短完工消息；没有服务端成功回执时记录为失败。
+10. 运行内容验收、内部链接、390px 手机及 1440px 电脑布局测试。
+11. 测试全部通过后由总控提交并推送 `main`，等待 GitHub Actions 成功，再检查正式网址。
+12. 向“手机消息推送”任务发送简短完工消息；没有服务端成功回执时记录为失败。
 
 ## 日期标准
 

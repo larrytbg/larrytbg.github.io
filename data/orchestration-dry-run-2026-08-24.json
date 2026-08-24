@@ -1,0 +1,81 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-08-24",
+  "batchId": "DRYRUN-2026-08-24-02",
+  "result": "passed_with_findings",
+  "published": false,
+  "controller": {
+    "model": "gpt-5.6-sol",
+    "thinking": "high",
+    "startedAt": "2026-08-24T20:20:27+08:00",
+    "completedAt": "2026-08-24T20:28:57+08:00",
+    "result": "passed"
+  },
+  "stages": [
+    {
+      "role": "source_scan",
+      "model": "gpt-5.6-luna",
+      "thinking": "medium",
+      "startedAt": "2026-08-24T20:20:57+08:00",
+      "completedAt": "2026-08-24T20:21:30+08:00",
+      "result": "passed_with_format_note",
+      "delivery": "返回WHO官方候选的日期、合作期限、参与单位、三个合作方向和事实边界",
+      "writeViolation": false,
+      "note": "正文中的任务ID填写错误；机构中文名也不准确，后续事实复核阶段均已纠正"
+    },
+    {
+      "role": "content_draft",
+      "model": "gpt-5.6-terra",
+      "thinking": "medium",
+      "startedAt": "2026-08-24T20:21:57+08:00",
+      "completedAt": "2026-08-24T20:22:15+08:00",
+      "result": "passed",
+      "delivery": "只使用已核验资料包生成不进入网站的初学者中文初稿",
+      "writeViolation": false
+    },
+    {
+      "role": "fact_review",
+      "model": "gpt-5.6-sol",
+      "thinking": "high",
+      "startedAt": "2026-08-24T20:22:42+08:00",
+      "completedAt": "2026-08-24T20:25:10+08:00",
+      "result": "passed_after_revision",
+      "delivery": "退回过强因果表述并给出修订稿；核准中文机构名和专业术语",
+      "writeViolation": false
+    },
+    {
+      "role": "site_engineering",
+      "model": "gpt-5.6-terra",
+      "thinking": "high",
+      "startedAt": "2026-08-24T20:25:40+08:00",
+      "completedAt": "2026-08-24T20:28:31+08:00",
+      "result": "conditionally_passed",
+      "delivery": "返回拟涉及文件、补丁说明、测试顺序和停止条件；识别健康专栏现有路由已占用",
+      "writeViolation": false
+    }
+  ],
+  "candidate": {
+    "title": "WHO与北京大学加强卫生应急准备合作",
+    "sourceLevel": "A",
+    "sourceType": "WHO官方部门动态",
+    "sourcePublishedAt": "2026-08-21",
+    "integratedIntoSite": false
+  },
+  "repositoryVerification": {
+    "branch": "main",
+    "headBefore": "9f4844065fa4dea6c8c3d24bd44bedfd1953efca",
+    "headAfter": "9f4844065fa4dea6c8c3d24bd44bedfd1953efca",
+    "siteChangedByDryRun": false,
+    "articleLedgerChangedByDryRun": false,
+    "commitCreatedByDryRun": false,
+    "pushed": false,
+    "published": false
+  },
+  "supersededAttempt": {
+    "result": "failed",
+    "cause": "四个工作任务先在Codex默认C盘worktree创建，再迁移到D盘后，回合完成但没有可读取的assistant正文",
+    "resolution": "归档或停用迁移版任务；四个工作任务改为直接在D盘正式项目创建",
+    "dataLossVerification": "not_independently_proven",
+    "websiteChanged": false
+  }
+}
