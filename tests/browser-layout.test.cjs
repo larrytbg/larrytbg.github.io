@@ -1,16 +1,15 @@
 const assert = require("node:assert/strict");
 const { chromium } = require("playwright");
 
+const updatedColumns = [
+  "codex", "daily", "finance", "financial-literacy", "health", "history",
+  "logic", "management", "papers", "philosophy", "ted",
+];
 const routes = [
   "/", "/audit/", "/archive/", "/briefing/2026-08-22/",
-  "/column/codex/02/", "/column/codex/03/", "/column/codex/04/",
-  "/column/daily/01/", "/column/daily/02/", "/column/daily/03/", "/column/daily/04/",
-  "/column/finance/01/", "/column/finance/02/", "/column/finance/03/",
-  "/column/financial-literacy/01/", "/column/financial-literacy/02/",
-  "/column/papers/01/", "/column/papers/02/", "/column/papers/03/",
-  "/column/health/01/", "/column/health/02/", "/column/health/03/",
-  "/column/philosophy/01/", "/column/logic/01/", "/column/management/01/",
-  "/column/history/01/", "/column/ted/01/", "/column/ted/02/", "/column/ted/03/",
+  ...updatedColumns.flatMap((column) =>
+    ["01", "02", "03", "04", "05"].map((index) => `/column/${column}/${index}/`),
+  ),
 ];
 
 (async () => {

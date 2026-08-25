@@ -7,7 +7,7 @@ import {
   validateHighlightEvidence,
 } from "./lib/daily-highlights.mjs";
 import { extractArticleRecord } from "./lib/article-timeline.mjs";
-import { extractSourcePublishedOn } from "./lib/article-ledger.mjs";
+import { extractSourcePublishedOn, hasSourceDateMetadata } from "./lib/article-ledger.mjs";
 
 function parseArgs(values) {
   const args = {};
@@ -60,7 +60,10 @@ const nextLedger = structuredClone(ledger);
 for (const entry of entries) {
   const { record, html } = currentArticles.get(entry.target);
   const existing = nextLedger.articles[entry.target];
-  const sourcePublishedOn = extractSourcePublishedOn(html) ?? existing?.sourcePublishedOn ?? null;
+  const extractedSourceDate = extractSourcePublishedOn(html);
+  const sourcePublishedOn = hasSourceDateMetadata(html)
+    ? extractedSourceDate
+    : existing?.sourcePublishedOn ?? null;
   if (entry.changeType === "new") {
     nextLedger.articles[entry.target] = {
       title: record.title,

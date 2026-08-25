@@ -40,6 +40,10 @@ export function findTitleFirstSeen({ repo, file, title }) {
 
 export function extractSourcePublishedOn(html) {
   const plain = decodeText(html);
-  const match = plain.match(/(?:原文发布|来源发布日期)\s*[：:]\s*(\d{4}-\d{2}-\d{2})/);
+  const match = plain.match(/(?:原文发布|原文日期|来源发布日期)\s*[：:]\s*(\d{4}-\d{2}-\d{2})(?!\d)/);
   return match?.[1] ?? null;
+}
+
+export function hasSourceDateMetadata(html) {
+  return /(?:原文发布|原文日期|来源发布日期)\s*[：:]/.test(decodeText(html));
 }

@@ -1,0 +1,999 @@
+{
+  "date": "2026-08-25",
+  "sourceCutoff": "2026-08-25 08:17（北京时间）",
+  "totalArticles": 110,
+  "substantivelyUpdated": 55,
+  "updateRate": 0.5,
+  "target": 0.5,
+  "targetMet": true,
+  "reviewSummary": {
+    "pass": 25,
+    "revisedAndPassed": 30,
+    "rejected": 0
+  },
+  "articles": [
+    {
+      "target": "codex/01",
+      "changeType": "updated",
+      "changeSummary": "补入CLI面向本地工作区执行编码任务的定位及跨平台边界。",
+      "title": "Codex CLI 的安装、登录与首个任务流程",
+      "sourceDate": "页面未标注发布日期，核验于2026-08-25",
+      "sourceVerification": {
+        "ok": true,
+        "checkedAt": "2026-08-25 08:17（北京时间）",
+        "sources": [
+          {
+            "name": "OpenAI Codex CLI",
+            "url": "https://learn.chatgpt.com/docs/codex/cli"
+          }
+        ]
+      }
+    },
+    {
+      "target": "codex/02",
+      "changeType": "updated",
+      "changeSummary": "将“指导文件”从普通说明补充为影响目录任务边界的项目约束。",
+      "title": "项目指导文件如何影响 Codex 的任务边界",
+      "sourceDate": "页面未标注发布日期，核验于2026-08-25",
+      "sourceVerification": {
+        "ok": true,
+        "checkedAt": "2026-08-25 08:17（北京时间）",
+        "sources": [
+          {
+            "name": "OpenAI AGENTS.md",
+            "url": "https://learn.chatgpt.com/docs/agent-configuration/agents-md"
+          }
+        ]
+      }
+    },
+    {
+      "target": "codex/03",
+      "changeType": "updated",
+      "changeSummary": "新增云端与本地在文件、凭据和网络权限上可能不同的边界。",
+      "title": "Codex 云端任务与本地工作区的执行边界",
+      "sourceDate": "页面未标注发布日期，核验于2026-08-25",
+      "sourceVerification": {
+        "ok": true,
+        "checkedAt": "2026-08-25 08:17（北京时间）",
+        "sources": [
+          {
+            "name": "OpenAI Codex cloud",
+            "url": "https://learn.chatgpt.com/docs/cloud"
+          }
+        ]
+      }
+    },
+    {
+      "target": "codex/04",
+      "changeType": "updated",
+      "changeSummary": "明确区分执行命令、测试结果、审查意见与完成修复。",
+      "title": "Codex 代码审查为何要回到差异与测试证据",
+      "sourceDate": "页面未标注发布日期，核验于2026-08-25",
+      "sourceVerification": {
+        "ok": true,
+        "checkedAt": "2026-08-25 08:17（北京时间）",
+        "sources": [
+          {
+            "name": "OpenAI Code review",
+            "url": "https://learn.chatgpt.com/docs/code-review"
+          },
+          {
+            "name": "OpenAI Best practices",
+            "url": "https://learn.chatgpt.com/guides/best-practices"
+          }
+        ]
+      }
+    },
+    {
+      "target": "codex/05",
+      "changeType": "updated",
+      "changeSummary": "加入完成报告的三种验证状态，避免把单一测试命令当作通用标准。",
+      "title": "完成 Codex 任务前为什么要保留验证证据",
+      "sourceDate": "页面未标注发布日期，核验于2026-08-25",
+      "sourceVerification": {
+        "ok": true,
+        "checkedAt": "2026-08-25 08:17（北京时间）",
+        "sources": [
+          {
+            "name": "OpenAI Best practices",
+            "url": "https://learn.chatgpt.com/guides/best-practices"
+          }
+        ]
+      }
+    },
+    {
+      "target": "daily/01",
+      "changeType": "updated",
+      "changeSummary": "补入百日节点和超过5200例的官方表述，并保留趋势判断边界。",
+      "title": "刚果（金）埃博拉疫情跨过百日，累计病例超过5200例",
+      "sourceDate": "2026-08-24",
+      "sourceVerification": {
+        "ok": true,
+        "checkedAt": "2026-08-25 08:17（北京时间）",
+        "sources": [
+          {
+            "name": "WHO非洲区域办事处公告",
+            "url": "https://www.afro.who.int/countries/democratic-republic-of-congo/news/over-5200-cases-recorded-democratic-republic-congocrosses100-days-ebola-outbreak-declaration"
+          }
+        ]
+      }
+    },
+    {
+      "target": "daily/02",
+      "changeType": "updated",
+      "changeSummary": "增加立场文件面向政策和项目设计、非个人建议的清晰定位。",
+      "title": "WHO 发布2026年伤寒疫苗立场文件",
+      "sourceDate": "2026-08-18",
+      "sourceVerification": {
+        "ok": true,
+        "checkedAt": "2026-08-25 08:17（北京时间）",
+        "sources": [
+          {
+            "name": "WHO伤寒疫苗立场文件",
+            "url": "https://www.who.int/publications/i/item/who-wer10132-166-180"
+          }
+        ]
+      }
+    },
+    {
+      "target": "daily/03",
+      "changeType": "updated",
+      "changeSummary": "明确区分疫苗分配与实际接种、覆盖率，避免将供应链节点写成防护结果。",
+      "title": "WHO 与非洲CDC欢迎向刚果（金）分配埃博拉疫苗",
+      "sourceDate": "2026-08-20",
+      "sourceVerification": {
+        "ok": true,
+        "checkedAt": "2026-08-25 08:17（北京时间）",
+        "sources": [
+          {
+            "name": "WHO与Africa CDC公告",
+            "url": "https://www.who.int/japan/news/detail-global/20-08-2026-who-and-africa-cdc-welcome-the-allocation-of-ebola-vaccines-to-the-democratic-republic-of-the-congo"
+          }
+        ]
+      }
+    },
+    {
+      "target": "daily/04",
+      "changeType": "updated",
+      "changeSummary": "补入更新覆盖范围及部分AI摘要为实验性的官方提示。",
+      "title": "Google 汇总2026年7月AI产品和研究更新",
+      "sourceDate": "2026-08-04",
+      "sourceVerification": {
+        "ok": true,
+        "checkedAt": "2026-08-25 08:17（北京时间）",
+        "sources": [
+          {
+            "name": "Google 2026年7月AI更新",
+            "url": "https://blog.google/innovation-and-ai/technology/ai/google-ai-updates-july-2026/"
+          }
+        ]
+      }
+    },
+    {
+      "target": "daily/05",
+      "changeType": "updated",
+      "changeSummary": "突出“征求反馈”与“最终生效规则”不是同一状态。",
+      "title": "FDA 就生成式AI医疗器械监管方法征求反馈",
+      "sourceDate": "2026-08-18",
+      "sourceVerification": {
+        "ok": true,
+        "checkedAt": "2026-08-25 08:17（北京时间）",
+        "sources": [
+          {
+            "name": "FDA官方新闻稿",
+            "url": "https://www.fda.gov/news-events/press-announcements/fda-seeks-public-feedback-inform-regulatory-approach-generative-ai-enabled-medical-devices"
+          }
+        ]
+      }
+    },
+    {
+      "target": "finance/01",
+      "changeType": "updated",
+      "changeSummary": "补入总体与核心口径不同，以及宏观指标不等于个体生活成本。",
+      "title": "PCE价格指数如何衡量个人消费价格变化",
+      "sourceDate": "当前发布均为2026-07-30",
+      "sourceVerification": {
+        "ok": true,
+        "checkedAt": "2026-08-25 08:17（北京时间）",
+        "sources": [
+          {
+            "name": "BEA PCE",
+            "url": "https://www.bea.gov/data/personal-consumption-expenditures-price-index"
+          },
+          {
+            "name": "BEA核心PCE",
+            "url": "https://www.bea.gov/data/personal-consumption-expenditures-price-index-excluding-food-and-energy"
+          }
+        ]
+      }
+    },
+    {
+      "target": "finance/02",
+      "changeType": "updated",
+      "changeSummary": "加入证券持有和准备金的可观察范围，排除单表预测市场方向的误读。",
+      "title": "如何从美联储资产负债表观察流动性项目",
+      "sourceDate": "页面最后更新2026-08-20",
+      "sourceVerification": {
+        "ok": true,
+        "checkedAt": "2026-08-25 08:17（北京时间）",
+        "sources": [
+          {
+            "name": "Federal Reserve H.4.1",
+            "url": "https://www.federalreserve.gov/releases/h41/"
+          }
+        ]
+      }
+    },
+    {
+      "target": "finance/03",
+      "changeType": "updated",
+      "changeSummary": "将每日现金收支与长期财政判断明确分开。",
+      "title": "美国财政部每日现金流数据应该怎样读",
+      "sourceDate": "持续更新数据集，核验于2026-08-25",
+      "sourceVerification": {
+        "ok": true,
+        "checkedAt": "2026-08-25 08:17（北京时间）",
+        "sources": [
+          {
+            "name": "U.S. Treasury Daily Treasury Statement",
+            "url": "https://fiscaldata.treasury.gov/datasets/daily-treasury-statement/"
+          }
+        ]
+      }
+    },
+    {
+      "target": "finance/04",
+      "changeType": "updated",
+      "changeSummary": "补入国际收支的居民—非居民统计边界和两类账户的不同问题。",
+      "title": "国际收支表为何要区分经常账户和金融账户",
+      "sourceDate": "动态数据页未标注统一发布日期，核验于2026-08-25",
+      "sourceVerification": {
+        "ok": true,
+        "checkedAt": "2026-08-25 08:17（北京时间）",
+        "sources": [
+          {
+            "name": "IMF Balance of Payments数据集",
+            "url": "https://data.imf.org/Datasets/BOP"
+          }
+        ]
+      }
+    },
+    {
+      "target": "finance/05",
+      "changeType": "updated",
+      "changeSummary": "增加收益率曲线与期限利差的定义性说明，删除“倒挂即衰退”的简化推断。",
+      "title": "收益率曲线反映预期，但不能单独预测衰退",
+      "sourceDate": "现行数据页核验于2026-08-25，研究资料为1996年",
+      "sourceVerification": {
+        "ok": true,
+        "checkedAt": "2026-08-25 08:17（北京时间）",
+        "sources": [
+          {
+            "name": "纽约联储Treasury Term Premia",
+            "url": "https://www.newyorkfed.org/research/data_indicators/term-premia-tabs"
+          },
+          {
+            "name": "纽约联储收益率曲线研究",
+            "url": "https://www.newyorkfed.org/medialibrary/media/research/capital_markets/ycfaq.pdf"
+          }
+        ]
+      }
+    },
+    {
+      "target": "financial-literacy/01",
+      "changeType": "updated",
+      "changeSummary": "补入定期投入会改变累计结果，并明确计算器不构成收益承诺。",
+      "title": "复利结果为何同时取决于时间、收益率与现金流",
+      "sourceDate": "页面未标注发布日期，核验于2026-08-25",
+      "sourceVerification": {
+        "ok": true,
+        "checkedAt": "2026-08-25 08:17（北京时间）",
+        "sources": [
+          {
+            "name": "Investor.gov复利计算器",
+            "url": "https://www.investor.gov/financial-tools-calculators/calculators/compound-interest-calculator"
+          }
+        ]
+      }
+    },
+    {
+      "target": "financial-literacy/02",
+      "changeType": "updated",
+      "changeSummary": "新增费用长期累积效应，并保留产品适配性不能仅看费用的边界。",
+      "title": "投资费用如何持续侵蚀长期回报",
+      "sourceDate": "2014-02",
+      "sourceVerification": {
+        "ok": true,
+        "checkedAt": "2026-08-25 08:17（北京时间）",
+        "sources": [
+          {
+            "name": "SEC费用影响公告",
+            "url": "https://www.investor.gov/sites/default/files/ib_fees_expenses.pdf"
+          }
+        ]
+      }
+    },
+    {
+      "target": "financial-literacy/03",
+      "changeType": "updated",
+      "changeSummary": "由资产类别介绍扩展为风险、期限与个人约束的匹配框架。",
+      "title": "资产配置是风险与期限的匹配问题",
+      "sourceDate": "页面未标注发布日期，核验于2026-08-25",
+      "sourceVerification": {
+        "ok": true,
+        "checkedAt": "2026-08-25 08:17（北京时间）",
+        "sources": [
+          {
+            "name": "Investor.gov Asset Allocation",
+            "url": "https://www.investor.gov/introduction-investing/getting-started/asset-allocation"
+          }
+        ]
+      }
+    },
+    {
+      "target": "financial-literacy/04",
+      "changeType": "updated",
+      "changeSummary": "补入核查、留存证据与法域限制，避免把美国流程泛化。",
+      "title": "发现信用报告错误后，应先核查再争议",
+      "sourceDate": "最后审阅2024-12-12",
+      "sourceVerification": {
+        "ok": true,
+        "checkedAt": "2026-08-25 08:17（北京时间）",
+        "sources": [
+          {
+            "name": "CFPB信用报告争议流程",
+            "url": "https://www.consumerfinance.gov/ask-cfpb/how-do-i-dispute-an-error-on-my-credit-report-en-314/"
+          }
+        ]
+      }
+    },
+    {
+      "target": "financial-literacy/05",
+      "changeType": "updated",
+      "changeSummary": "新增机构与产品登记核验，避免由信号直接推断违法。",
+      "title": "识别投资诈骗：核验机构、产品与承诺",
+      "sourceDate": "页面未标注发布日期，核验于2026-08-25",
+      "sourceVerification": {
+        "ok": true,
+        "checkedAt": "2026-08-25 08:17（北京时间）",
+        "sources": [
+          {
+            "name": "Investor.gov避免投资诈骗",
+            "url": "https://www.investor.gov/protect-your-investments/fraud/protect-your-money"
+          }
+        ]
+      }
+    },
+    {
+      "target": "health/01",
+      "changeType": "updated",
+      "changeSummary": "补入目标人群和地区流行病学是解释文件结论的前提。",
+      "title": "WHO伤寒疫苗立场文件如何更新公共卫生依据",
+      "sourceDate": "2026-08-18",
+      "sourceVerification": {
+        "ok": true,
+        "checkedAt": "2026-08-25 08:17（北京时间）",
+        "sources": [
+          {
+            "name": "WHO伤寒疫苗立场文件",
+            "url": "https://www.who.int/publications/i/item/who-wer10132-166-180"
+          }
+        ]
+      }
+    },
+    {
+      "target": "health/02",
+      "changeType": "updated",
+      "changeSummary": "以响应链条解释为何疫苗供应数据不能替代覆盖率数据。",
+      "title": "埃博拉疫苗分配与实际接种不是同一个指标",
+      "sourceDate": "2026-08-20",
+      "sourceVerification": {
+        "ok": true,
+        "checkedAt": "2026-08-25 08:17（北京时间）",
+        "sources": [
+          {
+            "name": "WHO官方公告",
+            "url": "https://www.who.int/japan/news/detail-global/20-08-2026-who-and-africa-cdc-welcome-the-allocation-of-ebola-vaccines-to-the-democratic-republic-of-the-congo"
+          }
+        ]
+      }
+    },
+    {
+      "target": "health/03",
+      "changeType": "updated",
+      "changeSummary": "补入安全性和有效性分别评估的监管边界，避免对产品作未经支持的判断。",
+      "title": "FDA如何讨论生成式AI医疗器械监管",
+      "sourceDate": "2026-08-18",
+      "sourceVerification": {
+        "ok": true,
+        "checkedAt": "2026-08-25 08:17（北京时间）",
+        "sources": [
+          {
+            "name": "FDA官方新闻稿",
+            "url": "https://www.fda.gov/news-events/press-announcements/fda-seeks-public-feedback-inform-regulatory-approach-generative-ai-enabled-medical-devices"
+          }
+        ]
+      }
+    },
+    {
+      "target": "health/04",
+      "changeType": "updated",
+      "changeSummary": "增加抗菌药物使用、感染预防和监测的关联，并明确不提供个人用药建议。",
+      "title": "抗菌药物耐药性需要同时看治疗与公共卫生",
+      "sourceDate": "主题页未标注统一发布日期，核验于2026-08-25",
+      "sourceVerification": {
+        "ok": true,
+        "checkedAt": "2026-08-25 08:17（北京时间）",
+        "sources": [
+          {
+            "name": "WHO Antimicrobial resistance",
+            "url": "https://www.who.int/health-topics/antimicrobial-resistance"
+          }
+        ]
+      }
+    },
+    {
+      "target": "health/05",
+      "changeType": "updated",
+      "changeSummary": "把数字健康从“部署工具”扩展为治理、公平和效果证据的共同问题。",
+      "title": "WHO数字健康战略为何强调治理、可及性与证据",
+      "sourceDate": "2021-08-18",
+      "sourceVerification": {
+        "ok": true,
+        "checkedAt": "2026-08-25 08:17（北京时间）",
+        "sources": [
+          {
+            "name": "WHO全球数字健康战略",
+            "url": "https://www.who.int/publications/i/item/9789240020924"
+          }
+        ]
+      }
+    },
+    {
+      "target": "history/01",
+      "changeType": "updated",
+      "changeSummary": "补入权力分工与制约，并区分历史文本和当代实践。",
+      "title": "美国宪法如何分配联邦政府权力",
+      "sourceDate": "原始文本签署于1787-09-17",
+      "sourceVerification": {
+        "ok": true,
+        "checkedAt": "2026-08-25 08:17（北京时间）",
+        "sources": [
+          {
+            "name": "美国国家档案馆—美国宪法",
+            "url": "https://www.archives.gov/founding-docs/constitution"
+          }
+        ]
+      }
+    },
+    {
+      "target": "history/02",
+      "changeType": "updated",
+      "changeSummary": "新增麦哲伦未完成全程这一事实，并用帝国与贸易背景修正英雄叙事。",
+      "title": "麦哲伦远航：个人行动与帝国组织应分开理解",
+      "sourceDate": "UNESCO登记于2023年，LOC页面未标注发布日期",
+      "sourceVerification": {
+        "ok": true,
+        "checkedAt": "2026-08-25 08:17（北京时间）",
+        "sources": [
+          {
+            "name": "UNESCO首次环球航行档案",
+            "url": "https://www.unesco.org/en/memory-world/first-voyage-circumnavigation-fernao-de-magalhaes-and-juan-sebastian-elcano-1519-1522"
+          },
+          {
+            "name": "美国国会图书馆资料",
+            "url": "https://www.loc.gov/item/today-in-history/november-28/"
+          }
+        ]
+      }
+    },
+    {
+      "target": "history/03",
+      "changeType": "updated",
+      "changeSummary": "从机器发明叙事扩展为能源、资本、制度与劳动关系的组合解释。",
+      "title": "工业革命不只是机器：能源、制度与劳动力的组合",
+      "sourceDate": "页面未标注发布日期，核验于2026-08-25",
+      "sourceVerification": {
+        "ok": true,
+        "checkedAt": "2026-08-25 08:17（北京时间）",
+        "sources": [
+          {
+            "name": "英国国家档案馆—工业城镇",
+            "url": "https://www.nationalarchives.gov.uk/education/resources/victorian-industrial-towns/"
+          },
+          {
+            "name": "19世纪生活资料",
+            "url": "https://www.nationalarchives.gov.uk/currency-converter/living-in-the-19th-century/"
+          }
+        ]
+      }
+    },
+    {
+      "target": "history/04",
+      "changeType": "updated",
+      "changeSummary": "补入文本复制速度和一致性的变化，同时排除单因果解释。",
+      "title": "古腾堡印刷术如何改变文本复制条件",
+      "sourceDate": "页面未标注统一发布日期，核验于2026-08-25",
+      "sourceVerification": {
+        "ok": true,
+        "checkedAt": "2026-08-25 08:17（北京时间）",
+        "sources": [
+          {
+            "name": "美国国会图书馆—Gutenberg Bible",
+            "url": "https://www.loc.gov/exhibits/bibles/the-gutenberg-bible.html"
+          },
+          {
+            "name": "LOC Gutenberg研究指南",
+            "url": "https://guides.loc.gov/gutenberg"
+          }
+        ]
+      }
+    },
+    {
+      "target": "history/05",
+      "changeType": "updated",
+      "changeSummary": "强调审判的证据和法律记录价值，避免夸大为唯一制度来源。",
+      "title": "纽伦堡审判如何留下战争罪责的法律记录",
+      "sourceDate": "页面未标注发布日期，核验于2026-08-25",
+      "sourceVerification": {
+        "ok": true,
+        "checkedAt": "2026-08-25 08:17（北京时间）",
+        "sources": [
+          {
+            "name": "美国大屠杀纪念馆—纽伦堡审判",
+            "url": "https://encyclopedia.ushmm.org/content/en/article/international-military-tribunal-at-nuremberg"
+          }
+        ]
+      }
+    },
+    {
+      "target": "logic/01",
+      "changeType": "updated",
+      "changeSummary": "补入不同模态系统的设定差异，避免将可能性误译成高概率。",
+      "title": "模态逻辑如何表达“必然”与“可能”",
+      "sourceDate": "首次发布2000-02-29，实质修订2023-01-23",
+      "sourceVerification": {
+        "ok": true,
+        "checkedAt": "2026-08-25 08:17（北京时间）",
+        "sources": [
+          {
+            "name": "SEP Modal Logic",
+            "url": "https://plato.stanford.edu/entries/logic-modal/"
+          }
+        ]
+      }
+    },
+    {
+      "target": "logic/02",
+      "changeType": "updated",
+      "changeSummary": "将悖论定位为规则和语义边界问题，而非一般事实冲突。",
+      "title": "悖论如何暴露语言、集合或规则的边界",
+      "sourceDate": "实质修订2025-04-30",
+      "sourceVerification": {
+        "ok": true,
+        "checkedAt": "2026-08-25 08:17（北京时间）",
+        "sources": [
+          {
+            "name": "SEP Paradoxes and Contemporary Logic",
+            "url": "https://plato.stanford.edu/entries/paradoxes-contemporary-logic/"
+          }
+        ]
+      }
+    },
+    {
+      "target": "logic/03",
+      "changeType": "updated",
+      "changeSummary": "补入观察与干预的根本区别，并明确图形不等于机制已证实。",
+      "title": "因果图为何要区分观察与干预",
+      "sourceDate": "首次发布2018-08-07",
+      "sourceVerification": {
+        "ok": true,
+        "checkedAt": "2026-08-25 08:17（北京时间）",
+        "sources": [
+          {
+            "name": "SEP Causal Models",
+            "url": "https://plato.stanford.edu/entries/causal-models/"
+          }
+        ]
+      }
+    },
+    {
+      "target": "logic/04",
+      "changeType": "updated",
+      "changeSummary": "加入对象层级与可表达命题的关系，避免从形式结论跳到现实结论。",
+      "title": "类型论如何限制部分自指表达",
+      "sourceDate": "实质修订2022-09-06",
+      "sourceVerification": {
+        "ok": true,
+        "checkedAt": "2026-08-25 08:17（北京时间）",
+        "sources": [
+          {
+            "name": "SEP Type Theory",
+            "url": "https://plato.stanford.edu/entries/type-theory/"
+          }
+        ]
+      }
+    },
+    {
+      "target": "logic/05",
+      "changeType": "updated",
+      "changeSummary": "补入量词功能与自然语言翻译不唯一的边界。",
+      "title": "谓词逻辑如何表达对象、属性与量词关系",
+      "sourceDate": "实质修订2026-06-17",
+      "sourceVerification": {
+        "ok": true,
+        "checkedAt": "2026-08-25 08:17（北京时间）",
+        "sources": [
+          {
+            "name": "SEP Classical Logic",
+            "url": "https://plato.stanford.edu/entries/logic-classical/"
+          }
+        ]
+      }
+    },
+    {
+      "target": "management/01",
+      "changeType": "updated",
+      "changeSummary": "突出关键结果不是任务清单，并补充目标、衡量和复盘的分工。",
+      "title": "OKR需要区分目标、关键结果与复盘",
+      "sourceDate": "前者未标注日期，后者最后更新2024-11-05",
+      "sourceVerification": {
+        "ok": true,
+        "checkedAt": "2026-08-25 08:17（北京时间）",
+        "sources": [
+          {
+            "name": "What Matters OKR Guide",
+            "url": "https://www.whatmatters.com/okrs-explained/good-example-okrs"
+          },
+          {
+            "name": "Microsoft Learn—Get to know OKRs",
+            "url": "https://learn.microsoft.com/en-us/viva/goals/get-to-know-okrs"
+          }
+        ]
+      }
+    },
+    {
+      "target": "management/02",
+      "changeType": "updated",
+      "changeSummary": "加入范围变更应评估时间、成本和风险，避免把范围管理误写为冻结需求。",
+      "title": "项目范围管理如何防止目标无边界膨胀",
+      "sourceDate": "分别发布于2012-05-09和2008-10-19",
+      "sourceVerification": {
+        "ok": true,
+        "checkedAt": "2026-08-25 08:17（北京时间）",
+        "sources": [
+          {
+            "name": "PMI Scope—mastering the fuzzy constraint",
+            "url": "https://www.pmi.org/learning/library/scope-mastering-fuzzy-constraint-6358"
+          },
+          {
+            "name": "PMI Scope change control",
+            "url": "https://www.pmi.org/learning/library/scope-control-projects-you-6972"
+          }
+        ]
+      }
+    },
+    {
+      "target": "management/03",
+      "changeType": "updated",
+      "changeSummary": "补入四类角色的区分，以及RACI不能自动消除组织冲突的边界。",
+      "title": "RACI矩阵如何减少责任空缺与重复决策",
+      "sourceDate": "Atlassian页面未标注日期，PMI发布于2026-07-29",
+      "sourceVerification": {
+        "ok": true,
+        "checkedAt": "2026-08-25 08:17（北京时间）",
+        "sources": [
+          {
+            "name": "Atlassian RACI",
+            "url": "https://www.atlassian.com/work-management/project-management/raci-chart"
+          },
+          {
+            "name": "PMI Stakeholder management and RACI",
+            "url": "https://www.pmi.org/blog/stakeholder-management-raci"
+          }
+        ]
+      }
+    },
+    {
+      "target": "management/04",
+      "changeType": "updated",
+      "changeSummary": "把设计文档从记录工具扩展为异步审阅和复盘依据，同时保留验证边界。",
+      "title": "设计文档如何记录取舍和决策依据",
+      "sourceDate": "最后更新2024-08-16",
+      "sourceVerification": {
+        "ok": true,
+        "checkedAt": "2026-08-25 08:17（北京时间）",
+        "sources": [
+          {
+            "name": "Google Cloud Architecture decision records",
+            "url": "https://docs.cloud.google.com/architecture/architecture-decision-records"
+          }
+        ]
+      }
+    },
+    {
+      "target": "management/05",
+      "changeType": "updated",
+      "changeSummary": "补入行为、影响、改进方向和后续跟踪四个反馈要点。",
+      "title": "管理反馈应从人格评价转向可观察行为",
+      "sourceDate": "CCL现行页核验于2026-08-25，CIPD发布于2022-09-20",
+      "sourceVerification": {
+        "ok": true,
+        "checkedAt": "2026-08-25 08:17（北京时间）",
+        "sources": [
+          {
+            "name": "CCL SBI反馈",
+            "url": "https://www.ccl.org/articles/leading-effectively-articles/sbi-feedback-model-a-quick-win-to-improve-talent-conversations-development/"
+          },
+          {
+            "name": "CIPD反馈证据综述",
+            "url": "https://www.cipd.org/uk/knowledge/evidence-reviews/performance-feedback/"
+          }
+        ]
+      }
+    },
+    {
+      "target": "papers/01",
+      "changeType": "updated",
+      "changeSummary": "新增实验聚焦序列任务的范围，避免泛化为全任务优势。",
+      "title": "Transformer论文如何将注意力机制置于序列建模核心",
+      "sourceDate": "2017-06-12",
+      "sourceVerification": {
+        "ok": true,
+        "checkedAt": "2026-08-25 08:17（北京时间）",
+        "sources": [
+          {
+            "name": "Vaswani等，arXiv:1706.03762",
+            "url": "https://doi.org/10.48550/arXiv.1706.03762"
+          }
+        ]
+      }
+    },
+    {
+      "target": "papers/02",
+      "changeType": "updated",
+      "changeSummary": "补入正向加噪与反向去噪的过程关系，并明确生成内容不等于现实事实。",
+      "title": "扩散模型如何通过逐步去噪生成样本",
+      "sourceDate": "2020-06-19",
+      "sourceVerification": {
+        "ok": true,
+        "checkedAt": "2026-08-25 08:17（北京时间）",
+        "sources": [
+          {
+            "name": "Ho等，arXiv:2006.11239",
+            "url": "https://doi.org/10.48550/arXiv.2006.11239"
+          }
+        ]
+      }
+    },
+    {
+      "target": "papers/03",
+      "changeType": "updated",
+      "changeSummary": "补入CASP等评估背景，并严格区分结构预测、实验结构与临床效果。",
+      "title": "AlphaFold2如何推进蛋白质结构预测",
+      "sourceDate": "在线发布2021-07-15",
+      "sourceVerification": {
+        "ok": true,
+        "checkedAt": "2026-08-25 08:17（北京时间）",
+        "sources": [
+          {
+            "name": "Nature—Highly accurate protein structure prediction with AlphaFold",
+            "url": "https://www.nature.com/articles/s41586-021-03819-2"
+          }
+        ]
+      }
+    },
+    {
+      "target": "papers/04",
+      "changeType": "updated",
+      "changeSummary": "增加识别假设是因果解释前提，避免将相关数据直接包装为因果。",
+      "title": "潜在结果框架如何定义处理效应",
+      "sourceDate": "教材页未标注统一日期，原始论文为1974年",
+      "sourceVerification": {
+        "ok": true,
+        "checkedAt": "2026-08-25 08:17（北京时间）",
+        "sources": [
+          {
+            "name": "Causal Inference: The Mixtape—Potential Outcomes",
+            "url": "https://mixtape.scunning.com/04-potential_outcomes_and_randomization"
+          },
+          {
+            "name": "Rubin 1974原始资料",
+            "url": "https://www.ets.org/research/policy_research_reports/publications/article/1974/hrbx.html"
+          }
+        ]
+      }
+    },
+    {
+      "target": "papers/05",
+      "changeType": "updated",
+      "changeSummary": "将报告完整性与试验质量明确分开，避免把规范遵循当作可信度认证。",
+      "title": "随机对照试验为何要预先定义结局和分析计划",
+      "sourceDate": "均发表于2025-04-14",
+      "sourceVerification": {
+        "ok": true,
+        "checkedAt": "2026-08-25 08:17（北京时间）",
+        "sources": [
+          {
+            "name": "SPIRIT 2025",
+            "url": "https://www.bmj.com/content/bmj/389/bmj-2024-081477.full.pdf"
+          },
+          {
+            "name": "CONSORT 2025",
+            "url": "https://www.bmj.com/content/389/bmj-2024-081123"
+          }
+        ]
+      }
+    },
+    {
+      "target": "philosophy/01",
+      "changeType": "updated",
+      "changeSummary": "补入事实到规范结论需要额外前提，避免把休谟问题误解为两者无关。",
+      "title": "休谟问题为何要求区分事实陈述与规范结论",
+      "sourceDate": "实质修订2018-08-20",
+      "sourceVerification": {
+        "ok": true,
+        "checkedAt": "2026-08-25 08:17（北京时间）",
+        "sources": [
+          {
+            "name": "SEP Hume’s Moral Philosophy",
+            "url": "https://plato.stanford.edu/entries/hume-moral/"
+          }
+        ]
+      }
+    },
+    {
+      "target": "philosophy/02",
+      "changeType": "updated",
+      "changeSummary": "补入“有用”不等于短期有效或机会主义的解释边界。",
+      "title": "实用主义如何把信念放回行动与后果中检验",
+      "sourceDate": "实质修订2024-09-30",
+      "sourceVerification": {
+        "ok": true,
+        "checkedAt": "2026-08-25 08:17（北京时间）",
+        "sources": [
+          {
+            "name": "SEP Pragmatism",
+            "url": "https://plato.stanford.edu/entries/pragmatism/"
+          }
+        ]
+      }
+    },
+    {
+      "target": "philosophy/03",
+      "changeType": "updated",
+      "changeSummary": "新增不可观察实体和理论成功两个争论焦点，避免口号化理解。",
+      "title": "科学实在论争论的是理论与世界的关系",
+      "sourceDate": "实质修订2017-06-12",
+      "sourceVerification": {
+        "ok": true,
+        "checkedAt": "2026-08-25 08:17（北京时间）",
+        "sources": [
+          {
+            "name": "SEP Scientific Realism",
+            "url": "https://plato.stanford.edu/entries/scientific-realism/"
+          }
+        ]
+      }
+    },
+    {
+      "target": "philosophy/04",
+      "changeType": "updated",
+      "changeSummary": "补入身体连续性与心理连续性的理论分歧，并限定思想实验的用途。",
+      "title": "个人同一性为何要区分身体、记忆与心理连续性",
+      "sourceDate": "实质修订2023-06-30",
+      "sourceVerification": {
+        "ok": true,
+        "checkedAt": "2026-08-25 08:17（北京时间）",
+        "sources": [
+          {
+            "name": "SEP Personal Identity",
+            "url": "https://plato.stanford.edu/entries/identity-personal/"
+          }
+        ]
+      }
+    },
+    {
+      "target": "philosophy/05",
+      "changeType": "updated",
+      "changeSummary": "补入表达式、对象与使用情境的区分，避免将单一理论绝对化。",
+      "title": "语言哲学中的指称问题如何影响我们谈论对象",
+      "sourceDate": "实质修订2024-07-31",
+      "sourceVerification": {
+        "ok": true,
+        "checkedAt": "2026-08-25 08:17（北京时间）",
+        "sources": [
+          {
+            "name": "SEP Theories of Meaning",
+            "url": "https://plato.stanford.edu/entries/meaning/"
+          }
+        ]
+      }
+    },
+    {
+      "target": "ted/01",
+      "changeType": "updated",
+      "changeSummary": "加入安静思考与公开表达不是同一能力维度，避免职业适配的刻板推断。",
+      "title": "Susan Cain：内向不等于缺乏领导力",
+      "sourceDate": "2012-02",
+      "sourceVerification": {
+        "ok": true,
+        "checkedAt": "2026-08-25 08:17（北京时间）",
+        "sources": [
+          {
+            "name": "TED—The Power of Introverts",
+            "url": "https://www.ted.com/talks/susan_cain_the_power_of_introverts"
+          }
+        ]
+      }
+    },
+    {
+      "target": "ted/02",
+      "changeType": "updated",
+      "changeSummary": "补入多来源叙事的作用，并明确不能据此替代对具体群体的事实核验。",
+      "title": "Chimamanda Ngozi Adichie：单一故事如何限制理解他人",
+      "sourceDate": "2009-07",
+      "sourceVerification": {
+        "ok": true,
+        "checkedAt": "2026-08-25 08:17（北京时间）",
+        "sources": [
+          {
+            "name": "TED—The Danger of a Single Story",
+            "url": "https://www.ted.com/talks/chimamanda_ngozi_adichie_the_danger_of_a_single_story"
+          }
+        ]
+      }
+    },
+    {
+      "target": "ted/03",
+      "changeType": "updated",
+      "changeSummary": "保留个性化呈现的核心观点，并加上历史案例不能代替当前算法证据的边界。",
+      "title": "Eli Pariser：过滤气泡如何改变信息环境",
+      "sourceDate": "2011-03",
+      "sourceVerification": {
+        "ok": true,
+        "checkedAt": "2026-08-25 08:17（北京时间）",
+        "sources": [
+          {
+            "name": "TED—Beware Online Filter Bubbles",
+            "url": "https://www.ted.com/talks/eli_pariser_beware_online_filter_bubbles"
+          }
+        ]
+      }
+    },
+    {
+      "target": "ted/04",
+      "changeType": "updated",
+      "changeSummary": "加入噪声、预判和分心三类理解障碍，并限定为沟通练习而非治疗。",
+      "title": "Julian Treasure：倾听能力决定对话能否真正发生",
+      "sourceDate": "2011-07",
+      "sourceVerification": {
+        "ok": true,
+        "checkedAt": "2026-08-25 08:17（北京时间）",
+        "sources": [
+          {
+            "name": "TED—5 Ways to Listen Better",
+            "url": "https://www.ted.com/talks/julian_treasure_5_ways_to_listen_better"
+          }
+        ]
+      }
+    },
+    {
+      "target": "ted/05",
+      "changeType": "updated",
+      "changeSummary": "补入“减少预先准备回应”的具体沟通机制，并保留高风险场景边界。",
+      "title": "Celeste Headlee：高质量对话需要专注、诚实与提问",
+      "sourceDate": "2015-05",
+      "sourceVerification": {
+        "ok": true,
+        "checkedAt": "2026-08-25 08:17（北京时间）",
+        "sources": [
+          {
+            "name": "TED—10 Ways to Have a Better Conversation",
+            "url": "https://www.ted.com/talks/celeste_headlee_10_ways_to_have_a_better_conversation"
+          }
+        ]
+      }
+    }
+  ]
+}

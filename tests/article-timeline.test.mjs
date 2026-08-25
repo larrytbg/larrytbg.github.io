@@ -12,8 +12,14 @@ import {
   renderDirectoryDate,
   semanticArticleHash,
 } from "../scripts/lib/article-timeline.mjs";
+import { extractSourcePublishedOn, hasSourceDateMetadata } from "../scripts/lib/article-ledger.mjs";
 
 const detail = `<html><body><header><div class="live-status">2026.08.22</div></header><main class="reading-page"><header class="reading-hero"><h1>示例文章</h1><div class="reading-meta"><span>首次收录：历史日期待核</span><span>最后实质更新：2026-08-22</span><span>来源发布日期：资料发布日期待核</span></div><div class="source-digest-attribution"><a href="https://example.com/report">原始报告<!-- --> · 发布于 <!-- -->资料发布日期待核<!-- --> ↗</a></div></header><article class="long-article"><section><h2>核心事实</h2><p>正文里的数字是42。</p></section><section id="sources" class="full-source-list"><a href="https://example.com/report"><span>原始报告</span></a></section></article></main></body></html>`;
+
+assert.equal(extractSourcePublishedOn('<span>原文日期：2026-08-24</span>'), "2026-08-24");
+assert.equal(extractSourcePublishedOn('<span>原文日期：前者未标注日期，后者最后更新2024-11-05</span>'), null);
+assert.equal(hasSourceDateMetadata('<span>原文日期：前者未标注日期</span>'), true);
+assert.equal(hasSourceDateMetadata('<span>本站最后更新：2026-08-25</span>'), false);
 
 const record = extractArticleRecord(detail, "daily/01");
 assert.equal(record.target, "daily/01");
