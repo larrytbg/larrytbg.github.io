@@ -1,0 +1,370 @@
+{
+  "date": "2026-08-27",
+  "sourceCutoff": "2026-08-27 02:20（北京时间）",
+  "totalArticles": 110,
+  "substantivelyUpdated": 20,
+  "updateRate": 0.1818,
+  "target": "quality-first, no padding",
+  "targetMet": true,
+  "scope": {
+    "daily": 2,
+    "finance": 2,
+    "health": 4,
+    "papers": 5,
+    "ted": 2,
+    "financial-literacy": 5
+  },
+  "tedScan": "TED 首页在 2026-08-27 约02:00（北京时间）显示两条约21小时前上线内容，因此纳入2篇；未用TEDx活动预告补数。",
+  "reviewSummary": {
+    "pass": 10,
+    "revisedAndPassed": 10,
+    "rejected": 0,
+    "reworkRounds": 1
+  },
+  "articles": [
+    {
+      "target": "daily/01",
+      "changeType": "updated",
+      "changeSummary": "新增并核准每日资讯资料：潘多拉已完成调试并开始科学观测，计划在一年主要任务期内至少研究20颗系外行星。",
+      "title": "NASA“潘多拉”开始科学观测：先把恒星噪声与行星大气分开",
+      "sourceDate": "2026-08-25",
+      "sourceVerification": {
+        "ok": true,
+        "checkedAt": "2026-08-27 02:20（北京时间）",
+        "sources": [
+          {
+            "name": "NASA Science—Pandora mission begins study",
+            "url": "https://science.nasa.gov/missions/pandora-missions/nasas-pandora-mission-begins-study-of-exoplanets-host-stars/"
+          }
+        ]
+      }
+    },
+    {
+      "target": "daily/02",
+      "changeType": "updated",
+      "changeSummary": "新增并核准每日资讯资料：NOAA“奥基阿诺斯探索者”号于8月20日从库克群岛拉罗汤加启航，开展为期29天的美属萨摩亚周边深海测绘与遥控潜水考察。",
+      "title": "NOAA直播深海考察：关键不是“看到奇观”，而是建立可复查的海底基线",
+      "sourceDate": "2026-08-24",
+      "sourceVerification": {
+        "ok": true,
+        "checkedAt": "2026-08-27 02:20（北京时间）",
+        "sources": [
+          {
+            "name": "NOAA Ocean Exploration—Updates From the Field",
+            "url": "https://oceanexplorer.noaa.gov/expedition-feature/updates-from-the-field-ex2606/"
+          }
+        ]
+      }
+    },
+    {
+      "target": "finance/01",
+      "changeType": "updated",
+      "changeSummary": "新增并核准金融资料：BEA二次估计显示，2026年第二季度实际GDP按年率增长1.5%，公布到一位小数的增速与初值相同；技术说明显示未四舍五入数值下修不足0.1个百分点。第一季度增速为2.1%。",
+      "title": "美国二季度GDP二次估计：公布值仍为1.5%，但未四舍五入值小幅下修",
+      "sourceDate": "2026-08-26",
+      "sourceVerification": {
+        "ok": true,
+        "checkedAt": "2026-08-27 02:20（北京时间）",
+        "sources": [
+          {
+            "name": "U.S. BEA—GDP Second Estimate and Corporate Profits",
+            "url": "https://bea.gov/news/2026/gdp-second-estimate-and-corporate-profits-2nd-quarter-2026"
+          }
+        ]
+      }
+    },
+    {
+      "target": "finance/02",
+      "changeType": "updated",
+      "changeSummary": "新增并核准金融资料：7月个人收入增加1151亿美元，月率0.4%；可支配个人收入增加1259亿美元，月率0.5%。",
+      "title": "美国7月收入与支出：收入增0.4%，支出增0.2%，储蓄率3.0%",
+      "sourceDate": "2026-08-26",
+      "sourceVerification": {
+        "ok": true,
+        "checkedAt": "2026-08-27 02:20（北京时间）",
+        "sources": [
+          {
+            "name": "U.S. BEA—Personal Income and Outlays, July 2026",
+            "url": "https://www.bea.gov/news/2026/personal-income-and-outlays-july-2026"
+          }
+        ]
+      }
+    },
+    {
+      "target": "health/01",
+      "changeType": "updated",
+      "changeSummary": "新增并核准身体健康资料：FDA批准RAS抑制剂Rasonque（daraxonrasib），用于既往至少接受过一种系统治疗、或不适合多药系统治疗的成人转移性胰腺腺癌患者。",
+      "title": "FDA批准转移性胰腺癌靶向药：生存期结果重要，但适用人群很窄",
+      "sourceDate": "2026-08-26",
+      "sourceVerification": {
+        "ok": true,
+        "checkedAt": "2026-08-27 02:20（北京时间）",
+        "sources": [
+          {
+            "name": "FDA—Rasonque approval",
+            "url": "https://www.fda.gov/news-events/press-announcements/fda-approves-first-class-targeted-therapy-metastatic-pancreatic-cancer"
+          }
+        ]
+      }
+    },
+    {
+      "target": "health/02",
+      "changeType": "updated",
+      "changeSummary": "新增并核准身体健康资料：FDA通过De Novo路径授权Libre Duo 10 Day，用于2岁及以上糖尿病患者，是美国首个连续监测酮体、并在单一设备中同时连续监测酮体和葡萄糖的可穿戴设备。",
+      "title": "FDA授权双连续监测设备：同时看葡萄糖与酮体，仍不能脱离症状判断",
+      "sourceDate": "2026-08-25",
+      "sourceVerification": {
+        "ok": true,
+        "checkedAt": "2026-08-27 02:20（北京时间）",
+        "sources": [
+          {
+            "name": "FDA—Libre Duo 10 Day authorization",
+            "url": "https://www.fda.gov/news-events/press-announcements/fda-authorizes-first-wearable-device-continuously-monitors-both-ketone-levels-and-blood-sugar"
+          }
+        ]
+      }
+    },
+    {
+      "target": "health/03",
+      "changeType": "updated",
+      "changeSummary": "新增并核准身体健康资料：WHO紧急委员会一致认为，脊灰病毒国际传播风险仍构成国际关注的突发公共卫生事件，并建议临时建议再延长3个月；同时认为不构成“pandemic emergency”。",
+      "title": "WHO延长脊灰国际紧急状态：病例下降不等于传播链已经切断",
+      "sourceDate": "2026-08-25",
+      "sourceVerification": {
+        "ok": true,
+        "checkedAt": "2026-08-27 02:20（北京时间）",
+        "sources": [
+          {
+            "name": "WHO—45th Polio IHR Emergency Committee",
+            "url": "https://www.who.int/news/item/25-08-2026-statement-of-the-forty-fifth-meeting-of-the-polio-ihr-emergency-committee"
+          }
+        ]
+      }
+    },
+    {
+      "target": "health/04",
+      "changeType": "updated",
+      "changeSummary": "新增并核准身体健康资料：WHO委员会于8月18日第二次开会评估刚果（金）本迪布焦病毒病疫情，8月24日发布更新临时建议。",
+      "title": "WHO更新刚果（金）本迪布焦埃博拉建议：核心仍是监测、追踪与安全照护",
+      "sourceDate": "2026-08-24",
+      "sourceVerification": {
+        "ok": true,
+        "checkedAt": "2026-08-27 02:20（北京时间）",
+        "sources": [
+          {
+            "name": "WHO—Bundibugyo virus temporary recommendations",
+            "url": "https://www.who.int/news/item/24-08-2026-second-meeting-of-the-ihr-emergency-committee-on-the-epidemic-of-ebola-bundibugyo-virus-disease-in-the-democratic-republic-of-the-congo-temporary-recommendations"
+          }
+        ]
+      }
+    },
+    {
+      "target": "papers/01",
+      "changeType": "updated",
+      "changeSummary": "新增并核准论文研究资料：研究分析194631篇横断面社会科学论文，作者模型判定1980至2024年平均46.3%的标题或摘要使用了因果语言。",
+      "title": "19万篇论文显示因果措辞越界：横断面相关被写成“导致”",
+      "sourceDate": "2026-08-24",
+      "sourceVerification": {
+        "ok": true,
+        "checkedAt": "2026-08-27 02:20（北京时间）",
+        "sources": [
+          {
+            "name": "Nature Human Behaviour—causal overclaiming",
+            "url": "https://www.nature.com/articles/s41562-026-02553-x"
+          }
+        ]
+      }
+    },
+    {
+      "target": "papers/02",
+      "changeType": "updated",
+      "changeSummary": "新增并核准论文研究资料：研究在人类肥厚心肌样本和压力超负荷小鼠心肌中观察到SRPK3水平升高。",
+      "title": "SRPK3与心肌肥厚：小鼠和细胞结果提出靶点，还不是临床疗法",
+      "sourceDate": "2026-08-24",
+      "sourceVerification": {
+        "ok": true,
+        "checkedAt": "2026-08-27 02:20（北京时间）",
+        "sources": [
+          {
+            "name": "Research—SRPK3 cardiac hypertrophy",
+            "url": "https://spj.science.org/doi/full/10.34133/research.1400"
+          }
+        ]
+      }
+    },
+    {
+      "target": "papers/03",
+      "changeType": "updated",
+      "changeSummary": "新增并核准论文研究资料：研究把血浆p-tau217/Aβ42分层与规范连接组映射结合，用于识别宏观神经退行性病变中心，并建立个体化网络脆弱指数NVI。",
+      "title": "阿尔茨海默病网络脆弱指数：血浆预筛加MRI的预后思路仍需前瞻验证",
+      "sourceDate": "2026-08-24",
+      "sourceVerification": {
+        "ok": true,
+        "checkedAt": "2026-08-27 02:20（北京时间）",
+        "sources": [
+          {
+            "name": "Research—Neuroimaging Epicenters in AD",
+            "url": "https://spj.science.org/doi/abs/10.34133/research.1392"
+          }
+        ]
+      }
+    },
+    {
+      "target": "papers/04",
+      "changeType": "updated",
+      "changeSummary": "新增并核准论文研究资料：研究提出全息断层成像结合点扩散函数感知模型，从小鼠胼胝体冷冻切片估计轴突直径、髓鞘厚度和g-ratio。",
+      "title": "无标记髓鞘成像：45秒重建三维折射率，但验证仍在小鼠切片",
+      "sourceDate": "2026-08-20",
+      "sourceVerification": {
+        "ok": true,
+        "checkedAt": "2026-08-27 02:20（北京时间）",
+        "sources": [
+          {
+            "name": "Scientific Reports—holotomographic brain myelin imaging",
+            "url": "https://www.nature.com/articles/s41598-026-65156-6"
+          }
+        ]
+      }
+    },
+    {
+      "target": "papers/05",
+      "changeType": "updated",
+      "changeSummary": "新增并核准论文研究资料：研究结合月球遥感、地形、照明模型和已知微生物耐受数据，识别南极低温、低紫外区域中的潜在存活位置。",
+      "title": "月球南极或有微生物短期存活区：存活不等于生长，更不是发现月球生命",
+      "sourceDate": "2026-08-19",
+      "sourceVerification": {
+        "ok": true,
+        "checkedAt": "2026-08-27 02:20（北京时间）",
+        "sources": [
+          {
+            "name": "NASA—Human-related microbes may survive Moon's south pole",
+            "url": "https://science.nasa.gov/humans-in-space/human-related-microbes-may-survive-moons-south-pole-nasa-finds/"
+          },
+          {
+            "name": "Science Advances DOI",
+            "url": "https://doi.org/10.1126/sciadv.aec0811"
+          }
+        ]
+      }
+    },
+    {
+      "target": "ted/01",
+      "changeType": "updated",
+      "changeSummary": "新增并核准TED 学习资料：TED-Ed课程由Michael Vazquez讲解柏拉图的“国家之船”思想实验。",
+      "title": "柏拉图“国家之船”：未经航海训练者争夺控制权的思想实验",
+      "sourceDate": "2026-08-27核验时，TED首页将该课程标为约21小时前上线；TED-Ed课程页未标注录制或制作日期",
+      "sourceVerification": {
+        "ok": true,
+        "checkedAt": "2026-08-27 02:20（北京时间）",
+        "sources": [
+          {
+            "name": "TED-Ed—Plato's Ship of State",
+            "url": "https://ed.ted.com/lessons/platos-infamous-ship-of-state-thought-experiment-michael-vazquez"
+          }
+        ]
+      }
+    },
+    {
+      "target": "ted/02",
+      "changeType": "updated",
+      "changeSummary": "新增并核准TED 学习资料：TED页面称，摄影师Rebecca Toh讲述她与180名其他参与者共同建设一座社区筹资图书馆的经历。",
+      "title": "180个陌生人共建图书馆：连接来自共同维护，不只是共享空间",
+      "sourceDate": "TED首页于2026-08-27显示约21小时前上线；演讲录制于TEDxSingapore 2024-12",
+      "sourceVerification": {
+        "ok": true,
+        "checkedAt": "2026-08-27 02:20（北京时间）",
+        "sources": [
+          {
+            "name": "TED—Rebecca Toh: How 180 strangers built a library together",
+            "url": "https://www.ted.com/talks/rebecca_toh_how_180_strangers_built_a_library_together"
+          }
+        ]
+      }
+    },
+    {
+      "target": "financial-literacy/01",
+      "changeType": "updated",
+      "changeSummary": "新增并核准财务学习资料：复利是本金和已累计利息共同产生后续利息。",
+      "title": "复利不是保证收益：先看利率、时间、费用与波动",
+      "sourceDate": "页面未标注统一发布日期，2026-08-27核验",
+      "sourceVerification": {
+        "ok": true,
+        "checkedAt": "2026-08-27 02:20（北京时间）",
+        "sources": [
+          {
+            "name": "Investor.gov—What is compound interest?",
+            "url": "https://www.investor.gov/additional-resources/information/youth/teachers-classroom-resources/what-compound-interest"
+          }
+        ]
+      }
+    },
+    {
+      "target": "financial-literacy/02",
+      "changeType": "updated",
+      "changeSummary": "新增并核准财务学习资料：信用分通常基于信用报告信息，但贷款机构可针对不同产品使用不同模型和数据源，因此个人可能有多个分数。",
+      "title": "信用分不是唯一数字：不同模型、产品和报告会给出不同结果",
+      "sourceDate": "页面最后修改于2025-06-04；2026-08-27核验",
+      "sourceVerification": {
+        "ok": true,
+        "checkedAt": "2026-08-27 02:20（北京时间）",
+        "sources": [
+          {
+            "name": "CFPB—Understand your credit score",
+            "url": "https://www.consumerfinance.gov/consumer-tools/credit-reports-and-scores/understand-your-credit-score/"
+          }
+        ]
+      }
+    },
+    {
+      "target": "financial-literacy/03",
+      "changeType": "updated",
+      "changeSummary": "新增并核准财务学习资料：2026年401(k)、403(b)等计划的员工选择性递延上限为24500美元，50岁及以上一般追缴上限为8000美元。",
+      "title": "2026年美国退休账户限额：401(k) 24500美元，IRA 7500美元",
+      "sourceDate": "2026年度限额，2026-08-27核验",
+      "sourceVerification": {
+        "ok": true,
+        "checkedAt": "2026-08-27 02:20（北京时间）",
+        "sources": [
+          {
+            "name": "IRS—COLA increases for contribution limits",
+            "url": "https://www.irs.gov/retirement-plans/cola-increases-for-dollar-limitations-on-benefits-and-contributions"
+          }
+        ]
+      }
+    },
+    {
+      "target": "financial-literacy/04",
+      "changeType": "updated",
+      "changeSummary": "新增并核准财务学习资料：FDIC保险自动覆盖FDIC承保银行中的合格存款；标准保险额度为每位存款人、每家FDIC承保银行、每种所有权类别25万美元。符合不同所有权类别规则时，同一存款人的合计保障额可能更高。",
+      "title": "FDIC保险按银行与所有权类别计算，不是每个账户各保25万美元",
+      "sourceDate": "页面现行内容于2026-08-27核验",
+      "sourceVerification": {
+        "ok": true,
+        "checkedAt": "2026-08-27 02:20（北京时间）",
+        "sources": [
+          {
+            "name": "FDIC—Deposit Insurance",
+            "url": "https://www.fdic.gov/resources/deposit-insurance"
+          }
+        ]
+      }
+    },
+    {
+      "target": "financial-literacy/05",
+      "changeType": "updated",
+      "changeSummary": "新增并核准财务学习资料：资产配置是把资金分布在股票、债券、现金等不同资产类型；合适组合取决于风险承受能力和投资期限。",
+      "title": "分散投资降低集中风险，但不能消除市场亏损",
+      "sourceDate": "2026-03-31",
+      "sourceVerification": {
+        "ok": true,
+        "checkedAt": "2026-08-27 02:20（北京时间）",
+        "sources": [
+          {
+            "name": "Investor.gov Tips for 2026",
+            "url": "https://www.investor.gov/introduction-investing/general-resources/news-alerts/alerts-bulletins/investor-bulletins/investorgov-tips-2026-investor-bulletin"
+          }
+        ]
+      }
+    }
+  ]
+}

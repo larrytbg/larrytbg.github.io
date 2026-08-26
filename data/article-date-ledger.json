@@ -81,18 +81,18 @@
       "evidence": "daily-audit"
     },
     "daily/01": {
-      "title": "刚果（金）埃博拉疫情跨过百日，累计病例超过5200例",
+      "title": "NASA“潘多拉”开始科学观测：先把恒星噪声与行星大气分开",
       "publishedOn": "2026-08-16",
-      "updatedOn": "2026-08-25",
-      "sourcePublishedOn": "2026-08-24",
+      "updatedOn": "2026-08-27",
+      "sourcePublishedOn": "2026-08-25",
       "evidence": "git-current-title-first-seen",
       "commit": "533ae0551f03e6546cc62b87904bcf180e53f980"
     },
     "daily/02": {
-      "title": "WHO 发布2026年伤寒疫苗立场文件",
+      "title": "NOAA直播深海考察：关键不是“看到奇观”，而是建立可复查的海底基线",
       "publishedOn": "2026-08-16",
-      "updatedOn": "2026-08-25",
-      "sourcePublishedOn": "2026-08-18",
+      "updatedOn": "2026-08-27",
+      "sourcePublishedOn": "2026-08-24",
       "evidence": "git-current-title-first-seen",
       "commit": "533ae0551f03e6546cc62b87904bcf180e53f980"
     },
@@ -160,18 +160,18 @@
       "evidence": "daily-audit"
     },
     "finance/01": {
-      "title": "PCE价格指数如何衡量个人消费价格变化",
+      "title": "美国二季度GDP二次估计：公布值仍为1.5%，但未四舍五入值小幅下修",
       "publishedOn": "2026-08-11",
-      "updatedOn": "2026-08-25",
-      "sourcePublishedOn": null,
+      "updatedOn": "2026-08-27",
+      "sourcePublishedOn": "2026-08-26",
       "evidence": "git-current-title-first-seen",
       "commit": "b21a9ea0086e259d00428b9ffb435441c30926d3"
     },
     "finance/02": {
-      "title": "如何从美联储资产负债表观察流动性项目",
+      "title": "美国7月收入与支出：收入增0.4%，支出增0.2%，储蓄率3.0%",
       "publishedOn": "2026-08-11",
-      "updatedOn": "2026-08-25",
-      "sourcePublishedOn": null,
+      "updatedOn": "2026-08-27",
+      "sourcePublishedOn": "2026-08-26",
       "evidence": "git-current-title-first-seen",
       "commit": "b21a9ea0086e259d00428b9ffb435441c30926d3"
     },
@@ -239,42 +239,42 @@
       "evidence": "daily-audit"
     },
     "financial-literacy/01": {
-      "title": "复利结果为何同时取决于时间、收益率与现金流",
+      "title": "复利不是保证收益：先看利率、时间、费用与波动",
       "publishedOn": "2026-08-15",
-      "updatedOn": "2026-08-25",
+      "updatedOn": "2026-08-27",
       "sourcePublishedOn": null,
       "evidence": "git-current-title-first-seen",
       "commit": "dbc88f54526d34276eb8d546b64cd265136e1a3f"
     },
     "financial-literacy/02": {
-      "title": "投资费用如何持续侵蚀长期回报",
+      "title": "信用分不是唯一数字：不同模型、产品和报告会给出不同结果",
       "publishedOn": "2026-08-15",
-      "updatedOn": "2026-08-25",
+      "updatedOn": "2026-08-27",
       "sourcePublishedOn": null,
       "evidence": "git-current-title-first-seen",
       "commit": "dbc88f54526d34276eb8d546b64cd265136e1a3f"
     },
     "financial-literacy/03": {
-      "title": "资产配置是风险与期限的匹配问题",
+      "title": "2026年美国退休账户限额：401(k) 24500美元，IRA 7500美元",
       "publishedOn": "2026-08-15",
-      "updatedOn": "2026-08-25",
+      "updatedOn": "2026-08-27",
       "sourcePublishedOn": null,
       "evidence": "git-current-title-first-seen",
       "commit": "dbc88f54526d34276eb8d546b64cd265136e1a3f"
     },
     "financial-literacy/04": {
-      "title": "发现信用报告错误后，应先核查再争议",
+      "title": "FDIC保险按银行与所有权类别计算，不是每个账户各保25万美元",
       "publishedOn": "2026-08-15",
-      "updatedOn": "2026-08-25",
+      "updatedOn": "2026-08-27",
       "sourcePublishedOn": null,
       "evidence": "git-current-title-first-seen",
       "commit": "dbc88f54526d34276eb8d546b64cd265136e1a3f"
     },
     "financial-literacy/05": {
-      "title": "识别投资诈骗：核验机构、产品与承诺",
+      "title": "分散投资降低集中风险，但不能消除市场亏损",
       "publishedOn": "2026-08-15",
-      "updatedOn": "2026-08-25",
-      "sourcePublishedOn": null,
+      "updatedOn": "2026-08-27",
+      "sourcePublishedOn": "2026-03-31",
       "evidence": "git-current-title-first-seen",
       "commit": "dbc88f54526d34276eb8d546b64cd265136e1a3f"
     },
@@ -319,34 +319,34 @@
       "commit": "dbc88f54526d34276eb8d546b64cd265136e1a3f"
     },
     "health/01": {
-      "title": "WHO伤寒疫苗立场文件如何更新公共卫生依据",
+      "title": "FDA批准转移性胰腺癌靶向药：生存期结果重要，但适用人群很窄",
       "publishedOn": "2026-08-16",
-      "updatedOn": "2026-08-25",
-      "sourcePublishedOn": "2026-08-18",
+      "updatedOn": "2026-08-27",
+      "sourcePublishedOn": "2026-08-26",
       "evidence": "git-current-title-first-seen",
       "commit": "533ae0551f03e6546cc62b87904bcf180e53f980"
     },
     "health/02": {
-      "title": "埃博拉疫苗分配与实际接种不是同一个指标",
+      "title": "FDA授权双连续监测设备：同时看葡萄糖与酮体，仍不能脱离症状判断",
       "publishedOn": "2026-08-16",
-      "updatedOn": "2026-08-25",
-      "sourcePublishedOn": "2026-08-20",
+      "updatedOn": "2026-08-27",
+      "sourcePublishedOn": "2026-08-25",
       "evidence": "git-current-title-first-seen",
       "commit": "533ae0551f03e6546cc62b87904bcf180e53f980"
     },
     "health/03": {
-      "title": "FDA如何讨论生成式AI医疗器械监管",
+      "title": "WHO延长脊灰国际紧急状态：病例下降不等于传播链已经切断",
       "publishedOn": "2026-08-10",
-      "updatedOn": "2026-08-25",
-      "sourcePublishedOn": "2026-08-18",
+      "updatedOn": "2026-08-27",
+      "sourcePublishedOn": "2026-08-25",
       "evidence": "git-current-title-first-seen",
       "commit": "23adeaf6a1e140d99387e185df77829cfda55737"
     },
     "health/04": {
-      "title": "抗菌药物耐药性需要同时看治疗与公共卫生",
+      "title": "WHO更新刚果（金）本迪布焦埃博拉建议：核心仍是监测、追踪与安全照护",
       "publishedOn": "2026-08-10",
-      "updatedOn": "2026-08-25",
-      "sourcePublishedOn": null,
+      "updatedOn": "2026-08-27",
+      "sourcePublishedOn": "2026-08-24",
       "evidence": "git-current-title-first-seen",
       "commit": "23adeaf6a1e140d99387e185df77829cfda55737"
     },
@@ -638,42 +638,42 @@
       "commit": "45bebd360a7cdef9e170a090625aebe427fc6dee"
     },
     "papers/01": {
-      "title": "Transformer论文如何将注意力机制置于序列建模核心",
+      "title": "19万篇论文显示因果措辞越界：横断面相关被写成“导致”",
       "publishedOn": "2026-08-16",
-      "updatedOn": "2026-08-25",
-      "sourcePublishedOn": "2017-06-12",
+      "updatedOn": "2026-08-27",
+      "sourcePublishedOn": "2026-08-24",
       "evidence": "git-current-title-first-seen",
       "commit": "533ae0551f03e6546cc62b87904bcf180e53f980"
     },
     "papers/02": {
-      "title": "扩散模型如何通过逐步去噪生成样本",
+      "title": "SRPK3与心肌肥厚：小鼠和细胞结果提出靶点，还不是临床疗法",
       "publishedOn": "2026-08-16",
-      "updatedOn": "2026-08-25",
-      "sourcePublishedOn": "2020-06-19",
+      "updatedOn": "2026-08-27",
+      "sourcePublishedOn": "2026-08-24",
       "evidence": "git-current-title-first-seen",
       "commit": "533ae0551f03e6546cc62b87904bcf180e53f980"
     },
     "papers/03": {
-      "title": "AlphaFold2如何推进蛋白质结构预测",
+      "title": "阿尔茨海默病网络脆弱指数：血浆预筛加MRI的预后思路仍需前瞻验证",
       "publishedOn": "2026-08-16",
-      "updatedOn": "2026-08-25",
-      "sourcePublishedOn": null,
+      "updatedOn": "2026-08-27",
+      "sourcePublishedOn": "2026-08-24",
       "evidence": "git-current-title-first-seen",
       "commit": "533ae0551f03e6546cc62b87904bcf180e53f980"
     },
     "papers/04": {
-      "title": "潜在结果框架如何定义处理效应",
+      "title": "无标记髓鞘成像：45秒重建三维折射率，但验证仍在小鼠切片",
       "publishedOn": "2026-08-16",
-      "updatedOn": "2026-08-25",
-      "sourcePublishedOn": null,
+      "updatedOn": "2026-08-27",
+      "sourcePublishedOn": "2026-08-20",
       "evidence": "git-current-title-first-seen",
       "commit": "533ae0551f03e6546cc62b87904bcf180e53f980"
     },
     "papers/05": {
-      "title": "随机对照试验为何要预先定义结局和分析计划",
+      "title": "月球南极或有微生物短期存活区：存活不等于生长，更不是发现月球生命",
       "publishedOn": "2026-08-10",
-      "updatedOn": "2026-08-25",
-      "sourcePublishedOn": null,
+      "updatedOn": "2026-08-27",
+      "sourcePublishedOn": "2026-08-19",
       "evidence": "git-current-title-first-seen",
       "commit": "23adeaf6a1e140d99387e185df77829cfda55737"
     },
@@ -797,17 +797,17 @@
       "commit": "45bebd360a7cdef9e170a090625aebe427fc6dee"
     },
     "ted/01": {
-      "title": "Susan Cain：内向不等于缺乏领导力",
+      "title": "柏拉图“国家之船”：未经航海训练者争夺控制权的思想实验",
       "publishedOn": "2026-08-11",
-      "updatedOn": "2026-08-25",
-      "sourcePublishedOn": null,
+      "updatedOn": "2026-08-27",
+      "sourcePublishedOn": "2026-08-27",
       "evidence": "git-current-title-first-seen",
       "commit": "647e7cf8215d3b426cef48c8e4ee676c178a9598"
     },
     "ted/02": {
-      "title": "Chimamanda Ngozi Adichie：单一故事如何限制理解他人",
+      "title": "180个陌生人共建图书馆：连接来自共同维护，不只是共享空间",
       "publishedOn": "2026-08-11",
-      "updatedOn": "2026-08-25",
+      "updatedOn": "2026-08-27",
       "sourcePublishedOn": null,
       "evidence": "git-current-title-first-seen",
       "commit": "647e7cf8215d3b426cef48c8e4ee676c178a9598"
