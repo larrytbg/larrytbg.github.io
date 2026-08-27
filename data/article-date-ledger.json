@@ -81,10 +81,10 @@
       "evidence": "daily-audit"
     },
     "daily/01": {
-      "title": "NASA“潘多拉”开始科学观测：先把恒星噪声与行星大气分开",
+      "title": "WHO重组科学委员会：把前沿科学判断接入全球卫生决策",
       "publishedOn": "2026-08-16",
-      "updatedOn": "2026-08-27",
-      "sourcePublishedOn": "2026-08-25",
+      "updatedOn": "2026-08-28",
+      "sourcePublishedOn": "2026-08-27",
       "evidence": "git-current-title-first-seen",
       "commit": "533ae0551f03e6546cc62b87904bcf180e53f980"
     },
@@ -160,18 +160,18 @@
       "evidence": "daily-audit"
     },
     "finance/01": {
-      "title": "美国二季度GDP二次估计：公布值仍为1.5%，但未四舍五入值小幅下修",
+      "title": "美国2023—2025年被裁劳动者：长期任职者重新就业率不能代表全部740万人",
       "publishedOn": "2026-08-11",
-      "updatedOn": "2026-08-27",
-      "sourcePublishedOn": "2026-08-26",
+      "updatedOn": "2026-08-28",
+      "sourcePublishedOn": "2026-08-27",
       "evidence": "git-current-title-first-seen",
       "commit": "b21a9ea0086e259d00428b9ffb435441c30926d3"
     },
     "finance/02": {
-      "title": "美国7月收入与支出：收入增0.4%，支出增0.2%，储蓄率3.0%",
+      "title": "ECB七月会议纪要：市场押注不是政策承诺，九月仍取决于数据",
       "publishedOn": "2026-08-11",
-      "updatedOn": "2026-08-27",
-      "sourcePublishedOn": "2026-08-26",
+      "updatedOn": "2026-08-28",
+      "sourcePublishedOn": "2026-08-27",
       "evidence": "git-current-title-first-seen",
       "commit": "b21a9ea0086e259d00428b9ffb435441c30926d3"
     },
@@ -319,10 +319,10 @@
       "commit": "dbc88f54526d34276eb8d546b64cd265136e1a3f"
     },
     "health/01": {
-      "title": "FDA批准转移性胰腺癌靶向药：生存期结果重要，但适用人群很窄",
+      "title": "WHO在韩国设新监管培训中心：加强药品与疫苗监管人才和体系能力",
       "publishedOn": "2026-08-16",
-      "updatedOn": "2026-08-27",
-      "sourcePublishedOn": "2026-08-26",
+      "updatedOn": "2026-08-28",
+      "sourcePublishedOn": "2026-08-27",
       "evidence": "git-current-title-first-seen",
       "commit": "533ae0551f03e6546cc62b87904bcf180e53f980"
     },
@@ -558,10 +558,10 @@
       "commit": "45bebd360a7cdef9e170a090625aebe427fc6dee"
     },
     "management/01": {
-      "title": "OKR需要区分目标、关键结果与复盘",
+      "title": "改革为什么常卡在执行：可信机构、沟通参与与过渡缓冲很关键",
       "publishedOn": "2026-08-10",
-      "updatedOn": "2026-08-25",
-      "sourcePublishedOn": null,
+      "updatedOn": "2026-08-28",
+      "sourcePublishedOn": "2026-08-25",
       "evidence": "git-current-title-first-seen",
       "commit": "23adeaf6a1e140d99387e185df77829cfda55737"
     },
@@ -638,26 +638,26 @@
       "commit": "45bebd360a7cdef9e170a090625aebe427fc6dee"
     },
     "papers/01": {
-      "title": "19万篇论文显示因果措辞越界：横断面相关被写成“导致”",
+      "title": "量子发射体做神经网络激活函数：低光强阈值仍停留在数值验证",
       "publishedOn": "2026-08-16",
-      "updatedOn": "2026-08-27",
-      "sourcePublishedOn": "2026-08-24",
+      "updatedOn": "2026-08-28",
+      "sourcePublishedOn": "2026-08-27",
       "evidence": "git-current-title-first-seen",
       "commit": "533ae0551f03e6546cc62b87904bcf180e53f980"
     },
     "papers/02": {
-      "title": "SRPK3与心肌肥厚：小鼠和细胞结果提出靶点，还不是临床疗法",
+      "title": "把水泥卷成“千层酥”：层状结构同时追求韧性与隔热",
       "publishedOn": "2026-08-16",
-      "updatedOn": "2026-08-27",
-      "sourcePublishedOn": "2026-08-24",
+      "updatedOn": "2026-08-28",
+      "sourcePublishedOn": "2026-08-27",
       "evidence": "git-current-title-first-seen",
       "commit": "533ae0551f03e6546cc62b87904bcf180e53f980"
     },
     "papers/03": {
-      "title": "阿尔茨海默病网络脆弱指数：血浆预筛加MRI的预后思路仍需前瞻验证",
+      "title": "用潮汐重力给火星内部做断层扫描：南半球地幔可能藏着热异常",
       "publishedOn": "2026-08-16",
-      "updatedOn": "2026-08-27",
-      "sourcePublishedOn": "2026-08-24",
+      "updatedOn": "2026-08-28",
+      "sourcePublishedOn": "2026-08-26",
       "evidence": "git-current-title-first-seen",
       "commit": "533ae0551f03e6546cc62b87904bcf180e53f980"
     },

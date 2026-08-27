@@ -17,15 +17,16 @@
    node scripts/capture-article-baseline.mjs --site site --date YYYY-MM-DD --out data/article-baseline-YYYY-MM-DD.json
    ```
 
-4. 总控按多模型运行规则依次派发来源扫描、内容撰写、事实复核和网站工程任务。每个任务派发前运行 `capture-repo-guard.mjs`，返回后立即运行 `verify-repo-guard.mjs`；工作任务运行期间总控不得编辑仓库。四个工作任务按策略只通过回复交付中间结果，不得写入主项目；当前没有单任务操作系统级只读沙箱，因此任何分支、提交、索引、已跟踪或未跟踪文件内容变化都必须立刻停止。总控记录每个任务实际使用的模型、开始结束时间、交付状态和返工情况。
-5. 依次扫描第一、第二、第三资源库；第二、第三库只在前一层不足时启用。
-6. 总控核验资料来源并在主项目中逐篇完成内容更新。原文日期能够核准时写入详情页，不能核准时隐藏，不写“待核”。
-7. 生成当天审计 JSON。每个可以高亮的文章记录必须包含：
+4. 总控按“Luna 来源扫描一轮 → Spark 证据卡一轮 → Terra 深度稿最多四轮 → Sol 事实复核最多四轮 → 总控集成 → Spark 只读技术检查一轮”的顺序派工。每个任务派发前运行 `capture-repo-guard.mjs`，返回后立即运行 `verify-repo-guard.mjs`；工作任务运行期间总控不得编辑仓库。四个工作任务按策略只通过回复或仓库外私有批次文件交付中间结果，不得写入主项目；当前没有单任务操作系统级只读沙箱，因此任何分支、提交、索引、已跟踪或未跟踪文件内容变化都必须立刻停止。总控记录每个任务实际使用的模型、开始结束时间、交付状态、Token 和返工情况。
+5. 工作任务正常总轮次不超过十二轮，含一次返工时硬上限十五轮。可观测 Token 达到 250 万时停止扩展栏目，达到 300 万时停止非必要模型调用，只允许总控对已复核通过内容执行确定性检查和安全发布。Spark 只做结构化、机械预检和只读技术检查，不承担最终事实与发布判断。
+6. 依次扫描第一、第二、第三资源库；第二、第三库只在前一层不足时启用。
+7. 总控核验资料来源并在主项目中逐篇完成内容更新。原文日期能够核准时写入详情页，不能核准时隐藏，不写“待核”。
+8. 生成当天审计 JSON。每个可以高亮的文章记录必须包含：
    - `target`：如 `daily/03`；
    - `changeType`：`new` 或 `updated`；
    - `changeSummary`：逐篇真实变化；
    - `sourceVerification.ok`：必须为 `true`。
-8. 使用更新前基线和日期台账运行高亮验证：
+9. 使用更新前基线和日期台账运行高亮验证：
 
    ```powershell
    node scripts/apply-daily-highlights.mjs --date YYYY-MM-DD --audit data/update-audit-YYYY-MM-DD.json --site site --baseline data/article-baseline-YYYY-MM-DD.json --ledger data/article-date-ledger.json
@@ -33,15 +34,15 @@
 
    这一步会先验证正文真实差异，再更新文章的本站日期台账。已有文章如果没有新增来源，必须新增带当天日期的 `data-substantive-update="YYYY-MM-DD"` 实质内容区块，否则拒绝高亮。
 
-9. 把日期台账渲染到首页、专栏目录和文章详情页：
+10. 把日期台账渲染到首页、专栏目录和文章详情页：
 
    ```powershell
    node scripts/apply-article-dates.mjs --site site --ledger data/article-date-ledger.json
    ```
 
-10. 运行内容验收、内部链接、390px 手机及 1440px 电脑布局测试。
-11. 测试全部通过后由总控提交并推送 `main`，等待 GitHub Actions 成功，再检查正式网址。
-12. 向“手机消息推送”任务发送简短完工消息；没有服务端成功回执时记录为失败。
+11. 运行内容验收和必要技术检查；每周日再运行完整历史测试及 390px 手机、1440px 电脑布局测试。
+12. 测试全部通过后由总控提交并推送 `main`，等待 GitHub Actions 成功，再检查正式网址。
+13. 向“手机消息推送”任务发送简短完工消息；没有服务端成功回执时记录为失败。
 
 ## 日期标准
 

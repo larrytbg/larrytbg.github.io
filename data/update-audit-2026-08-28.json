@@ -1,0 +1,165 @@
+{
+  "date": "2026-08-28",
+  "sourceCutoff": "2026-08-28 02:32（北京时间）",
+  "totalArticles": 110,
+  "substantivelyUpdated": 8,
+  "updateRate": 0.0727,
+  "target": "quality-first, no padding",
+  "targetMet": true,
+  "scope": {
+    "daily": 1,
+    "finance": 2,
+    "health": 1,
+    "papers": 3,
+    "management": 1
+  },
+  "tedScan": {
+    "newOfficialTalksInLast24Hours": 0,
+    "updated": 0,
+    "decision": "No backfill."
+  },
+  "reviewSummary": {
+    "pass": 3,
+    "revisedAndPassed": 5,
+    "rejected": 0,
+    "reworkRounds": 1
+  },
+  "articles": [
+    {
+      "target": "daily/01",
+      "changeType": "updated",
+      "changeSummary": "新增并核准每日资讯资料：WHO于2026年8月27日宣布任命21名科学家进入科学委员会。",
+      "title": "WHO重组科学委员会：把前沿科学判断接入全球卫生决策",
+      "sourceDate": "2026-08-27",
+      "sourceVerification": {
+        "ok": true,
+        "checkedAt": "2026-08-28 02:32（北京时间）",
+        "sources": [
+          {
+            "name": "WHO appoints 21 leading scientists to Science Council to help shape future health breakthroughs",
+            "url": "https://www.who.int/japan/news/detail-global/27-08-2026-who-appoints-21-leading-scientists-to-science-council-to-help-shape-future-health-breakthroughs"
+          }
+        ]
+      }
+    },
+    {
+      "target": "finance/01",
+      "changeType": "updated",
+      "changeSummary": "新增并核准金融资料：BLS称2023—2025年共有740万名被定义为displaced workers的劳动者，其中330万人在原雇主持续工作至少3年。",
+      "title": "美国2023—2025年被裁劳动者：长期任职者重新就业率不能代表全部740万人",
+      "sourceDate": "2026-08-27",
+      "sourceVerification": {
+        "ok": true,
+        "checkedAt": "2026-08-28 02:32（北京时间）",
+        "sources": [
+          {
+            "name": "Displaced Workers Summary",
+            "url": "https://www.bls.gov/news.release/disp.nr0.htm"
+          }
+        ]
+      }
+    },
+    {
+      "target": "finance/02",
+      "changeType": "updated",
+      "changeSummary": "新增并核准金融资料：ECB于2026年8月27日发布7月22—23日货币政策会议纪要。",
+      "title": "ECB七月会议纪要：市场押注不是政策承诺，九月仍取决于数据",
+      "sourceDate": "2026-08-27",
+      "sourceVerification": {
+        "ok": true,
+        "checkedAt": "2026-08-28 02:32（北京时间）",
+        "sources": [
+          {
+            "name": "Account of the monetary policy meeting of the Governing Council of the European Central Bank held in Frankfurt am Main on Wednesday and Thursday, 22-23 July 2026",
+            "url": "https://www.ecb.europa.eu/press/accounts/2026/html/ecb.mg260827~f06c21fd54.en.html"
+          }
+        ]
+      }
+    },
+    {
+      "target": "health/01",
+      "changeType": "updated",
+      "changeSummary": "新增并核准身体健康资料：WHO将韩国Global Harmonization Centre指定为卫生产品监管体系强化与培训合作中心。",
+      "title": "WHO在韩国设新监管培训中心：加强药品与疫苗监管人才和体系能力",
+      "sourceDate": "2026-08-27",
+      "sourceVerification": {
+        "ok": true,
+        "checkedAt": "2026-08-28 02:32（北京时间）",
+        "sources": [
+          {
+            "name": "WHO expands global regulatory capacity through new collaborating centre in Republic of Korea",
+            "url": "https://www.who.int/news/item/27-08-2026-who-expands-global-regulatory-capacity-through-new-collaborating-centre-in-republic-of-korea"
+          }
+        ]
+      }
+    },
+    {
+      "target": "papers/01",
+      "changeType": "updated",
+      "changeSummary": "新增并核准论文研究资料：论文发表于Nature Communications，DOI为10.1038/s41467-026-77202-y。",
+      "title": "量子发射体做神经网络激活函数：低光强阈值仍停留在数值验证",
+      "sourceDate": "2026-08-27",
+      "sourceVerification": {
+        "ok": true,
+        "checkedAt": "2026-08-28 02:32（北京时间）",
+        "sources": [
+          {
+            "name": "Quantum nonlinearity for optical neural computing",
+            "url": "https://www.nature.com/articles/s41467-026-77202-y"
+          }
+        ]
+      }
+    },
+    {
+      "target": "papers/02",
+      "changeType": "updated",
+      "changeSummary": "新增并核准论文研究资料：论文发表于Nature Communications，DOI为10.1038/s41467-026-77120-z。",
+      "title": "把水泥卷成“千层酥”：层状结构同时追求韧性与隔热",
+      "sourceDate": "2026-08-27",
+      "sourceVerification": {
+        "ok": true,
+        "checkedAt": "2026-08-28 02:32（北京时间）",
+        "sources": [
+          {
+            "name": "Tough, thermal insulating and scalable puff pastry-inspired architected cementitious material via simple rolling-folding",
+            "url": "https://www.nature.com/articles/s41467-026-77120-z"
+          }
+        ]
+      }
+    },
+    {
+      "target": "papers/03",
+      "changeType": "updated",
+      "changeSummary": "新增并核准论文研究资料：论文发表于Nature，DOI为10.1038/s41586-026-10893-x，在线发布日期为2026年8月26日，期次日期为8月27日。",
+      "title": "用潮汐重力给火星内部做断层扫描：南半球地幔可能藏着热异常",
+      "sourceDate": "2026-08-26",
+      "sourceVerification": {
+        "ok": true,
+        "checkedAt": "2026-08-28 02:32（北京时间）",
+        "sources": [
+          {
+            "name": "Tidal tomography reveals a thermal anomaly beneath Mars’s crustal dichotomy",
+            "url": "https://www.nature.com/articles/s41586-026-10893-x"
+          }
+        ]
+      }
+    },
+    {
+      "target": "management/01",
+      "changeType": "updated",
+      "changeSummary": "新增并核准管理资料：IMF文章基于2026年G20 Strong, Sustainable, Balanced and Inclusive Growth报告讨论结构性改革。",
+      "title": "改革为什么常卡在执行：可信机构、沟通参与与过渡缓冲很关键",
+      "sourceDate": "2026-08-25",
+      "sourceVerification": {
+        "ok": true,
+        "checkedAt": "2026-08-28 02:32（北京时间）",
+        "sources": [
+          {
+            "name": "Well-Designed Regulatory and Institutional Reforms Can Boost Economic Growth",
+            "url": "https://www.imf.org/en/blogs/articles/2026/08/25/well-designed-regulatory-and-institutional-reforms-can-boost-economic-growth"
+          }
+        ]
+      }
+    }
+  ]
+}
