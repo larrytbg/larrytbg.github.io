@@ -1,17 +1,17 @@
 {
   "date": "2026-08-28",
-  "sourceCutoff": "2026-08-28 02:32（北京时间）",
+  "sourceCutoff": "2026-08-28 12:18（北京时间）",
   "totalArticles": 110,
-  "substantivelyUpdated": 8,
-  "updateRate": 0.0727,
+  "substantivelyUpdated": 15,
+  "updateRate": 0.1364,
   "target": "quality-first, no padding",
   "targetMet": true,
   "scope": {
-    "daily": 1,
-    "finance": 2,
-    "health": 1,
-    "papers": 3,
-    "management": 1
+    "daily": 3,
+    "finance": 3,
+    "health": 3,
+    "papers": 4,
+    "management": 2
   },
   "tedScan": {
     "newOfficialTalksInLast24Hours": 0,
@@ -19,8 +19,8 @@
     "decision": "No backfill."
   },
   "reviewSummary": {
-    "pass": 3,
-    "revisedAndPassed": 5,
+    "pass": 7,
+    "revisedAndPassed": 8,
     "rejected": 0,
     "reworkRounds": 1
   },
@@ -33,7 +33,7 @@
       "sourceDate": "2026-08-27",
       "sourceVerification": {
         "ok": true,
-        "checkedAt": "2026-08-28 02:32（北京时间）",
+        "checkedAt": "2026-08-28 12:18（北京时间）",
         "sources": [
           {
             "name": "WHO appoints 21 leading scientists to Science Council to help shape future health breakthroughs",
@@ -50,7 +50,7 @@
       "sourceDate": "2026-08-27",
       "sourceVerification": {
         "ok": true,
-        "checkedAt": "2026-08-28 02:32（北京时间）",
+        "checkedAt": "2026-08-28 12:18（北京时间）",
         "sources": [
           {
             "name": "Displaced Workers Summary",
@@ -67,7 +67,7 @@
       "sourceDate": "2026-08-27",
       "sourceVerification": {
         "ok": true,
-        "checkedAt": "2026-08-28 02:32（北京时间）",
+        "checkedAt": "2026-08-28 12:18（北京时间）",
         "sources": [
           {
             "name": "Account of the monetary policy meeting of the Governing Council of the European Central Bank held in Frankfurt am Main on Wednesday and Thursday, 22-23 July 2026",
@@ -84,7 +84,7 @@
       "sourceDate": "2026-08-27",
       "sourceVerification": {
         "ok": true,
-        "checkedAt": "2026-08-28 02:32（北京时间）",
+        "checkedAt": "2026-08-28 12:18（北京时间）",
         "sources": [
           {
             "name": "WHO expands global regulatory capacity through new collaborating centre in Republic of Korea",
@@ -101,7 +101,7 @@
       "sourceDate": "2026-08-27",
       "sourceVerification": {
         "ok": true,
-        "checkedAt": "2026-08-28 02:32（北京时间）",
+        "checkedAt": "2026-08-28 12:18（北京时间）",
         "sources": [
           {
             "name": "Quantum nonlinearity for optical neural computing",
@@ -118,7 +118,7 @@
       "sourceDate": "2026-08-27",
       "sourceVerification": {
         "ok": true,
-        "checkedAt": "2026-08-28 02:32（北京时间）",
+        "checkedAt": "2026-08-28 12:18（北京时间）",
         "sources": [
           {
             "name": "Tough, thermal insulating and scalable puff pastry-inspired architected cementitious material via simple rolling-folding",
@@ -135,7 +135,7 @@
       "sourceDate": "2026-08-26",
       "sourceVerification": {
         "ok": true,
-        "checkedAt": "2026-08-28 02:32（北京时间）",
+        "checkedAt": "2026-08-28 12:18（北京时间）",
         "sources": [
           {
             "name": "Tidal tomography reveals a thermal anomaly beneath Mars’s crustal dichotomy",
@@ -152,11 +152,130 @@
       "sourceDate": "2026-08-25",
       "sourceVerification": {
         "ok": true,
-        "checkedAt": "2026-08-28 02:32（北京时间）",
+        "checkedAt": "2026-08-28 12:18（北京时间）",
         "sources": [
           {
             "name": "Well-Designed Regulatory and Institutional Reforms Can Boost Economic Growth",
             "url": "https://www.imf.org/en/blogs/articles/2026/08/25/well-designed-regulatory-and-institutional-reforms-can-boost-economic-growth"
+          }
+        ]
+      }
+    },
+    {
+      "target": "daily/02",
+      "changeType": "updated",
+      "changeSummary": "新增并核准每日资讯资料：BLS于2026年8月27日发布2025—2035年就业预测。",
+      "title": "美国2025—2035年就业预测：总就业预计增长3.5%，公用事业预计增长9.8%",
+      "sourceDate": "2026-08-27",
+      "sourceVerification": {
+        "ok": true,
+        "checkedAt": "2026-08-28 12:18（北京时间）",
+        "sources": [
+          {
+            "name": "Employment Projections: 2025-2035 Summary",
+            "url": "https://www.bls.gov/news.release/ecopro.nr0.htm"
+          }
+        ]
+      }
+    },
+    {
+      "target": "daily/03",
+      "changeType": "updated",
+      "changeSummary": "新增并核准每日资讯资料：NOAA Fisheries于2026年8月27日介绍华盛顿州Big Quilcene River修复工程，并投入970万美元。",
+      "title": "让河流重回洪泛平原：鲑鱼恢复与社区防洪可以共用一套工程",
+      "sourceDate": "2026-08-27",
+      "sourceVerification": {
+        "ok": true,
+        "checkedAt": "2026-08-28 12:18（北京时间）",
+        "sources": [
+          {
+            "name": "A River Reborn: Restoring a Stronghold for Hood Canal Summer-Run Chum Salmon",
+            "url": "https://www.fisheries.noaa.gov/feature-story/river-reborn-restoring-stronghold-hood-canal-summer-run-chum-salmon"
+          }
+        ]
+      }
+    },
+    {
+      "target": "finance/03",
+      "changeType": "updated",
+      "changeSummary": "新增并核准金融资料：ECB于2026年8月27日发布7月22—23日货币政策会议纪要，会议决定维持三项关键利率不变。",
+      "title": "ECB七月会议的真正信号：维持利率不变，但能源与通胀风险仍偏上行",
+      "sourceDate": "2026-08-27",
+      "sourceVerification": {
+        "ok": true,
+        "checkedAt": "2026-08-28 12:18（北京时间）",
+        "sources": [
+          {
+            "name": "Meeting of 22-23 July 2026",
+            "url": "https://www.ecb.europa.eu/press/accounts/2026/html/ecb.mg260827~f06c21fd54.en.html"
+          }
+        ]
+      }
+    },
+    {
+      "target": "health/02",
+      "changeType": "updated",
+      "changeSummary": "新增并核准身体健康资料：论文于2026年8月27日在线发表于Nature Communications，DOI为10.1038/s41467-026-77145-4。",
+      "title": "把柔性电极固定在脑组织上：小鼠80周记录离临床脑机接口还有多远",
+      "sourceDate": "2026-08-27",
+      "sourceVerification": {
+        "ok": true,
+        "checkedAt": "2026-08-28 12:18（北京时间）",
+        "sources": [
+          {
+            "name": "Umbrella-type stretchable electrode arrays for long-term neural recording",
+            "url": "https://www.nature.com/articles/s41467-026-77145-4"
+          }
+        ]
+      }
+    },
+    {
+      "target": "health/03",
+      "changeType": "updated",
+      "changeSummary": "新增并核准身体健康资料：论文于2026年8月27日在线发表于Nature Communications，DOI为10.1038/s41467-026-77210-y。",
+      "title": "急性间质性肾炎的空间图谱：炎症信号与预测相互作用不等于新疗法",
+      "sourceDate": "2026-08-27",
+      "sourceVerification": {
+        "ok": true,
+        "checkedAt": "2026-08-28 12:18（北京时间）",
+        "sources": [
+          {
+            "name": "Spatial analysis reveals cellular microenvironments and mechanisms of inflammation and injury in acute interstitial nephritis",
+            "url": "https://www.nature.com/articles/s41467-026-77210-y"
+          }
+        ]
+      }
+    },
+    {
+      "target": "papers/04",
+      "changeType": "updated",
+      "changeSummary": "新增并核准论文研究资料：论文于2026年8月27日在线发表于Nature Communications，DOI为10.1038/s41467-026-77024-y。",
+      "title": "DNA存储逼近密度上限：1.66比特每碱基背后仍有合成与读取成本",
+      "sourceDate": "2026-08-27",
+      "sourceVerification": {
+        "ok": true,
+        "checkedAt": "2026-08-28 12:18（北京时间）",
+        "sources": [
+          {
+            "name": "Towards density-optimal DNA storage with practical bijective coding",
+            "url": "https://www.nature.com/articles/s41467-026-77024-y"
+          }
+        ]
+      }
+    },
+    {
+      "target": "management/02",
+      "changeType": "updated",
+      "changeSummary": "新增并核准管理资料：NASA称Roman望远镜封装在整流罩后于8月25日抵达肯尼迪航天中心39A发射台的SpaceX机库。",
+      "title": "把发射前关键节点拆成门禁：Roman望远镜的阶段闸门管理",
+      "sourceDate": "2026-08-25",
+      "sourceVerification": {
+        "ok": true,
+        "checkedAt": "2026-08-28 12:18（北京时间）",
+        "sources": [
+          {
+            "name": "NASA’s Nancy Grace Roman Space Telescope Arrives at Hangar",
+            "url": "https://science.nasa.gov/blogs/roman/2026/08/25/nasas-nancy-grace-roman-space-telescope-arrives-at-hangar/"
           }
         ]
       }

@@ -15,11 +15,11 @@ if (!inputPath) throw new Error("Usage: node scripts/publish-2026-08-28.mjs --in
 
 const input = JSON.parse(await readFile(path.resolve(inputPath), "utf8"));
 const updates = input.articles ?? [];
-const expectedScope = { daily: 1, finance: 2, health: 1, papers: 3, management: 1 };
+const expectedScope = { daily: 3, finance: 3, health: 3, papers: 4, management: 2 };
 if (input.date !== date) throw new Error(`input date mismatch: ${input.date}`);
 if (JSON.stringify(input.scope) !== JSON.stringify(expectedScope)) throw new Error("input scope mismatch");
 if (!/^2026-08-28 \d{2}:\d{2}（北京时间）$/.test(input.checkedAt ?? "")) throw new Error("invalid checkedAt");
-if (!/^2026-08-27T18:\d{2}:\d{2}\.000Z$/.test(input.generatedAt ?? "")) throw new Error("invalid generatedAt");
+if (!/^2026-08-28T\d{2}:\d{2}:\d{2}\.000Z$/.test(input.generatedAt ?? "")) throw new Error("invalid generatedAt");
 if (updates.length === 0 || updates.length > 30) throw new Error(`invalid update count: ${updates.length}`);
 if (new Set(updates.map((item) => item.target)).size !== updates.length) throw new Error("duplicate targets");
 for (const item of updates) {
@@ -27,7 +27,10 @@ for (const item of updates) {
   if (!item.title || !item.sourceDate || !item.sources?.length || item.facts?.length < 3) {
     throw new Error(`incomplete approved item: ${item.id}`);
   }
+  if (!["PASS", "REVISE_PASSED"].includes(item.factReview)) throw new Error(`invalid fact review: ${item.id}`);
 }
+const revisedIds = new Set(updates.filter((item) => item.factReview === "REVISE_PASSED").map((item) => item.id));
+const passCount = updates.length - revisedIds.size;
 
 const ledgerPath = path.resolve(args.get("--ledger") ?? path.join(root, "data", "article-date-ledger.json"));
 const baselinePath = path.resolve(args.get("--baseline") ?? path.join(root, "data", `article-baseline-${date}.json`));
@@ -82,7 +85,7 @@ function updateChrome(html) {
   return html
     .replace(/<div class="live-status"><span><\/span>[\s\S]*?<\/div>/, `<div class="live-status"><span></span> 2026.08.28 · 每日更新 ${version}</div>`)
     .replace(/(<aside class="column-status"><span>)[\s\S]*?(<\/span>)/, `$1${dateCn} · 每日更新 ${version}$2`)
-    .replace(/(<footer class="site-footer">[\s\S]*?<p>)(?:\d{4}年\d{1,2}月\d{1,2}日)([\s\S]*?每日更新(?:<!-- -->)?\s*)\d+(<\/p>)/, `$1${dateCn}$2 ${version}$3`);
+    .replace(/(<footer class="site-footer">[\s\S]*?<p>)(?:\d{4}年\d{1,2}月\d{1,2}日)([\s\S]*?每日更新(?:<!-- -->)?\s*)\d+(<\/p>)/, `$1${dateCn}$2${version}$3`);
 }
 
 for (const item of updates) {
@@ -132,14 +135,12 @@ home = home
   .replace(/(<section class="shell directory-header"><p>)[\s\S]*?(<\/p>)/, `$1${dateCn} · 每日更新 ${version}$2`)
   .replace(/资料截止：[^<]+/, `资料截止：${checkedAt}`)
   .replace(/<div class="today-grid">[\s\S]*?<\/div><\/section>/, `<div class="today-grid">${featured}</div></section>`);
-const note = `<p class="today-update-note">8月28日完成8篇真实实质更新：每日资讯1篇、金融2篇、健康1篇、论文3篇、管理1篇；TED过去24小时无新增，因此更新0篇。3篇直接通过，5篇最小修订后通过，0篇驳回。<a href="/audit">查看逐篇审计 →</a></p>`;
+const note = `<p class="today-update-note">8月28日完成${updates.length}篇真实实质更新：每日资讯${input.scope.daily}篇、金融${input.scope.finance}篇、健康${input.scope.health}篇、论文${input.scope.papers}篇、管理${input.scope.management}篇；TED过去24小时无新增，因此更新0篇。${passCount}篇直接通过，${revisedIds.size}篇最小修订后通过，0篇驳回。<a href="/audit">查看逐篇审计 →</a></p>`;
 home = home.includes('class="today-update-note"')
   ? home.replace(/<p class="today-update-note">[\s\S]*?<\/p>/, note)
   : home.replace('<h2 id="today-title">今日必读</h2>', `<h2 id="today-title">今日必读</h2>${note}`);
 await writeFile(path.join(site, "index.html"), home, "utf8");
 
-const revisedIds = new Set(["F01", "H01", "P01", "P03", "M01"]);
-for (const id of revisedIds) if (!updates.some((item) => item.id === id)) throw new Error(`missing revised item: ${id}`);
 const auditArticles = updates.map((item) => ({
   target: item.target, changeType: "updated", changeSummary: changeSummary(item), title: item.title,
   sourceDate: item.sourceDate,
@@ -157,12 +158,12 @@ await writeFile(path.join(root, "data", `update-audit-${date}.json`), auditText,
 await writeFile(path.join(site, "audit", `update-${date}.json`), auditText, "utf8");
 
 const rows = auditArticles.map((item) => `<li><strong>${item.target}</strong><span>${esc(item.title)}</span><small>${esc(item.changeSummary)}</small></li>`).join("");
-const auditPage = `<!DOCTYPE html><html lang="zh-CN"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><link rel="stylesheet" href="/assets/index-CVB57ELS.css"/><link rel="stylesheet" href="/assets/daily-highlights.css"/><title>8月28日更新审计 · 自学总站</title></head><body><header class="site-header"><div class="shell header-inner"><a href="/" class="brand"><span class="brand-mark">知</span><span>自学总站</span></a><nav class="main-nav"><a href="/">全部专栏</a><a href="/ski-training">滑雪训练</a><a href="/archive">每日归档</a></nav><div class="live-status"><span></span> 2026.08.28 · 每日更新 ${version}</div></div></header><main class="shell audit-page"><header class="directory-header"><p>${dateCn} · 真实更新审计</p><h1>${updates.length} 篇真实实质更新，按新鲜度与质量发布</h1><p>每日资讯1篇、金融2篇、健康1篇、论文3篇、管理1篇；TED过去24小时无新增，因此更新0篇。3篇直接通过，5篇按事实复核意见最小修订后通过，0篇驳回；没有用旧稿、日期或同义改写补数。</p></header><section class="audit-summary"><h2>质量说明</h2><p>每条审计均对应正文语义变化，包含核准来源、原文日期与适用边界。Spark只负责证据卡格式归一化和查漏，最终事实结论均由Sol复核。</p></section><section class="audit-list"><h2>逐篇变更</h2><ul>${rows}</ul></section></main><footer class="site-footer"><div class="shell footer-inner"><p>自学总站 · 长期自学知识库</p><p>${dateCn} · 每日更新 ${version}</p></div></footer></body></html>`;
+const auditPage = `<!DOCTYPE html><html lang="zh-CN"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><link rel="stylesheet" href="/assets/index-CVB57ELS.css"/><link rel="stylesheet" href="/assets/daily-highlights.css"/><title>8月28日更新审计 · 自学总站</title></head><body><header class="site-header"><div class="shell header-inner"><a href="/" class="brand"><span class="brand-mark">知</span><span>自学总站</span></a><nav class="main-nav"><a href="/">全部专栏</a><a href="/ski-training">滑雪训练</a><a href="/archive">每日归档</a></nav><div class="live-status"><span></span> 2026.08.28 · 每日更新 ${version}</div></div></header><main class="shell audit-page"><header class="directory-header"><p>${dateCn} · 真实更新审计</p><h1>${updates.length} 篇真实实质更新，按新鲜度与质量发布</h1><p>每日资讯${input.scope.daily}篇、金融${input.scope.finance}篇、健康${input.scope.health}篇、论文${input.scope.papers}篇、管理${input.scope.management}篇；TED过去24小时无新增，因此更新0篇。${passCount}篇直接通过，${revisedIds.size}篇按事实复核意见最小修订后通过，0篇驳回；没有用旧稿、日期或同义改写补数。</p></header><section class="audit-summary"><h2>质量说明</h2><p>每条审计均对应正文语义变化，包含核准来源、原文日期与适用边界。深度稿按证据包一次生成，最终事实结论由事实复核任务核准。</p></section><section class="audit-list"><h2>逐篇变更</h2><ul>${rows}</ul></section></main><footer class="site-footer"><div class="shell footer-inner"><p>自学总站 · 长期自学知识库</p><p>${dateCn} · 每日更新 ${version}</p></div></footer></body></html>`;
 await writeFile(path.join(site, "audit", "index.html"), auditPage, "utf8");
 
 let archive = await readFile(path.join(site, "archive", "index.html"), "utf8");
 archive = archive.replace(/<article class="archive-entry" data-archive-date="2026-08-28">[\s\S]*?<\/article>/, "");
-const archiveEntry = `<article class="archive-entry" data-archive-date="2026-08-28"><div class="archive-date"><strong>2026.08.28</strong><span>每日更新 ${version} · 8篇真实实质更新</span></div><div class="archive-content"><h2>2026年8月28日</h2><p>本批按质量优先更新8篇：3篇直接通过事实复核，5篇最小修订后通过；TED过去24小时无新增，未用旧稿补数。</p><ul><li><span>更新审计</span><a href="/audit">查看8篇逐条审计 →</a></li></ul></div></article>`;
+const archiveEntry = `<article class="archive-entry" data-archive-date="2026-08-28"><div class="archive-date"><strong>2026.08.28</strong><span>每日更新 ${version} · ${updates.length}篇真实实质更新</span></div><div class="archive-content"><h2>2026年8月28日</h2><p>本批按质量优先更新${updates.length}篇：${passCount}篇直接通过事实复核，${revisedIds.size}篇最小修订后通过；TED过去24小时无新增，未用旧稿补数。</p><ul><li><span>更新审计</span><a href="/audit">查看${updates.length}篇逐条审计 →</a></li></ul></div></article>`;
 archive = archive.replace('<section class="shell archive-list" aria-label="每日版本">', `<section class="shell archive-list" aria-label="每日版本">${archiveEntry}`);
 await writeFile(path.join(site, "archive", "index.html"), archive, "utf8");
 
@@ -184,4 +185,4 @@ execFileSync(process.execPath, [
   "--ledger", ledgerPath,
 ], { cwd: root, stdio: "inherit" });
 
-console.log(`Prepared ${updates.length}/110 verified substantive updates; 3 PASS and 5 revised-and-passed.`);
+console.log(`Prepared ${updates.length}/110 verified substantive updates; ${passCount} PASS and ${revisedIds.size} revised-and-passed.`);

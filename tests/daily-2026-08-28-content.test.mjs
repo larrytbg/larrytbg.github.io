@@ -4,24 +4,24 @@ import test from "node:test";
 import { extractArticleRecord } from "../scripts/lib/article-timeline.mjs";
 
 const expectedCounts = {
-  daily: 1,
-  finance: 2,
-  health: 1,
-  papers: 3,
-  management: 1,
+  daily: 3,
+  finance: 3,
+  health: 3,
+  papers: 4,
+  management: 2,
 };
 
 const audit = JSON.parse(await readFile("data/update-audit-2026-08-28.json", "utf8"));
 const targets = audit.articles.map((entry) => entry.target);
 
-test("8月28日审计只包含8篇复核通过的实质更新", () => {
+test("8月28日审计只包含15篇复核通过的实质更新", () => {
   assert.equal(audit.date, "2026-08-28");
-  assert.equal(audit.substantivelyUpdated, 8);
-  assert.equal(audit.articles.length, 8);
+  assert.equal(audit.substantivelyUpdated, 15);
+  assert.equal(audit.articles.length, 15);
   assert.deepEqual(audit.scope, expectedCounts);
   assert.deepEqual(audit.reviewSummary, {
-    pass: 3,
-    revisedAndPassed: 5,
+    pass: 7,
+    revisedAndPassed: 8,
     rejected: 0,
     reworkRounds: 1,
   });
@@ -34,7 +34,7 @@ test("公开审计副本与数据审计完全一致", async () => {
   assert.deepEqual(publicAudit, audit);
 });
 
-test("8篇专栏目录卡与审计的标题、日期、摘要和来源一致", async () => {
+test("15篇专栏目录卡与审计的标题、日期、摘要和来源一致", async () => {
   for (const entry of audit.articles) {
     const [column, index] = entry.target.split("/");
     const html = await readFile(`site/column/${column}/index.html`, "utf8");
@@ -48,7 +48,7 @@ test("8篇专栏目录卡与审计的标题、日期、摘要和来源一致", a
   }
 });
 
-test("8篇详情页标题、来源、深度正文和长度都满足发布要求", async () => {
+test("15篇详情页标题、来源、深度正文和长度都满足发布要求", async () => {
   for (const entry of audit.articles) {
     const html = await readFile(`site/column/${entry.target}/index.html`, "utf8");
     assert.match(html, new RegExp(entry.title.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")));
@@ -64,7 +64,7 @@ test("8篇详情页标题、来源、深度正文和长度都满足发布要求"
   }
 });
 
-test("与更新前基线相比恰好8篇正文发生语义变化", async () => {
+test("与更新前基线相比恰好15篇正文发生语义变化", async () => {
   const baseline = JSON.parse(await readFile("data/article-baseline-2026-08-28.json", "utf8"));
   const changed = [];
   for (const [target, before] of Object.entries(baseline.articles)) {
@@ -75,7 +75,7 @@ test("与更新前基线相比恰好8篇正文发生语义变化", async () => {
   assert.deepEqual(changed.sort(), targets.sort());
 });
 
-test("TED无新增且日期台账只标记本批8篇", async () => {
+test("TED无新增且日期台账只标记本批15篇", async () => {
   assert.deepEqual(targets.filter((target) => target.startsWith("ted/")).sort(), []);
   const ledger = JSON.parse(await readFile("data/article-date-ledger.json", "utf8"));
   const updatedToday = Object.entries(ledger.articles)

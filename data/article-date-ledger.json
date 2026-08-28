@@ -89,18 +89,18 @@
       "commit": "533ae0551f03e6546cc62b87904bcf180e53f980"
     },
     "daily/02": {
-      "title": "NOAA直播深海考察：关键不是“看到奇观”，而是建立可复查的海底基线",
+      "title": "美国2025—2035年就业预测：总就业预计增长3.5%，公用事业预计增长9.8%",
       "publishedOn": "2026-08-16",
-      "updatedOn": "2026-08-27",
-      "sourcePublishedOn": "2026-08-24",
+      "updatedOn": "2026-08-28",
+      "sourcePublishedOn": "2026-08-27",
       "evidence": "git-current-title-first-seen",
       "commit": "533ae0551f03e6546cc62b87904bcf180e53f980"
     },
     "daily/03": {
-      "title": "WHO 与非洲CDC欢迎向刚果（金）分配埃博拉疫苗",
+      "title": "让河流重回洪泛平原：鲑鱼恢复与社区防洪可以共用一套工程",
       "publishedOn": "2026-08-16",
-      "updatedOn": "2026-08-25",
-      "sourcePublishedOn": "2026-08-20",
+      "updatedOn": "2026-08-28",
+      "sourcePublishedOn": "2026-08-27",
       "evidence": "git-current-title-first-seen",
       "commit": "533ae0551f03e6546cc62b87904bcf180e53f980"
     },
@@ -176,10 +176,10 @@
       "commit": "b21a9ea0086e259d00428b9ffb435441c30926d3"
     },
     "finance/03": {
-      "title": "美国财政部每日现金流数据应该怎样读",
+      "title": "ECB七月会议的真正信号：维持利率不变，但能源与通胀风险仍偏上行",
       "publishedOn": "2026-08-11",
-      "updatedOn": "2026-08-25",
-      "sourcePublishedOn": null,
+      "updatedOn": "2026-08-28",
+      "sourcePublishedOn": "2026-08-27",
       "evidence": "git-current-title-first-seen",
       "commit": "b21a9ea0086e259d00428b9ffb435441c30926d3"
     },
@@ -327,18 +327,18 @@
       "commit": "533ae0551f03e6546cc62b87904bcf180e53f980"
     },
     "health/02": {
-      "title": "FDA授权双连续监测设备：同时看葡萄糖与酮体，仍不能脱离症状判断",
+      "title": "把柔性电极固定在脑组织上：小鼠80周记录离临床脑机接口还有多远",
       "publishedOn": "2026-08-16",
-      "updatedOn": "2026-08-27",
-      "sourcePublishedOn": "2026-08-25",
+      "updatedOn": "2026-08-28",
+      "sourcePublishedOn": "2026-08-27",
       "evidence": "git-current-title-first-seen",
       "commit": "533ae0551f03e6546cc62b87904bcf180e53f980"
     },
     "health/03": {
-      "title": "WHO延长脊灰国际紧急状态：病例下降不等于传播链已经切断",
+      "title": "急性间质性肾炎的空间图谱：炎症信号与预测相互作用不等于新疗法",
       "publishedOn": "2026-08-10",
-      "updatedOn": "2026-08-27",
-      "sourcePublishedOn": "2026-08-25",
+      "updatedOn": "2026-08-28",
+      "sourcePublishedOn": "2026-08-27",
       "evidence": "git-current-title-first-seen",
       "commit": "23adeaf6a1e140d99387e185df77829cfda55737"
     },
@@ -566,10 +566,10 @@
       "commit": "23adeaf6a1e140d99387e185df77829cfda55737"
     },
     "management/02": {
-      "title": "项目范围管理如何防止目标无边界膨胀",
+      "title": "把发射前关键节点拆成门禁：Roman望远镜的阶段闸门管理",
       "publishedOn": "2026-08-10",
-      "updatedOn": "2026-08-25",
-      "sourcePublishedOn": null,
+      "updatedOn": "2026-08-28",
+      "sourcePublishedOn": "2026-08-25",
       "evidence": "git-current-title-first-seen",
       "commit": "23adeaf6a1e140d99387e185df77829cfda55737"
     },
@@ -662,10 +662,10 @@
       "commit": "533ae0551f03e6546cc62b87904bcf180e53f980"
     },
     "papers/04": {
-      "title": "无标记髓鞘成像：45秒重建三维折射率，但验证仍在小鼠切片",
+      "title": "DNA存储逼近密度上限：1.66比特每碱基背后仍有合成与读取成本",
       "publishedOn": "2026-08-16",
-      "updatedOn": "2026-08-27",
-      "sourcePublishedOn": "2026-08-20",
+      "updatedOn": "2026-08-28",
+      "sourcePublishedOn": "2026-08-27",
       "evidence": "git-current-title-first-seen",
       "commit": "533ae0551f03e6546cc62b87904bcf180e53f980"
     },
