@@ -81,20 +81,18 @@
       "evidence": "daily-audit"
     },
     "daily/01": {
-      "title": "WHO重组科学委员会：把前沿科学判断接入全球卫生决策",
-      "publishedOn": "2026-08-16",
-      "updatedOn": "2026-08-28",
-      "sourcePublishedOn": "2026-08-27",
-      "evidence": "git-current-title-first-seen",
-      "commit": "533ae0551f03e6546cc62b87904bcf180e53f980"
+      "title": "世卫组织东南亚区域委员会第七十九届会议在帝力开幕",
+      "publishedOn": "2026-09-08",
+      "updatedOn": null,
+      "sourcePublishedOn": "2026-09-07",
+      "evidence": "daily-audit"
     },
     "daily/02": {
-      "title": "美国2025—2035年就业预测：总就业预计增长3.5%，公用事业预计增长9.8%",
-      "publishedOn": "2026-08-16",
-      "updatedOn": "2026-08-28",
-      "sourcePublishedOn": "2026-08-27",
-      "evidence": "git-current-title-first-seen",
-      "commit": "533ae0551f03e6546cc62b87904bcf180e53f980"
+      "title": "世卫组织为老年人与老龄化专家工作组征集专家",
+      "publishedOn": "2026-09-08",
+      "updatedOn": null,
+      "sourcePublishedOn": "2026-09-07",
+      "evidence": "daily-audit"
     },
     "daily/03": {
       "title": "让河流重回洪泛平原：鲑鱼恢复与社区防洪可以共用一套工程",
@@ -319,12 +317,11 @@
       "commit": "dbc88f54526d34276eb8d546b64cd265136e1a3f"
     },
     "health/01": {
-      "title": "WHO在韩国设新监管培训中心：加强药品与疫苗监管人才和体系能力",
-      "publishedOn": "2026-08-16",
-      "updatedOn": "2026-08-28",
-      "sourcePublishedOn": "2026-08-27",
-      "evidence": "git-current-title-first-seen",
-      "commit": "533ae0551f03e6546cc62b87904bcf180e53f980"
+      "title": "世卫组织非洲区域启动区域卫生数据中心",
+      "publishedOn": "2026-09-08",
+      "updatedOn": null,
+      "sourcePublishedOn": "2026-09-07",
+      "evidence": "daily-audit"
     },
     "health/02": {
       "title": "把柔性电极固定在脑组织上：小鼠80周记录离临床脑机接口还有多远",

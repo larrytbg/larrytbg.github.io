@@ -1,0 +1,82 @@
+{
+  "date": "2026-09-08",
+  "sourceCutoff": "2026-09-08 07:32（北京时间）",
+  "totalArticles": 110,
+  "substantivelyUpdated": 3,
+  "updateRate": 0.0273,
+  "target": "quality-first, no padding",
+  "targetMet": true,
+  "scope": {
+    "daily": 2,
+    "finance": 0,
+    "health": 1,
+    "papers": 0,
+    "ted": 0,
+    "philosophy": 0
+  },
+  "tedScan": {
+    "scanned": true,
+    "newItems": 0,
+    "updated": 0,
+    "note": "过去24小时未核准到TED官方新增内容，未用旧演讲补数。"
+  },
+  "reviewSummary": {
+    "pass": 1,
+    "revisedAndPassed": 2,
+    "rejected": 0,
+    "reworkRounds": 1
+  },
+  "articles": [
+    {
+      "target": "daily/01",
+      "changeType": "new",
+      "changeSummary": "新增并核准每日资讯资料：世卫组织东南亚区域委员会第79届会议在东帝汶帝力开幕。",
+      "title": "世卫组织东南亚区域委员会第七十九届会议在帝力开幕",
+      "sourceDate": "2026-09-07",
+      "sourceVerification": {
+        "ok": true,
+        "checkedAt": "2026-09-08 07:32（北京时间）",
+        "sources": [
+          {
+            "name": "世界卫生组织（WHO）",
+            "url": "https://www.who.int/southeastasia/news/detail/07-09-2026-who-south-east-asia-region-annual-governing-body-meeting-begins-in-timor-leste"
+          }
+        ]
+      }
+    },
+    {
+      "target": "health/01",
+      "changeType": "new",
+      "changeSummary": "新增并核准身体健康资料：世卫组织非洲区域办事处启动了区域卫生数据中心（RDHUB）。",
+      "title": "世卫组织非洲区域启动区域卫生数据中心",
+      "sourceDate": "2026-09-07",
+      "sourceVerification": {
+        "ok": true,
+        "checkedAt": "2026-09-08 07:32（北京时间）",
+        "sources": [
+          {
+            "name": "WHO非洲区域办事处",
+            "url": "https://afro.who.int/news/who-launches-regional-health-data-hub-turn-health-data-informed-action"
+          }
+        ]
+      }
+    },
+    {
+      "target": "daily/02",
+      "changeType": "new",
+      "changeSummary": "新增并核准每日资讯资料：世卫组织正在为老年人与老龄化领域的新一届STAGE成员征集专家。",
+      "title": "世卫组织为老年人与老龄化专家工作组征集专家",
+      "sourceDate": "2026-09-07",
+      "sourceVerification": {
+        "ok": true,
+        "checkedAt": "2026-09-08 07:32（北京时间）",
+        "sources": [
+          {
+            "name": "世界卫生组织（WHO）",
+            "url": "https://www.who.int/news-room/articles-detail/call-for-experts-in-older-people-and-ageing"
+          }
+        ]
+      }
+    }
+  ]
+}
