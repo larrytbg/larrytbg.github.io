@@ -81,26 +81,25 @@
       "evidence": "daily-audit"
     },
     "daily/01": {
-      "title": "世卫组织东南亚区域委员会第七十九届会议在帝力开幕",
-      "publishedOn": "2026-09-08",
+      "title": "世卫组织东南亚区域卫生部长通过帝力宣言，推进专科医疗公平",
+      "publishedOn": "2026-09-09",
       "updatedOn": null,
-      "sourcePublishedOn": "2026-09-07",
+      "sourcePublishedOn": "2026-09-08",
       "evidence": "daily-audit"
     },
     "daily/02": {
-      "title": "世卫组织为老年人与老龄化专家工作组征集专家",
-      "publishedOn": "2026-09-08",
+      "title": "世卫组织东南亚区域公布成员国公共卫生进展与消除疾病里程碑",
+      "publishedOn": "2026-09-09",
       "updatedOn": null,
-      "sourcePublishedOn": "2026-09-07",
+      "sourcePublishedOn": "2026-09-08",
       "evidence": "daily-audit"
     },
     "daily/03": {
-      "title": "让河流重回洪泛平原：鲑鱼恢复与社区防洪可以共用一套工程",
-      "publishedOn": "2026-08-16",
-      "updatedOn": "2026-08-28",
-      "sourcePublishedOn": "2026-08-27",
-      "evidence": "git-current-title-first-seen",
-      "commit": "533ae0551f03e6546cc62b87904bcf180e53f980"
+      "title": "哈勃与韦布望远镜发现小型海王星外天体保留早期形成线索",
+      "publishedOn": "2026-09-09",
+      "updatedOn": null,
+      "sourcePublishedOn": "2026-09-08",
+      "evidence": "daily-audit"
     },
     "daily/04": {
       "title": "Google 汇总2026年7月AI产品和研究更新",
@@ -158,20 +157,18 @@
       "evidence": "daily-audit"
     },
     "finance/01": {
-      "title": "美国2023—2025年被裁劳动者：长期任职者重新就业率不能代表全部740万人",
-      "publishedOn": "2026-08-11",
-      "updatedOn": "2026-08-28",
-      "sourcePublishedOn": "2026-08-27",
-      "evidence": "git-current-title-first-seen",
-      "commit": "b21a9ea0086e259d00428b9ffb435441c30926d3"
+      "title": "美联储发布2026年7月消费信贷数据",
+      "publishedOn": "2026-09-09",
+      "updatedOn": null,
+      "sourcePublishedOn": "2026-09-08",
+      "evidence": "daily-audit"
     },
     "finance/02": {
-      "title": "ECB七月会议纪要：市场押注不是政策承诺，九月仍取决于数据",
-      "publishedOn": "2026-08-11",
-      "updatedOn": "2026-08-28",
-      "sourcePublishedOn": "2026-08-27",
-      "evidence": "git-current-title-first-seen",
-      "commit": "b21a9ea0086e259d00428b9ffb435441c30926d3"
+      "title": "欧洲央行发布截至9月4日的欧元体系合并财务报表",
+      "publishedOn": "2026-09-09",
+      "updatedOn": null,
+      "sourcePublishedOn": "2026-09-08",
+      "evidence": "daily-audit"
     },
     "finance/03": {
       "title": "ECB七月会议的真正信号：维持利率不变，但能源与通胀风险仍偏上行",
@@ -317,10 +314,10 @@
       "commit": "dbc88f54526d34276eb8d546b64cd265136e1a3f"
     },
     "health/01": {
-      "title": "世卫组织非洲区域启动区域卫生数据中心",
-      "publishedOn": "2026-09-08",
+      "title": "WHO发布烟草与不孕相关证据总结",
+      "publishedOn": "2026-09-09",
       "updatedOn": null,
-      "sourcePublishedOn": "2026-09-07",
+      "sourcePublishedOn": "2026-09-08",
       "evidence": "daily-audit"
     },
     "health/02": {
@@ -635,12 +632,11 @@
       "commit": "45bebd360a7cdef9e170a090625aebe427fc6dee"
     },
     "papers/01": {
-      "title": "量子发射体做神经网络激活函数：低光强阈值仍停留在数值验证",
-      "publishedOn": "2026-08-16",
-      "updatedOn": "2026-08-28",
-      "sourcePublishedOn": "2026-08-27",
-      "evidence": "git-current-title-first-seen",
-      "commit": "533ae0551f03e6546cc62b87904bcf180e53f980"
+      "title": "偏肺病毒基因组中发现非随机分布的反向开放阅读框",
+      "publishedOn": "2026-09-09",
+      "updatedOn": null,
+      "sourcePublishedOn": "2026-09-08",
+      "evidence": "daily-audit"
     },
     "papers/02": {
       "title": "把水泥卷成“千层酥”：层状结构同时追求韧性与隔热",

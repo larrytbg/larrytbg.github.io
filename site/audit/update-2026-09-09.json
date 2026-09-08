@@ -1,0 +1,155 @@
+{
+  "date": "2026-09-09",
+  "sourceCutoff": "2026-09-09 07:36（北京时间）",
+  "totalArticles": 110,
+  "substantivelyUpdated": 7,
+  "updateRate": 0.0636,
+  "target": "quality-first, no padding",
+  "targetMet": true,
+  "scope": {
+    "daily": 3,
+    "finance": 2,
+    "health": 1,
+    "papers": 1,
+    "ted": 0,
+    "financialLiteracy": 0
+  },
+  "tedScan": {
+    "scanned": true,
+    "newItems": 0,
+    "updated": 0,
+    "note": "过去24小时未核准到TED官方新增内容，未用旧演讲补数。"
+  },
+  "rotation": {
+    "column": "financialLiteracy",
+    "updated": 0,
+    "note": "轮换栏目未核准到高价值新增来源，未用旧稿补数。"
+  },
+  "reviewSummary": {
+    "pass": 6,
+    "revisedAndPassed": 1,
+    "rejected": 2,
+    "reworkRounds": 1
+  },
+  "articles": [
+    {
+      "target": "daily/01",
+      "changeType": "new",
+      "changeSummary": "新增并核准每日资讯资料：东南亚区域卫生部长在第79届区域委员会会议上通过《人力资源与卫生：专科医疗公平》帝力宣言。",
+      "title": "世卫组织东南亚区域卫生部长通过帝力宣言，推进专科医疗公平",
+      "sourceDate": "2026-09-08",
+      "sourceVerification": {
+        "ok": true,
+        "checkedAt": "2026-09-09 07:36（北京时间）",
+        "sources": [
+          {
+            "name": "WHO东南亚区域办事处",
+            "url": "https://www.who.int/southeastasia/news/detail/08-09-2026-health-ministers-of-who-south-east-asia-region-adopt-dili-declaration-to-advance-equity-in-specialized-care"
+          }
+        ]
+      }
+    },
+    {
+      "target": "daily/02",
+      "changeType": "new",
+      "changeSummary": "新增并核准每日资讯资料：WHO东南亚区域在第79届区域委员会会议期间公布成员国在疾病消除、母婴健康、免疫接种和非传染性疾病管理方面的进展。",
+      "title": "世卫组织东南亚区域公布成员国公共卫生进展与消除疾病里程碑",
+      "sourceDate": "2026-09-08",
+      "sourceVerification": {
+        "ok": true,
+        "checkedAt": "2026-09-09 07:36（北京时间）",
+        "sources": [
+          {
+            "name": "WHO东南亚区域办事处",
+            "url": "https://www.who.int/southeastasia/news/detail/08-09-2026-who-south-east-asia-region-recognizes-major-public-health-achievements-across-member-states"
+          }
+        ]
+      }
+    },
+    {
+      "target": "daily/03",
+      "changeType": "new",
+      "changeSummary": "新增并核准每日资讯资料：研究团队首次联合使用NASA哈勃和詹姆斯·韦布太空望远镜研究海王星外天体。",
+      "title": "哈勃与韦布望远镜发现小型海王星外天体保留早期形成线索",
+      "sourceDate": "2026-09-08",
+      "sourceVerification": {
+        "ok": true,
+        "checkedAt": "2026-09-09 07:36（北京时间）",
+        "sources": [
+          {
+            "name": "NASA科学任务局",
+            "url": "https://science.nasa.gov/missions/hubble/nasas-hubble-webb-find-far-out-solar-system-objects-remember-past/"
+          }
+        ]
+      }
+    },
+    {
+      "target": "health/01",
+      "changeType": "new",
+      "changeSummary": "新增并核准身体健康资料：WHO发布新的烟草知识总结，讨论烟草使用与不孕之间的证据关联。",
+      "title": "WHO发布烟草与不孕相关证据总结",
+      "sourceDate": "2026-09-08",
+      "sourceVerification": {
+        "ok": true,
+        "checkedAt": "2026-09-09 07:36（北京时间）",
+        "sources": [
+          {
+            "name": "世界卫生组织",
+            "url": "https://www.who.int/news/item/08-09-2026-tobacco-smoking-may-be-harming-your-chances-of-having-a-baby"
+          }
+        ]
+      }
+    },
+    {
+      "target": "finance/01",
+      "changeType": "new",
+      "changeSummary": "新增并核准金融资料：G.19统计发布页标注发布日期为2026年9月8日，数据期为2026年7月。",
+      "title": "美联储发布2026年7月消费信贷数据",
+      "sourceDate": "2026-09-08",
+      "sourceVerification": {
+        "ok": true,
+        "checkedAt": "2026-09-09 07:36（北京时间）",
+        "sources": [
+          {
+            "name": "美国联邦储备委员会",
+            "url": "https://www.federalreserve.gov/releases/g19/current/default.htm"
+          }
+        ]
+      }
+    },
+    {
+      "target": "finance/02",
+      "changeType": "new",
+      "changeSummary": "新增并核准金融资料：欧洲央行页面发布日期为2026年9月8日，报表截至2026年9月4日。",
+      "title": "欧洲央行发布截至9月4日的欧元体系合并财务报表",
+      "sourceDate": "2026-09-08",
+      "sourceVerification": {
+        "ok": true,
+        "checkedAt": "2026-09-09 07:36（北京时间）",
+        "sources": [
+          {
+            "name": "欧洲中央银行",
+            "url": "https://www.ecb.europa.eu/press/annual-reports-financial-statements/wfs/2026/html/ecb.fs260908.et.html"
+          }
+        ]
+      }
+    },
+    {
+      "target": "papers/01",
+      "changeType": "new",
+      "changeSummary": "新增并核准论文研究资料：论文于2026年9月8日在Scientific Reports以开放获取形式发表。",
+      "title": "偏肺病毒基因组中发现非随机分布的反向开放阅读框",
+      "sourceDate": "2026-09-08",
+      "sourceVerification": {
+        "ok": true,
+        "checkedAt": "2026-09-09 07:36（北京时间）",
+        "sources": [
+          {
+            "name": "Scientific Reports（Springer Nature）",
+            "url": "https://www.nature.com/articles/s41598-026-66235-4"
+          }
+        ]
+      }
+    }
+  ]
+}
