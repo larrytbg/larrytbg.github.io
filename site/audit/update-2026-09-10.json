@@ -1,0 +1,155 @@
+{
+  "date": "2026-09-10",
+  "sourceCutoff": "2026-09-10 07:26（北京时间）",
+  "totalArticles": 110,
+  "substantivelyUpdated": 7,
+  "updateRate": 0.0636,
+  "target": "quality-first, no padding",
+  "targetMet": true,
+  "scope": {
+    "daily": 3,
+    "finance": 2,
+    "health": 1,
+    "papers": 0,
+    "ted": 0,
+    "management": 1
+  },
+  "tedScan": {
+    "scanned": true,
+    "newItems": 0,
+    "updated": 0,
+    "note": "过去24小时未核准到TED官方新增内容，未用旧演讲补数。"
+  },
+  "rotation": {
+    "column": "management",
+    "updated": 1,
+    "note": "管理轮换栏目发布1篇经过事实复核的新资料。"
+  },
+  "reviewSummary": {
+    "pass": 0,
+    "revisedAndPassed": 7,
+    "rejected": 0,
+    "reworkRounds": 1
+  },
+  "articles": [
+    {
+      "target": "daily/01",
+      "changeType": "new",
+      "changeSummary": "新增并核准每日资讯资料：WHO任命Vanessa Kerry博士为总干事卫生韧性特别特使。",
+      "title": "WHO任命Vanessa Kerry博士为卫生韧性特别特使",
+      "sourceDate": "2026-09-09",
+      "sourceVerification": {
+        "ok": true,
+        "checkedAt": "2026-09-10 07:26（北京时间）",
+        "sources": [
+          {
+            "name": "世界卫生组织",
+            "url": "https://www.who.int/news/item/09-09-2026-dr-vanessa-kerry-appointed-to-new-role-as-who-director-general-s-special-envoy-for-health-resilience"
+          }
+        ]
+      }
+    },
+    {
+      "target": "daily/02",
+      "changeType": "new",
+      "changeSummary": "新增并核准每日资讯资料：NASA钱德拉X射线天文台发现一类行为异常的新天体候选。",
+      "title": "NASA钱德拉望远镜发现异常低能X射线天体群",
+      "sourceDate": "2026-09-09",
+      "sourceVerification": {
+        "ok": true,
+        "checkedAt": "2026-09-10 07:26（北京时间）",
+        "sources": [
+          {
+            "name": "NASA科学任务局",
+            "url": "https://science.nasa.gov/missions/chandra/nasas-chandra-unveils-mysterious-x-ray-objects/"
+          }
+        ]
+      }
+    },
+    {
+      "target": "daily/03",
+      "changeType": "new",
+      "changeSummary": "新增并核准每日资讯资料：NASA称Sentinel-6B与Sentinel-6 Michael Freilich相距约30秒飞行，组成Copernicus Sentinel-6/Jason-CS任务。",
+      "title": "NASA介绍卫星如何在厄尔尼诺期间辅助飓风研究",
+      "sourceDate": "2026-09-09",
+      "sourceVerification": {
+        "ok": true,
+        "checkedAt": "2026-09-10 07:26（北京时间）",
+        "sources": [
+          {
+            "name": "NASA喷气推进实验室",
+            "url": "https://www.nasa.gov/missions/jason-cs-sentinel-6/how-2-us-european-satellites-are-studying-hurricanes-during-el-nino/"
+          }
+        ]
+      }
+    },
+    {
+      "target": "health/01",
+      "changeType": "new",
+      "changeSummary": "新增并核准身体健康资料：WHO预认证母体呼吸道合胞病毒疫苗RSVpreF（ABRYSVO）的多剂量瓶装规格。",
+      "title": "WHO预认证多剂量母体RSV疫苗瓶装规格",
+      "sourceDate": "2026-09-09",
+      "sourceVerification": {
+        "ok": true,
+        "checkedAt": "2026-09-10 07:26（北京时间）",
+        "sources": [
+          {
+            "name": "世界卫生组织",
+            "url": "https://www.who.int/news/item/09-09-2026-who-prequalifies-multi-dose-rsv-vaccine-vial--paving-the-way-to-protecting-more-infants-globally"
+          }
+        ]
+      }
+    },
+    {
+      "target": "finance/01",
+      "changeType": "new",
+      "changeSummary": "新增并核准金融资料：FinCEN公告称识别出约175亿美元疑似与医疗保健欺诈有关的可疑金融活动。",
+      "title": "美国财政部公布疑似医疗保健欺诈资金活动分析",
+      "sourceDate": "2026-09-09",
+      "sourceVerification": {
+        "ok": true,
+        "checkedAt": "2026-09-10 07:26（北京时间）",
+        "sources": [
+          {
+            "name": "美国财政部金融犯罪执法网络",
+            "url": "https://home.treasury.gov/news/press-releases/sb0625/"
+          }
+        ]
+      }
+    },
+    {
+      "target": "finance/02",
+      "changeType": "new",
+      "changeSummary": "新增并核准金融资料：OFAC宣布制裁跨国犯罪组织Xinbi Guarantee，并指定两个支持其核心运营的实体。",
+      "title": "美国财政部制裁涉网络诈骗的跨国犯罪组织Xinbi Guarantee",
+      "sourceDate": "2026-09-09",
+      "sourceVerification": {
+        "ok": true,
+        "checkedAt": "2026-09-10 07:26（北京时间）",
+        "sources": [
+          {
+            "name": "美国财政部外国资产控制办公室",
+            "url": "https://home.treasury.gov/news/press-releases/sb0624/"
+          }
+        ]
+      }
+    },
+    {
+      "target": "management/01",
+      "changeType": "new",
+      "changeSummary": "新增并核准管理资料：WHO公告介绍了在南非开普敦世界公共卫生大会期间举行的传统医学与公共卫生研讨会。",
+      "title": "WHO介绍传统医学研究、政策与公共卫生伙伴协作案例",
+      "sourceDate": "2026-09-09",
+      "sourceVerification": {
+        "ok": true,
+        "checkedAt": "2026-09-10 07:26（北京时间）",
+        "sources": [
+          {
+            "name": "世界卫生组织",
+            "url": "https://www.who.int/news/item/09-09-2026-public-health-leaders-explore-how-traditional-medicine-can-support-health-system-transformation"
+          }
+        ]
+      }
+    }
+  ]
+}

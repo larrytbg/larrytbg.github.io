@@ -81,24 +81,24 @@
       "evidence": "daily-audit"
     },
     "daily/01": {
-      "title": "世卫组织东南亚区域卫生部长通过帝力宣言，推进专科医疗公平",
-      "publishedOn": "2026-09-09",
+      "title": "WHO任命Vanessa Kerry博士为卫生韧性特别特使",
+      "publishedOn": "2026-09-10",
       "updatedOn": null,
-      "sourcePublishedOn": "2026-09-08",
+      "sourcePublishedOn": "2026-09-09",
       "evidence": "daily-audit"
     },
     "daily/02": {
-      "title": "世卫组织东南亚区域公布成员国公共卫生进展与消除疾病里程碑",
-      "publishedOn": "2026-09-09",
+      "title": "NASA钱德拉望远镜发现异常低能X射线天体群",
+      "publishedOn": "2026-09-10",
       "updatedOn": null,
-      "sourcePublishedOn": "2026-09-08",
+      "sourcePublishedOn": "2026-09-09",
       "evidence": "daily-audit"
     },
     "daily/03": {
-      "title": "哈勃与韦布望远镜发现小型海王星外天体保留早期形成线索",
-      "publishedOn": "2026-09-09",
+      "title": "NASA介绍卫星如何在厄尔尼诺期间辅助飓风研究",
+      "publishedOn": "2026-09-10",
       "updatedOn": null,
-      "sourcePublishedOn": "2026-09-08",
+      "sourcePublishedOn": "2026-09-09",
       "evidence": "daily-audit"
     },
     "daily/04": {
@@ -157,17 +157,17 @@
       "evidence": "daily-audit"
     },
     "finance/01": {
-      "title": "美联储发布2026年7月消费信贷数据",
-      "publishedOn": "2026-09-09",
+      "title": "美国财政部公布疑似医疗保健欺诈资金活动分析",
+      "publishedOn": "2026-09-10",
       "updatedOn": null,
-      "sourcePublishedOn": "2026-09-08",
+      "sourcePublishedOn": "2026-09-09",
       "evidence": "daily-audit"
     },
     "finance/02": {
-      "title": "欧洲央行发布截至9月4日的欧元体系合并财务报表",
-      "publishedOn": "2026-09-09",
+      "title": "美国财政部制裁涉网络诈骗的跨国犯罪组织Xinbi Guarantee",
+      "publishedOn": "2026-09-10",
       "updatedOn": null,
-      "sourcePublishedOn": "2026-09-08",
+      "sourcePublishedOn": "2026-09-09",
       "evidence": "daily-audit"
     },
     "finance/03": {
@@ -314,10 +314,10 @@
       "commit": "dbc88f54526d34276eb8d546b64cd265136e1a3f"
     },
     "health/01": {
-      "title": "WHO发布烟草与不孕相关证据总结",
-      "publishedOn": "2026-09-09",
+      "title": "WHO预认证多剂量母体RSV疫苗瓶装规格",
+      "publishedOn": "2026-09-10",
       "updatedOn": null,
-      "sourcePublishedOn": "2026-09-08",
+      "sourcePublishedOn": "2026-09-09",
       "evidence": "daily-audit"
     },
     "health/02": {
@@ -552,12 +552,11 @@
       "commit": "45bebd360a7cdef9e170a090625aebe427fc6dee"
     },
     "management/01": {
-      "title": "改革为什么常卡在执行：可信机构、沟通参与与过渡缓冲很关键",
-      "publishedOn": "2026-08-10",
-      "updatedOn": "2026-08-28",
-      "sourcePublishedOn": "2026-08-25",
-      "evidence": "git-current-title-first-seen",
-      "commit": "23adeaf6a1e140d99387e185df77829cfda55737"
+      "title": "WHO介绍传统医学研究、政策与公共卫生伙伴协作案例",
+      "publishedOn": "2026-09-10",
+      "updatedOn": null,
+      "sourcePublishedOn": "2026-09-09",
+      "evidence": "daily-audit"
     },
     "management/02": {
       "title": "把发射前关键节点拆成门禁：Roman望远镜的阶段闸门管理",
