@@ -15,3 +15,10 @@ export function requireExactIdSet(label, expectedIds, actualItems) {
     throw new Error(`${label} ID set mismatch`);
   }
 }
+
+export function requireReleaseCandidateSet({ mappingIds, exclusionId, drafts }) {
+  if (!exclusionId || mappingIds.includes(exclusionId)) {
+    throw new Error("release candidates require one distinct exclusion ID");
+  }
+  requireExactIdSet("release candidates", [...mappingIds, exclusionId], drafts);
+}

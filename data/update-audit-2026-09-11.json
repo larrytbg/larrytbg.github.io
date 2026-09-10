@@ -1,0 +1,124 @@
+{
+  "date": "2026-09-11",
+  "sourceCutoff": "2026-09-11 07:25（北京时间）",
+  "totalArticles": 110,
+  "substantivelyUpdated": 4,
+  "updateRate": 0.0364,
+  "target": "quality-first, no padding",
+  "targetMet": true,
+  "scope": {
+    "daily": 1,
+    "finance": 1,
+    "health": 1,
+    "papers": 1,
+    "ted": 0,
+    "history": 0
+  },
+  "sourceScan": {
+    "candidates": 6,
+    "readyFromWorker": 4,
+    "hold": 2,
+    "controllerExpanded": true,
+    "selected": 4
+  },
+  "tedScan": {
+    "scanned": true,
+    "newItems": 0,
+    "updated": 0,
+    "note": "过去24小时未核准到TED官方新增内容，未用旧演讲补数。"
+  },
+  "rotation": {
+    "column": "history",
+    "updated": 0,
+    "note": "历史候选虽完成事实复核，但官方来源页受交互式安全验证阻断，因来源可访问性门槛未发布。"
+  },
+  "draftSummary": {
+    "workerRounds": 2,
+    "workerResult": "quality gate failed",
+    "controllerTakeover": true,
+    "note": "总控依据已核验证据完成逐篇非模板化终稿。"
+  },
+  "reviewSummary": {
+    "pass": 3,
+    "revisedAndPassed": 1,
+    "rejected": 0,
+    "reworkRounds": 1
+  },
+  "postReviewExclusions": [
+    {
+      "id": "history-20260911-loc-documenting-911",
+      "target": "history/01",
+      "reason": "官方来源页受交互式安全验证阻断，命令行和真实浏览器均无法直接读取。"
+    }
+  ],
+  "articles": [
+    {
+      "target": "daily/01",
+      "changeType": "new",
+      "changeSummary": "新增并核准每日资讯资料：NASA Earth Observatory于2026年9月10日发布该影像资料。",
+      "title": "NASA卫星影像记录马里尘暴羽流",
+      "sourceDate": "2026-09-10",
+      "sourceVerification": {
+        "ok": true,
+        "checkedAt": "2026-09-11 07:25（北京时间）",
+        "sources": [
+          {
+            "name": "NASA Earth Observatory",
+            "url": "https://science.nasa.gov/earth/earth-observatory/dust-storm-sweeps-over-mali/"
+          }
+        ]
+      }
+    },
+    {
+      "target": "finance/01",
+      "changeType": "new",
+      "changeSummary": "新增并核准金融资料：欧洲央行管理委员会于2026年9月10日决定将三项关键利率各上调25个基点。",
+      "title": "欧洲央行上调三项关键利率并发布新基线预测",
+      "sourceDate": "2026-09-10",
+      "sourceVerification": {
+        "ok": true,
+        "checkedAt": "2026-09-11 07:25（北京时间）",
+        "sources": [
+          {
+            "name": "欧洲中央银行",
+            "url": "https://www.ecb.europa.eu/press/pr/date/2026/html/ecb.mp260910~314e508016.en.html"
+          }
+        ]
+      }
+    },
+    {
+      "target": "health/01",
+      "changeType": "new",
+      "changeSummary": "新增并核准身体健康资料：世界预防自杀日为每年9月10日。",
+      "title": "WHO以改变叙事为主题推动自杀预防公共行动",
+      "sourceDate": "2026-09-10",
+      "sourceVerification": {
+        "ok": true,
+        "checkedAt": "2026-09-11 07:25（北京时间）",
+        "sources": [
+          {
+            "name": "世界卫生组织",
+            "url": "https://www.who.int/campaigns/world-suicide-prevention-day/2026"
+          }
+        ]
+      }
+    },
+    {
+      "target": "papers/01",
+      "changeType": "new",
+      "changeSummary": "新增并核准论文研究资料：这是一篇2026年9月10日在线发表的Expert Recommendation文章。",
+      "title": "专家建议文章提炼锂离子电池研发与商业化的可迁移经验",
+      "sourceDate": "2026-09-10",
+      "sourceVerification": {
+        "ok": true,
+        "checkedAt": "2026-09-11 07:25（北京时间）",
+        "sources": [
+          {
+            "name": "Nature Reviews Clean Technology",
+            "url": "https://www.nature.com/articles/s44359-026-00203-z"
+          }
+        ]
+      }
+    }
+  ]
+}
