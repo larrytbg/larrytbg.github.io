@@ -81,10 +81,10 @@
       "evidence": "daily-audit"
     },
     "daily/01": {
-      "title": "NASA卫星影像记录马里尘暴羽流",
-      "publishedOn": "2026-09-11",
+      "title": "高分辨率海底测绘重建Hunga火山口快速坍塌",
+      "publishedOn": "2026-09-12",
       "updatedOn": null,
-      "sourcePublishedOn": "2026-09-10",
+      "sourcePublishedOn": "2026-09-11",
       "evidence": "daily-audit"
     },
     "daily/02": {
@@ -157,10 +157,10 @@
       "evidence": "daily-audit"
     },
     "finance/01": {
-      "title": "欧洲央行上调三项关键利率并发布新基线预测",
-      "publishedOn": "2026-09-11",
+      "title": "加州线路投资未显示减少公共安全停电的明确关联",
+      "publishedOn": "2026-09-12",
       "updatedOn": null,
-      "sourcePublishedOn": "2026-09-10",
+      "sourcePublishedOn": "2026-09-11",
       "evidence": "daily-audit"
     },
     "finance/02": {
@@ -314,10 +314,10 @@
       "commit": "dbc88f54526d34276eb8d546b64cd265136e1a3f"
     },
     "health/01": {
-      "title": "WHO以改变叙事为主题推动自杀预防公共行动",
-      "publishedOn": "2026-09-11",
+      "title": "随机二期试验比较高风险冒烟型多发性骨髓瘤两种方案",
+      "publishedOn": "2026-09-12",
       "updatedOn": null,
-      "sourcePublishedOn": "2026-09-10",
+      "sourcePublishedOn": "2026-09-11",
       "evidence": "daily-audit"
     },
     "health/02": {
@@ -472,12 +472,11 @@
       "commit": "45bebd360a7cdef9e170a090625aebe427fc6dee"
     },
     "logic/01": {
-      "title": "模态逻辑如何表达“必然”与“可能”",
-      "publishedOn": "2026-08-10",
-      "updatedOn": "2026-08-25",
-      "sourcePublishedOn": null,
-      "evidence": "git-current-title-first-seen",
-      "commit": "23adeaf6a1e140d99387e185df77829cfda55737"
+      "title": "宇宙拓扑综述展示如何区分未发现证据与排除假设",
+      "publishedOn": "2026-09-12",
+      "updatedOn": null,
+      "sourcePublishedOn": "2026-09-11",
+      "evidence": "daily-audit"
     },
     "logic/02": {
       "title": "悖论如何暴露语言、集合或规则的边界",
@@ -631,10 +630,10 @@
       "commit": "45bebd360a7cdef9e170a090625aebe427fc6dee"
     },
     "papers/01": {
-      "title": "专家建议文章提炼锂离子电池研发与商业化的可迁移经验",
-      "publishedOn": "2026-09-11",
+      "title": "钕掺杂稳定锰基酸性析氧催化剂的活性与耐久性",
+      "publishedOn": "2026-09-12",
       "updatedOn": null,
-      "sourcePublishedOn": "2026-09-10",
+      "sourcePublishedOn": "2026-09-11",
       "evidence": "daily-audit"
     },
     "papers/02": {

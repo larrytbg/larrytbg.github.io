@@ -1,0 +1,136 @@
+{
+  "date": "2026-09-12",
+  "sourceCutoff": "2026-09-12 07:20（北京时间）",
+  "totalArticles": 110,
+  "substantivelyUpdated": 5,
+  "updateRate": 0.0455,
+  "target": "quality-first, no padding",
+  "targetMet": true,
+  "scope": {
+    "daily": 1,
+    "finance": 1,
+    "health": 1,
+    "papers": 1,
+    "ted": 0,
+    "logic": 1
+  },
+  "sourceScan": {
+    "candidates": 8,
+    "readyFromWorker": 4,
+    "hold": 4,
+    "workerReadyRejected": 3,
+    "controllerExpanded": true,
+    "selected": 5,
+    "note": "工作任务READY中2条与前一日重复、1条超出24小时时窗，均未采用。"
+  },
+  "tedScan": {
+    "scanned": true,
+    "newItems": 0,
+    "updated": 0,
+    "note": "过去24小时未核准到TED官方新增内容，未用旧演讲补数。"
+  },
+  "rotation": {
+    "column": "logic",
+    "updated": 1,
+    "note": "逻辑轮换栏目用宇宙拓扑综述训练区分未发现证据、排除范围与确认命题。"
+  },
+  "draftSummary": {
+    "workerRounds": 2,
+    "workerResult": "quality gate failed",
+    "controllerTakeover": true,
+    "note": "总控依据已核验证据完成逐篇非模板化终稿。"
+  },
+  "reviewSummary": {
+    "pass": 5,
+    "revisedAndPassed": 0,
+    "rejected": 0,
+    "reworkRounds": 0
+  },
+  "articles": [
+    {
+      "target": "daily/01",
+      "changeType": "new",
+      "changeSummary": "新增并核准每日资讯资料：论文于2026年9月11日在线发表，研究比较Hunga火山2022年喷发前后的高分辨率海底地形测绘。",
+      "title": "高分辨率海底测绘重建Hunga火山口快速坍塌",
+      "sourceDate": "2026-09-11",
+      "sourceVerification": {
+        "ok": true,
+        "checkedAt": "2026-09-12 07:20（北京时间）",
+        "sources": [
+          {
+            "name": "Nature Geoscience",
+            "url": "https://www.nature.com/articles/s41561-026-02099-7"
+          }
+        ]
+      }
+    },
+    {
+      "target": "finance/01",
+      "changeType": "new",
+      "changeSummary": "新增并核准金融资料：这篇开放获取研究于2026年9月11日发表，以线路层级数据评估基础设施投资与公共安全停电事件之间的关系。",
+      "title": "加州线路投资未显示减少公共安全停电的明确关联",
+      "sourceDate": "2026-09-11",
+      "sourceVerification": {
+        "ok": true,
+        "checkedAt": "2026-09-12 07:20（北京时间）",
+        "sources": [
+          {
+            "name": "Scientific Reports",
+            "url": "https://www.nature.com/articles/s41598-026-50735-4"
+          }
+        ]
+      }
+    },
+    {
+      "target": "health/01",
+      "changeType": "new",
+      "changeSummary": "新增并核准身体健康资料：ImmunoPRISM随机二期试验比较固定疗程teclistamab与来那度胺加地塞米松，主要终点为完全缓解率。",
+      "title": "随机二期试验比较高风险冒烟型多发性骨髓瘤两种方案",
+      "sourceDate": "2026-09-11",
+      "sourceVerification": {
+        "ok": true,
+        "checkedAt": "2026-09-12 07:20（北京时间）",
+        "sources": [
+          {
+            "name": "Nature Medicine",
+            "url": "https://www.nature.com/articles/s41591-026-04642-w"
+          }
+        ]
+      }
+    },
+    {
+      "target": "papers/01",
+      "changeType": "new",
+      "changeSummary": "新增并核准论文研究资料：这篇开放获取研究于2026年9月11日发表，研究钕掺杂锰氧化物在酸性析氧反应中的表现。",
+      "title": "钕掺杂稳定锰基酸性析氧催化剂的活性与耐久性",
+      "sourceDate": "2026-09-11",
+      "sourceVerification": {
+        "ok": true,
+        "checkedAt": "2026-09-12 07:20（北京时间）",
+        "sources": [
+          {
+            "name": "Nature Communications",
+            "url": "https://www.nature.com/articles/s41467-026-77291-9"
+          }
+        ]
+      }
+    },
+    {
+      "target": "logic/01",
+      "changeType": "new",
+      "changeSummary": "新增并核准逻辑资料：这篇Review Article于2026年9月11日发表，讨论如何用观测检验宇宙是否具有非平凡整体拓扑。",
+      "title": "宇宙拓扑综述展示如何区分未发现证据与排除假设",
+      "sourceDate": "2026-09-11",
+      "sourceVerification": {
+        "ok": true,
+        "checkedAt": "2026-09-12 07:20（北京时间）",
+        "sources": [
+          {
+            "name": "Nature Astronomy",
+            "url": "https://www.nature.com/articles/s41550-026-02930-6"
+          }
+        ]
+      }
+    }
+  ]
+}

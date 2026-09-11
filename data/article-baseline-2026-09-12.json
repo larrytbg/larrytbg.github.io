@@ -1,0 +1,790 @@
+{
+  "capturedOn": "2026-09-12",
+  "articles": {
+    "codex/01": {
+      "title": "Codex CLI 的安装、登录与首个任务流程",
+      "semanticHash": "f284424de8b356ba878b7a86971cc3c7d075f4bafcfef4b687c4f27dcc768891",
+      "sourceUrls": [
+        "https://learn.chatgpt.com/docs/codex/cli"
+      ]
+    },
+    "codex/02": {
+      "title": "项目指导文件如何影响 Codex 的任务边界",
+      "semanticHash": "1696629c2e38410dd4c6059bce800b1ee0a53ae5a795bfdb05f29731fe3c7e9f",
+      "sourceUrls": [
+        "https://learn.chatgpt.com/docs/agent-configuration/agents-md"
+      ]
+    },
+    "codex/03": {
+      "title": "Codex 云端任务与本地工作区的执行边界",
+      "semanticHash": "2a25bbef81b06845a460245b15b4b3722e16dc1e68968d4624f80ab5ad7dfdfb",
+      "sourceUrls": [
+        "https://learn.chatgpt.com/docs/cloud"
+      ]
+    },
+    "codex/04": {
+      "title": "Codex 代码审查为何要回到差异与测试证据",
+      "semanticHash": "754f6fcc511aba931a9475a8a1cf073691a73c209cb361e8e79ea9cbc2e2abc3",
+      "sourceUrls": [
+        "https://learn.chatgpt.com/docs/code-review",
+        "https://learn.chatgpt.com/guides/best-practices"
+      ]
+    },
+    "codex/05": {
+      "title": "完成 Codex 任务前为什么要保留验证证据",
+      "semanticHash": "23b508cca91cbe4443ba004a4dc869d7da51ebaf596a60a3d6a63be200124ead",
+      "sourceUrls": [
+        "https://learn.chatgpt.com/guides/best-practices"
+      ]
+    },
+    "codex/06": {
+      "title": "Amazon Bedrock新增缓存网页搜索与远程压缩，长上下文成本更可控",
+      "semanticHash": "f645eabbb1c963a415832d294e165246cf545cc0aadd531dd886b5fddfbb3c99",
+      "sourceUrls": [
+        "https://learn.chatgpt.com/docs/changelog"
+      ]
+    },
+    "codex/07": {
+      "title": "命令显示和会话回放会遮盖完整密钥，降低误泄露风险",
+      "semanticHash": "091bdf0ff5dfa876af3bd357803266fc741d9cb2f64cd0e92fff58daf8af4cb1",
+      "sourceUrls": [
+        "https://learn.chatgpt.com/docs/changelog"
+      ]
+    },
+    "codex/08": {
+      "title": "Windows后台进程中断和路径处理得到修复，长任务恢复更稳定",
+      "semanticHash": "dc0a8b49b9e35dab26f8aa7c753971828880d5291d5eedd9091d0ec244ae4f9a",
+      "sourceUrls": [
+        "https://learn.chatgpt.com/docs/changelog"
+      ]
+    },
+    "codex/09": {
+      "title": "用插件和连接器扩展外部资料与工具",
+      "semanticHash": "e3df24457242e76ff700fb5cd342a77bed52113e40eb661df0950168d02c0557",
+      "sourceUrls": [
+        "https://developers.openai.com/codex/use-cases"
+      ]
+    },
+    "codex/10": {
+      "title": "OpenAI暂停部分前沿训练，说明高能力模型要把隔离和监控放在速度前面",
+      "semanticHash": "4153fb36e02f0fc4adfe58887ea7ea4adb78182a019b23a7bdca84b51e31b96d",
+      "sourceUrls": [
+        "https://openai.com/index/pacing-model-development-cyber-capabilities/"
+      ]
+    },
+    "daily/01": {
+      "title": "NASA卫星影像记录马里尘暴羽流",
+      "semanticHash": "c39866aa8d9137c8e2e4218f8e895691a38b58a3dc1ff8c1edc3e7cf502f8386",
+      "sourceUrls": [
+        "https://science.nasa.gov/earth/earth-observatory/dust-storm-sweeps-over-mali/"
+      ]
+    },
+    "daily/02": {
+      "title": "NASA钱德拉望远镜发现异常低能X射线天体群",
+      "semanticHash": "e1b9f1d5f05f2182959a96471d3783a5f1a266aef8b6dc3ab039bd049ea2f3d6",
+      "sourceUrls": [
+        "https://science.nasa.gov/missions/chandra/nasas-chandra-unveils-mysterious-x-ray-objects/"
+      ]
+    },
+    "daily/03": {
+      "title": "NASA介绍卫星如何在厄尔尼诺期间辅助飓风研究",
+      "semanticHash": "68b06ba9240ac7998131e1ae656b0228413fcfad8d95ab9ff26d4a4750c4d4e9",
+      "sourceUrls": [
+        "https://www.nasa.gov/missions/jason-cs-sentinel-6/how-2-us-european-satellites-are-studying-hurricanes-during-el-nino/"
+      ]
+    },
+    "daily/04": {
+      "title": "Google 汇总2026年7月AI产品和研究更新",
+      "semanticHash": "4075844e42548141f6d1d419b94585d8b29ad1736421618e91c337988d0eb896",
+      "sourceUrls": [
+        "https://blog.google/innovation-and-ai/technology/ai/google-ai-updates-july-2026/"
+      ]
+    },
+    "daily/05": {
+      "title": "FDA 就生成式AI医疗器械监管方法征求反馈",
+      "semanticHash": "299fd59e9024fce2a9423bf606aa5aa3613b3508240ad1d8384f72895634a80f",
+      "sourceUrls": [
+        "https://www.fda.gov/news-events/press-announcements/fda-seeks-public-feedback-inform-regulatory-approach-generative-ai-enabled-medical-devices"
+      ]
+    },
+    "daily/06": {
+      "title": "刚果（金）邦迪布焦埃博拉仍在传播，最新WHO完整批次报2124例和828死",
+      "semanticHash": "a79abce73f587b2cb6249cf90036fc4c90ba1887ad937c1445659dc747e3047e",
+      "sourceUrls": [
+        "https://www.who.int/emergencies/disease-outbreak-news/item/2026-DON613"
+      ]
+    },
+    "daily/07": {
+      "title": "欧盟AI沙盒进入法定落地阶段，但各成员国完成度不能只凭期限判断",
+      "semanticHash": "701c580308b77feadd09aa27505b9d412b94d7fc26d3c106cd0e612367b4a4a6",
+      "sourceUrls": [
+        "https://eur-lex.europa.eu/eli/reg/2024/1689/oj"
+      ]
+    },
+    "daily/08": {
+      "title": "贸易风险判断要同时看数量、价格和政策，单看关税标题容易误判",
+      "semanticHash": "d05e48a856a24461055ce20303f6a415769a192490263d6bb1ade21b1188e6c1",
+      "sourceUrls": [
+        "https://www.wto.org/english/res_e/statis_e/statis_e.htm"
+      ]
+    },
+    "daily/09": {
+      "title": "科技新闻要区分产品发布、演示与规模化使用",
+      "semanticHash": "2d8feb35130bccec88966300e16abb914dc9fb3037e87fa70b25a02e711d18c5",
+      "sourceUrls": [
+        "https://www.oecd.org/digital/"
+      ]
+    },
+    "daily/10": {
+      "title": "哈萨克斯坦首届库鲁尔泰选举完成投票，74.19%是初步投票率而非席位结果",
+      "semanticHash": "557825fa2a1768766612db45184d6944f1d26acfc79545892c32b7063df40fc4",
+      "sourceUrls": [
+        "https://www.election.gov.kz/rus/news/releases/index.php?ID=10571",
+        "https://www.election.gov.kz/rus/news/releases/index.php?ID=10535",
+        "https://election.gov.kz/eng/news/releases/index.php?ID=10256"
+      ]
+    },
+    "finance/01": {
+      "title": "欧洲央行上调三项关键利率并发布新基线预测",
+      "semanticHash": "354d2d1d0989ee55c825f78efebb1dde9a4d7694622da892d909340ba80f1b4c",
+      "sourceUrls": [
+        "https://www.ecb.europa.eu/press/pr/date/2026/html/ecb.mp260910~314e508016.en.html"
+      ]
+    },
+    "finance/02": {
+      "title": "美国财政部制裁涉网络诈骗的跨国犯罪组织Xinbi Guarantee",
+      "semanticHash": "0413fd3e38e8148fce5d72d4edcb671a380e990d8627575f54cd6ee8d38a308b",
+      "sourceUrls": [
+        "https://home.treasury.gov/news/press-releases/sb0624/"
+      ]
+    },
+    "finance/03": {
+      "title": "ECB七月会议的真正信号：维持利率不变，但能源与通胀风险仍偏上行",
+      "semanticHash": "0e89ef7e4a021871ddbdccdcf482806e2a9600bed76e485a0de2396461624ee3",
+      "sourceUrls": [
+        "https://www.ecb.europa.eu/press/accounts/2026/html/ecb.mg260827~f06c21fd54.en.html"
+      ]
+    },
+    "finance/04": {
+      "title": "国际收支表为何要区分经常账户和金融账户",
+      "semanticHash": "3e32aa7f88285ba16f69861b450c2b0a236c8621015dad7dc85c7d557a0281af",
+      "sourceUrls": [
+        "https://data.imf.org/Datasets/BOP"
+      ]
+    },
+    "finance/05": {
+      "title": "收益率曲线反映预期，但不能单独预测衰退",
+      "semanticHash": "813469014aaecaf2d2d30a90bb8667f9d8216231c88cf8887fc44c2f6b48c572",
+      "sourceUrls": [
+        "https://www.newyorkfed.org/research/data_indicators/term-premia-tabs",
+        "https://www.newyorkfed.org/medialibrary/media/research/capital_markets/ycfaq.pdf"
+      ]
+    },
+    "finance/06": {
+      "title": "美国7月生产者价格环比持平，但服务和建筑上涨说明成本压力并未全面消失",
+      "semanticHash": "03bec44f77ac7ec317c70280e807f64236cdde1f8a669383da413141cf458cf1",
+      "sourceUrls": [
+        "https://www.bls.gov/news.release/ppi.nr0.htm"
+      ]
+    },
+    "finance/07": {
+      "title": "关税退款可能改善企业现金流，但法律执行完成前仍属于不确定资产",
+      "semanticHash": "95ea868bc5d0ba1564240dcaf4afb1615ea80167cc4e8f7f906b4c11a75b37ae",
+      "sourceUrls": [
+        "https://apnews.com/article/435c34b570308d57895212baea601854"
+      ]
+    },
+    "finance/08": {
+      "title": "金融制裁替代部分军事压力，最终效果取决于银行、买家和第三国执行",
+      "semanticHash": "fe839feea86efab818ccdca483f5c22567d3ccab3e2ad73b6203cd7c1d6ee4de",
+      "sourceUrls": [
+        "https://apnews.com/article/d96e3bf53eb4050097e6cab128db82cb"
+      ]
+    },
+    "finance/09": {
+      "title": "全球金融条件仍较宽松，但战争、利率和高估值让市场更容易突然波动",
+      "semanticHash": "cdc619aff9c37f069d81f01bc9f817455e027877ad535a10a2a5c92e9ded507b",
+      "sourceUrls": [
+        "https://www.imf.org/-/media/files/publications/weo/2026/update/july/english/text.pdf"
+      ]
+    },
+    "finance/10": {
+      "title": "美加关税谈判破裂，50%关税已生效但实际冲击取决于覆盖清单",
+      "semanticHash": "1c0f23d6437a7f2e0d0227a9a1910797fe7702fb1e45d262ec96a15d4848f955",
+      "sourceUrls": [
+        "https://www.whitehouse.gov/presidential-actions/2026/07/imposing-additional-duties-to-offset-canadian-discrimination-against-the-commerce-of-the-united-states-with-respect-to-alcoholic-beverages/",
+        "https://www.whitehouse.gov/fact-sheets/2026/07/fact-sheet-president-donald-j-trump-imposes-additional-tariffs-on-canada/",
+        "https://apnews.com/article/857ef76b20a766e370d70176135b678e",
+        "https://apnews.com/article/a180ac85a70bbfb512ea59c224cb6c31"
+      ]
+    },
+    "financial-literacy/01": {
+      "title": "复利不是保证收益：先看利率、时间、费用与波动",
+      "semanticHash": "b55cdda0d43cfd1f4614b9545b8d724a946abe500d8a061008453737fa9c01ad",
+      "sourceUrls": [
+        "https://www.investor.gov/additional-resources/information/youth/teachers-classroom-resources/what-compound-interest"
+      ]
+    },
+    "financial-literacy/02": {
+      "title": "信用分不是唯一数字：不同模型、产品和报告会给出不同结果",
+      "semanticHash": "ec19b5983623548d560197ee7d1f3f49b9a41756cda9a36900835024d0311ebd",
+      "sourceUrls": [
+        "https://www.consumerfinance.gov/consumer-tools/credit-reports-and-scores/understand-your-credit-score/"
+      ]
+    },
+    "financial-literacy/03": {
+      "title": "2026年美国退休账户限额：401(k) 24500美元，IRA 7500美元",
+      "semanticHash": "63f1de47364258b39526e6551df9e5201692f5245de67e57f48d8c04e9d214c8",
+      "sourceUrls": [
+        "https://www.irs.gov/retirement-plans/cola-increases-for-dollar-limitations-on-benefits-and-contributions"
+      ]
+    },
+    "financial-literacy/04": {
+      "title": "FDIC保险按银行与所有权类别计算，不是每个账户各保25万美元",
+      "semanticHash": "de10f16f7b67440f00bfa3891d583e8b10ebd6b7db8cf7d9a49a41c32fa17a81",
+      "sourceUrls": [
+        "https://www.fdic.gov/resources/deposit-insurance"
+      ]
+    },
+    "financial-literacy/05": {
+      "title": "分散投资降低集中风险，但不能消除市场亏损",
+      "semanticHash": "d9fb665056971914d95c2434be0039b23d589109f58cd584879b9a2ee68c34b9",
+      "sourceUrls": [
+        "https://www.investor.gov/introduction-investing/general-resources/news-alerts/alerts-bulletins/investor-bulletins/investorgov-tips-2026-investor-bulletin"
+      ]
+    },
+    "financial-literacy/06": {
+      "title": "中级经济法：合同成立、生效和履行是三个不同问题",
+      "semanticHash": "757136cf266096589a4847788fbc9b4b4ba3cfb1e68fc92b6a99ddafb390126b",
+      "sourceUrls": [
+        "https://wb.flk.npc.gov.cn/flfg/PDF/bd53dd912c1048f2aecbaa229238334b.pdf"
+      ]
+    },
+    "financial-literacy/07": {
+      "title": "中级经济法：公司治理要分清股东、董事和管理层的权责",
+      "semanticHash": "948b21b90d0c41fb8e70b5e86dc411247b980d9445566db6e248cf08bf02425b",
+      "sourceUrls": [
+        "https://www.npc.gov.cn/npc/c2/c30834/202312/t20231229_433999.html"
+      ]
+    },
+    "financial-literacy/08": {
+      "title": "中级经济法：财务披露不是可选说明，重要遗漏也会形成责任",
+      "semanticHash": "7c98dbe26cfe0dcda62554ba6a8c62a1327df6667f7b85899ca71d7dba4f187a",
+      "sourceUrls": [
+        "https://www.csrc.gov.cn/csrc/c106256/c1653948/content.shtml"
+      ]
+    },
+    "financial-literacy/09": {
+      "title": "中级财务管理：预算差异和营运资金要追到业务原因",
+      "semanticHash": "daf44267cd1c6ea3ef9847971e1611548a7bc9f74648b831b81766c276b86b5e",
+      "sourceUrls": [
+        "https://openstax.org/books/principles-of-finance-2e/pages/19-1-what-is-working-capital"
+      ]
+    },
+    "financial-literacy/10": {
+      "title": "中级财务管理：净现值把未来现金换算成今天可比较的价值",
+      "semanticHash": "874ff0bfd3440cde212f6e20d421a5e0b9fd88a20b302db87e93481a2bdae3fc",
+      "sourceUrls": [
+        "https://openstax.org/books/principles-finance/pages/16-2-net-present-value-npv-method"
+      ]
+    },
+    "health/01": {
+      "title": "WHO以改变叙事为主题推动自杀预防公共行动",
+      "semanticHash": "e97b8b1a5e6c0638da1899517dec09f0f72635ded073ca13294c0b046d62f6f1",
+      "sourceUrls": [
+        "https://www.who.int/campaigns/world-suicide-prevention-day/2026"
+      ]
+    },
+    "health/02": {
+      "title": "把柔性电极固定在脑组织上：小鼠80周记录离临床脑机接口还有多远",
+      "semanticHash": "a77b01936fb935384054d2e1e7007e7a24b83c2933023c8a1f1db23a53f70ed2",
+      "sourceUrls": [
+        "https://www.nature.com/articles/s41467-026-77145-4"
+      ]
+    },
+    "health/03": {
+      "title": "急性间质性肾炎的空间图谱：炎症信号与预测相互作用不等于新疗法",
+      "semanticHash": "5e534c26baadf4be2a805c76a0a716b2d029e5e4095e72320fe6ad0c763848a5",
+      "sourceUrls": [
+        "https://www.nature.com/articles/s41467-026-77210-y"
+      ]
+    },
+    "health/04": {
+      "title": "WHO更新刚果（金）本迪布焦埃博拉建议：核心仍是监测、追踪与安全照护",
+      "semanticHash": "a605a0e7ccb3768d8295f285607a455bd260c98df24556963c72a7650cd6f1c5",
+      "sourceUrls": [
+        "https://www.who.int/news/item/24-08-2026-second-meeting-of-the-ihr-emergency-committee-on-the-epidemic-of-ebola-bundibugyo-virus-disease-in-the-democratic-republic-of-the-congo-temporary-recommendations"
+      ]
+    },
+    "health/05": {
+      "title": "WHO数字健康战略为何强调治理、可及性与证据",
+      "semanticHash": "c1626f5fd6a2cbdf7be572d5b4acb34b1e82bbcf740c67d7342d03a71a6128a3",
+      "sourceUrls": [
+        "https://www.who.int/publications/i/item/9789240020924"
+      ]
+    },
+    "health/06": {
+      "title": "长新冠综合门诊与疲劳改善相关，额外多器官MRI在12周未显示优势",
+      "semanticHash": "e44a08b3a0de3c04f5da7a6aeb72db673bde959bf62b2639d498b3575f845a0f",
+      "sourceUrls": [
+        "https://www.nature.com/articles/s41591-026-04552-x"
+      ]
+    },
+    "health/07": {
+      "title": "Retina4IRD把遗传性视网膜病Top-5诊断准确率提高到88.5%，仍需基因检测确认",
+      "semanticHash": "7ca601695db98c5cd9f2064b8fdf9893df036effbe82256b20c6cb5f2c89e83a",
+      "sourceUrls": [
+        "https://www.nature.com/articles/s41591-026-04545-w"
+      ]
+    },
+    "health/08": {
+      "title": "Apitegromab在24周少损失1.9公斤瘦体重，但尚未证明长期功能获益",
+      "semanticHash": "4e2dfbdc09898b90515946eac1a7d607718d47bd2e136e2aa17fd8fd49a0f589",
+      "sourceUrls": [
+        "https://www.nature.com/articles/s41591-026-04440-4"
+      ]
+    },
+    "health/09": {
+      "title": "疫苗决策要区分个人保护与群体传播",
+      "semanticHash": "4182322424f12c603cfac3ed6662a798855fd7621c253f170acd0fea6fe48d5a",
+      "sourceUrls": [
+        "https://www.who.int/health-topics/vaccines-and-immunization"
+      ]
+    },
+    "health/10": {
+      "title": "美国召回苜蓿芽苗菜，55人染病但污染源调查仍在进行",
+      "semanticHash": "072bf83dd80c31ed29a9a8419dad2ff63dfc22081d6826b5b54496deca122a84",
+      "sourceUrls": [
+        "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/everything-sprouts-llc-recalls-alfalfa-sprouts-due-potential-e-coli-and-salmonella-risk",
+        "https://www.fda.gov/food/outbreaks-foodborne-illness/outbreak-investigation-shiga-toxin-producing-e-coli-salmonella-sprouts-august-2026"
+      ]
+    },
+    "history/01": {
+      "title": "美国宪法如何分配联邦政府权力",
+      "semanticHash": "446a9daa219926dbedc2af2fffe4e99b59dad8a79aa608b0a33f905ff25c4d3e",
+      "sourceUrls": [
+        "https://www.archives.gov/founding-docs/constitution"
+      ]
+    },
+    "history/02": {
+      "title": "麦哲伦远航：个人行动与帝国组织应分开理解",
+      "semanticHash": "b0dabb6395c0d321ff13071c4c88807d3264b60cbcef9b6262c61f1ea8622986",
+      "sourceUrls": [
+        "https://www.unesco.org/en/memory-world/first-voyage-circumnavigation-fernao-de-magalhaes-and-juan-sebastian-elcano-1519-1522",
+        "https://www.loc.gov/item/today-in-history/november-28/"
+      ]
+    },
+    "history/03": {
+      "title": "工业革命不只是机器：能源、制度与劳动力的组合",
+      "semanticHash": "9773f45d625c13c05b0bda99ff8978c124018f17f6508a6aa0c243dd81dffa74",
+      "sourceUrls": [
+        "https://www.nationalarchives.gov.uk/education/resources/victorian-industrial-towns/",
+        "https://www.nationalarchives.gov.uk/currency-converter/living-in-the-19th-century/"
+      ]
+    },
+    "history/04": {
+      "title": "古腾堡印刷术如何改变文本复制条件",
+      "semanticHash": "a2f5bc553cd0e63152bd96ca97a555f9bf90bc8ab493f2eb2bb7930822f89e8c",
+      "sourceUrls": [
+        "https://www.loc.gov/exhibits/bibles/the-gutenberg-bible.html",
+        "https://guides.loc.gov/gutenberg"
+      ]
+    },
+    "history/05": {
+      "title": "纽伦堡审判如何留下战争罪责的法律记录",
+      "semanticHash": "6cef2c22a86dca9e0862e611e0959e67e4756f6d7580c2e5911bc9fb8099ca6e",
+      "sourceUrls": [
+        "https://encyclopedia.ushmm.org/content/en/article/international-military-tribunal-at-nuremberg"
+      ]
+    },
+    "history/06": {
+      "title": "苏轼的多次起落说明：多重能力和关系能降低单一职位风险",
+      "semanticHash": "3c315e1eeaf7bd5caf6baa559e713fa5e8d884cf09e45ccadebfe451aa2222ee",
+      "sourceUrls": [
+        "https://www.dpm.org.cn/collection/handwriting/230730.html"
+      ]
+    },
+    "history/07": {
+      "title": "司马迁说明：长期使命必须落实为作品和边界，不能等同无限忍耐",
+      "semanticHash": "4e44522b13e88865b5ba5181a4ee46b67299eeb0452c4165eaef2acc020eabe7",
+      "sourceUrls": [
+        "https://www.dpm.org.cn/lemmas/240631.html"
+      ]
+    },
+    "history/08": {
+      "title": "张骞出使说明：原目标失败后，应单独评估信息、关系和路线资产",
+      "semanticHash": "1a2e7329f1867399e1ed98f74e5e40af59d1d565c41f1d2bdf9c159e922e32cc",
+      "sourceUrls": [
+        "https://www.nopss.gov.cn/n1/2019/0923/c219470-31368124.html"
+      ]
+    },
+    "history/09": {
+      "title": "郑和远航的关键不是个人胆识，而是组织、补给与伙伴网络",
+      "semanticHash": "983f6a983e40a038d42e0b3ad227d5ba403d4e0c45ebce289483046cc048305e",
+      "sourceUrls": [
+        "https://www.nopss.gov.cn/n1/2023/1018/c448861-40097871.html"
+      ]
+    },
+    "history/10": {
+      "title": "居里夫人的成就与伤害共同提醒：热爱必须配套安全和恢复机制",
+      "semanticHash": "90ef770c636bacbbfd44c33eddb8d490f01927b358f43f2c73ab38ed4c024e53",
+      "sourceUrls": [
+        "https://www.unesco.org/en/virtual-science-museum/women-science/marie-sklodowska-curie?hub=196669"
+      ]
+    },
+    "logic/01": {
+      "title": "模态逻辑如何表达“必然”与“可能”",
+      "semanticHash": "06f05f056dfbb8ff750ebdb5adcdb1a793513e3b82e3bbef2a21d565325c5ae9",
+      "sourceUrls": [
+        "https://plato.stanford.edu/entries/logic-modal/"
+      ]
+    },
+    "logic/02": {
+      "title": "悖论如何暴露语言、集合或规则的边界",
+      "semanticHash": "7609bf0133412bbb47dab6bd862c07af19257c975fc075a2c583c008ad8f45af",
+      "sourceUrls": [
+        "https://plato.stanford.edu/entries/paradoxes-contemporary-logic/"
+      ]
+    },
+    "logic/03": {
+      "title": "因果图为何要区分观察与干预",
+      "semanticHash": "efa7b7d46901433b96b2976e3fd7acf42340bccd2a5489a8fd7ccaf6fb9f73c6",
+      "sourceUrls": [
+        "https://plato.stanford.edu/entries/causal-models/"
+      ]
+    },
+    "logic/04": {
+      "title": "类型论如何限制部分自指表达",
+      "semanticHash": "2a2e625e95e3bf4aca3bcc394a2d6d9cd8599aea2d513ecab6ffdbce82cc1617",
+      "sourceUrls": [
+        "https://plato.stanford.edu/entries/type-theory/"
+      ]
+    },
+    "logic/05": {
+      "title": "谓词逻辑如何表达对象、属性与量词关系",
+      "semanticHash": "9b618ea21ab0068c1e714db9a6d7f0af6e7c420736fd606a8369385f03e763c0",
+      "sourceUrls": [
+        "https://plato.stanford.edu/entries/logic-classical/"
+      ]
+    },
+    "logic/06": {
+      "title": "肯定后件会把多种可能原因误写成唯一原因",
+      "semanticHash": "f6e3381ac7e9be159a9fb6a8fa14ded9ee2d5ca88011361aba7830ec18bdbc34",
+      "sourceUrls": [
+        "https://forallx.openlogicproject.org/"
+      ]
+    },
+    "logic/07": {
+      "title": "错误二分把多方案压成两极，破解方法是寻找分阶段和附条件选择",
+      "semanticHash": "996c8aabb715456d8e14ef0c4942149f8160492bdd12f0f1c4ddea7fd313685f",
+      "sourceUrls": [
+        "https://forallx.openlogicproject.org/"
+      ]
+    },
+    "logic/08": {
+      "title": "相关关系要升级为因果判断，还需时间顺序、比较和机制",
+      "semanticHash": "33cd0dc3f8c3f1953267d53948054ba9f9b9154f55f82fd722cf6a5373bc07d6",
+      "sourceUrls": [
+        "https://forallx.openlogicproject.org/"
+      ]
+    },
+    "logic/09": {
+      "title": "忽视基础率会让罕见事件的判断严重偏差",
+      "semanticHash": "2c6622308b2afb3eed87320fe2d2dfe019e71f14097435476bf8b9cea52b39a6",
+      "sourceUrls": [
+        "https://plato.stanford.edu/entries/bayes-theorem/"
+      ]
+    },
+    "logic/10": {
+      "title": "先把对方观点说到最强，再进行反驳",
+      "semanticHash": "5b72f556de72c23842bdb1f6299d8fc216893e1cf50259f7e6925c952ecfac2e",
+      "sourceUrls": [
+        "https://iep.utm.edu/fallacy/"
+      ]
+    },
+    "management/01": {
+      "title": "WHO介绍传统医学研究、政策与公共卫生伙伴协作案例",
+      "semanticHash": "ab1d7fcd6c71c89b42d412d58ff6d77e16d6cacfd0ec6b789784de387e83b718",
+      "sourceUrls": [
+        "https://www.who.int/news/item/09-09-2026-public-health-leaders-explore-how-traditional-medicine-can-support-health-system-transformation"
+      ]
+    },
+    "management/02": {
+      "title": "把发射前关键节点拆成门禁：Roman望远镜的阶段闸门管理",
+      "semanticHash": "6e9c02a9ef0b3b2ccfbf98d06f08744f5f3e2ab40c5988f413364860878912b5",
+      "sourceUrls": [
+        "https://science.nasa.gov/blogs/roman/2026/08/25/nasas-nancy-grace-roman-space-telescope-arrives-at-hangar/"
+      ]
+    },
+    "management/03": {
+      "title": "RACI矩阵如何减少责任空缺与重复决策",
+      "semanticHash": "b32f0b14ccf835e3de0b2f6bc79260a95558d4087a5e7b79e9bf0eea0da386d1",
+      "sourceUrls": [
+        "https://www.atlassian.com/work-management/project-management/raci-chart",
+        "https://www.pmi.org/blog/stakeholder-management-raci"
+      ]
+    },
+    "management/04": {
+      "title": "设计文档如何记录取舍和决策依据",
+      "semanticHash": "8d21bfaa8edd670cc8597debfa78455b0ab1b3fa3c7de7d861dd1ae1b7d9bb06",
+      "sourceUrls": [
+        "https://docs.cloud.google.com/architecture/architecture-decision-records"
+      ]
+    },
+    "management/05": {
+      "title": "管理反馈应从人格评价转向可观察行为",
+      "semanticHash": "649fc2ce1f07e3741f8e6ee70daaa51f9db0c18493330698c2f1756f0bd926b1",
+      "sourceUrls": [
+        "https://www.ccl.org/articles/leading-effectively-articles/sbi-feedback-model-a-quick-win-to-improve-talent-conversations-development/",
+        "https://www.cipd.org/uk/knowledge/evidence-reviews/performance-feedback/"
+      ]
+    },
+    "management/06": {
+      "title": "利益相关者地图按权力、态度和证据更新，不给同事贴永久标签",
+      "semanticHash": "f43fd3f4eedae30a149a18b2833fdc02a356b59d9eeeae98c903553389c7b9c3",
+      "sourceUrls": [
+        "https://hbr.org/topic/subject/organizational-culture"
+      ]
+    },
+    "management/07": {
+      "title": "授权必须同时下放责任和决策权，并写清何时需要请示",
+      "semanticHash": "c18079e252827692b16bdc37e8f3f3b5320cba378a37c9fe30613e8e2b0b028d",
+      "sourceUrls": [
+        "https://openstax.org/details/books/principles-management"
+      ]
+    },
+    "management/08": {
+      "title": "冲突升级应分级推进并保留降级通道，紧急违法和安全风险除外",
+      "semanticHash": "c521465fd36427588e9c0e719d76dc9a5c4d7ae2b0bb9159a0077840f454a56c",
+      "sourceUrls": [
+        "https://www.pon.harvard.edu/daily/conflict-resolution/how-to-manage-conflict-at-work/"
+      ]
+    },
+    "management/09": {
+      "title": "心理安全必须与高标准并存：允许报错，不等于允许不负责",
+      "semanticHash": "1c31447f57759d7178702c229e5aa260f0a52b506c70c7157eb99177e8da5688",
+      "sourceUrls": [
+        "https://www.library.hbs.edu/working-knowledge/psychological-safety-is-an-asset-not-a-luxury"
+      ]
+    },
+    "management/10": {
+      "title": "项目启动前做预演失败，结束后复盘事实，形成前后两道防线",
+      "semanticHash": "832bbaecbfca8ca7a05c314db2ed176e4c365529cebc7ef567d31eaa00ab0f27",
+      "sourceUrls": [
+        "https://hbr.org/2007/09/performing-a-project-premortem"
+      ]
+    },
+    "papers/01": {
+      "title": "专家建议文章提炼锂离子电池研发与商业化的可迁移经验",
+      "semanticHash": "9a1ac184638229f2984c8ea81085f793e87d3c73fea1b5c6a64df39a0ed2c4d8",
+      "sourceUrls": [
+        "https://www.nature.com/articles/s44359-026-00203-z"
+      ]
+    },
+    "papers/02": {
+      "title": "把水泥卷成“千层酥”：层状结构同时追求韧性与隔热",
+      "semanticHash": "b2839f8397911f523159ebfdc3c6f8c1a914dcb731254202ca030bd3b79fda53",
+      "sourceUrls": [
+        "https://www.nature.com/articles/s41467-026-77120-z"
+      ]
+    },
+    "papers/03": {
+      "title": "用潮汐重力给火星内部做断层扫描：南半球地幔可能藏着热异常",
+      "semanticHash": "9e2b6de9607a22d28e01d3b32938c2260b40f58e560d2fe3f1c062353e11ba44",
+      "sourceUrls": [
+        "https://www.nature.com/articles/s41586-026-10893-x"
+      ]
+    },
+    "papers/04": {
+      "title": "DNA存储逼近密度上限：1.66比特每碱基背后仍有合成与读取成本",
+      "semanticHash": "e83c53f437ba5bf73a4f7468a6b137d38138fd20a24525fc935438651744f662",
+      "sourceUrls": [
+        "https://www.nature.com/articles/s41467-026-77024-y"
+      ]
+    },
+    "papers/05": {
+      "title": "月球南极或有微生物短期存活区：存活不等于生长，更不是发现月球生命",
+      "semanticHash": "812ec2e4c366967520e8d0c84b3829ac5586fdb4b006f841543535961912cb87",
+      "sourceUrls": [
+        "https://science.nasa.gov/humans-in-space/human-related-microbes-may-survive-moons-south-pole-nasa-finds/",
+        "https://doi.org/10.1126/sciadv.aec0811"
+      ]
+    },
+    "papers/06": {
+      "title": "体细胞突变可追踪人类小胶质细胞来源，提供衰老谱系图但不是疾病预测",
+      "semanticHash": "46ec5b379a362eed6f122c14d1ebbf28575a4a74754f35bc9b692c34d17d1899",
+      "sourceUrls": [
+        "https://www.nature.com/articles/s41586-026-10939-0"
+      ]
+    },
+    "papers/07": {
+      "title": "硅自旋量子比特实现四体奇偶校验，接近纠错基本操作但离容错计算仍远",
+      "semanticHash": "606c39c82eaa54cda09aaa3f58789afcdbd50b69b367f6a5eff6e37e379a77c0",
+      "sourceUrls": [
+        "https://www.nature.com/articles/s41586-026-10766-3"
+      ]
+    },
+    "papers/08": {
+      "title": "酶促糖基化与酰胺化可降低多烯类毒性，仍需临床前安全和药效验证",
+      "semanticHash": "dcdbe8b5ab02aa57a642efb1c5e2d63a33e368d109ef8684c180a5abe90b5585",
+      "sourceUrls": [
+        "https://www.nature.com/articles/s41586-026-10834-8"
+      ]
+    },
+    "papers/09": {
+      "title": "系统综述比单篇论文更适合回答稳定结论",
+      "semanticHash": "3eff30af5e461f002e8d705737a25e5dbd82e42752853cbb5043c836b444ea76",
+      "sourceUrls": [
+        "https://www.cochrane.org/about-us/evidence-based-health-care/systematic-reviews"
+      ]
+    },
+    "papers/10": {
+      "title": "热电材料有了更明确的设计规则，但目前仍是理论框架",
+      "semanticHash": "1af8608f61f19be5509e7373727f1589b9369c74a6246716a762906a8d246bbf",
+      "sourceUrls": [
+        "https://doi.org/10.1016/j.mtadv.2026.100896",
+        "https://www.eurekalert.org/news-releases/1140629"
+      ]
+    },
+    "philosophy/01": {
+      "title": "休谟问题为何要求区分事实陈述与规范结论",
+      "semanticHash": "bf789b3d5ed1182fd9b9f79d46a79c130c25761d67116fd192c85ce58638a829",
+      "sourceUrls": [
+        "https://plato.stanford.edu/entries/hume-moral/"
+      ]
+    },
+    "philosophy/02": {
+      "title": "实用主义如何把信念放回行动与后果中检验",
+      "semanticHash": "9656fe33ca746526445741663f81401f81ac6031f396e21077973625b2446bfa",
+      "sourceUrls": [
+        "https://plato.stanford.edu/entries/pragmatism/"
+      ]
+    },
+    "philosophy/03": {
+      "title": "科学实在论争论的是理论与世界的关系",
+      "semanticHash": "7b53b6f4cada372ea9964a6c89dd4b1689a93ca289e23ed6cd647fabe21f543c",
+      "sourceUrls": [
+        "https://plato.stanford.edu/entries/scientific-realism/"
+      ]
+    },
+    "philosophy/04": {
+      "title": "个人同一性为何要区分身体、记忆与心理连续性",
+      "semanticHash": "4196f15603e245fe1280904e99f42646a73d8dee6d876931b09f0794e3100b56",
+      "sourceUrls": [
+        "https://plato.stanford.edu/entries/identity-personal/"
+      ]
+    },
+    "philosophy/05": {
+      "title": "语言哲学中的指称问题如何影响我们谈论对象",
+      "semanticHash": "4c66f0c85fb272f155d81e0e327f9a1437d27ead64e1bb3f3910d8635c79f8d7",
+      "sourceUrls": [
+        "https://plato.stanford.edu/entries/meaning/"
+      ]
+    },
+    "philosophy/06": {
+      "title": "苏格拉底式提问的目标是暴露定义和理由中的矛盾，不是把对话变成审讯",
+      "semanticHash": "f8d7f7d26fb7e6f46a84a7882788e5d643f1b08cf446efd72cb69416460f635a",
+      "sourceUrls": [
+        "https://plato.stanford.edu/entries/socrates/"
+      ]
+    },
+    "philosophy/07": {
+      "title": "功利主义要比较所有受影响者的长期后果，而不是简单多数表决",
+      "semanticHash": "64e7a8b1357fc509a08ef885e6c6d15d9706e1771357c687719bce385b67fe35",
+      "sourceUrls": [
+        "https://plato.stanford.edu/entries/consequentialism/"
+      ]
+    },
+    "philosophy/08": {
+      "title": "义务论为结果计算设置底线：人不能只被当成实现目标的工具",
+      "semanticHash": "40bcfcae88c8ce8a8626eb0fdc6c6c6934bbc2b18ca429ece1c8cf1e4ddfc99e",
+      "sourceUrls": [
+        "https://plato.stanford.edu/entries/ethics-deontological/"
+      ]
+    },
+    "philosophy/09": {
+      "title": "德性伦理追问的不是一次选择，而是要成为什么样的人",
+      "semanticHash": "ea2973f2647769d23e4bcee0a8ffc646c17fb4911f7aaaece40ec85697319966",
+      "sourceUrls": [
+        "https://plato.stanford.edu/entries/ethics-virtue/"
+      ]
+    },
+    "philosophy/10": {
+      "title": "存在主义提醒：选择会反过来塑造选择者自己",
+      "semanticHash": "fbc0c875949042c1eeeac583829e180affcdf75ad81bf09ac7ad1b2987cc389d",
+      "sourceUrls": [
+        "https://plato.stanford.edu/entries/existentialism/"
+      ]
+    },
+    "ted/01": {
+      "title": "柏拉图“国家之船”：未经航海训练者争夺控制权的思想实验",
+      "semanticHash": "b7d33090f157862f1b6af4227f76d87559df821782ad17524efe798729ead823",
+      "sourceUrls": [
+        "https://ed.ted.com/lessons/platos-infamous-ship-of-state-thought-experiment-michael-vazquez"
+      ]
+    },
+    "ted/02": {
+      "title": "180个陌生人共建图书馆：连接来自共同维护，不只是共享空间",
+      "semanticHash": "499540bd7e14d583e9539b241b0e70342d5be176029af9aae015eb4d0e228f83",
+      "sourceUrls": [
+        "https://www.ted.com/talks/rebecca_toh_how_180_strangers_built_a_library_together"
+      ]
+    },
+    "ted/03": {
+      "title": "Eli Pariser：过滤气泡如何改变信息环境",
+      "semanticHash": "cc53a7501809472e54c1907621618450bfa692c5ccd6e4e58b72cc46b441e29e",
+      "sourceUrls": [
+        "https://www.ted.com/talks/eli_pariser_beware_online_filter_bubbles"
+      ]
+    },
+    "ted/04": {
+      "title": "Julian Treasure：倾听能力决定对话能否真正发生",
+      "semanticHash": "da80ac6495a7f502020d90c80a364cf932cda2fef1410fde91f01f2d98d7be05",
+      "sourceUrls": [
+        "https://www.ted.com/talks/julian_treasure_5_ways_to_listen_better"
+      ]
+    },
+    "ted/05": {
+      "title": "Celeste Headlee：高质量对话需要专注、诚实与提问",
+      "semanticHash": "d5a5b6b0f66b40e35a8abb20cfe5ef16e3c2d1516a88613293628d7fc2eb8de3",
+      "sourceUrls": [
+        "https://www.ted.com/talks/celeste_headlee_10_ways_to_have_a_better_conversation"
+      ]
+    },
+    "ted/06": {
+      "title": "学校不该只奖励标准答案：创造力也需要被当成基本能力",
+      "semanticHash": "494160c68f6b5189f5588c6b62ecebb7f27e983a675031a02a19a0fc4c818c6c",
+      "sourceUrls": [
+        "https://www.ted.com/talks/sir_ken_robinson_do_schools_kill_creativity"
+      ]
+    },
+    "ted/07": {
+      "title": "拖延并非只是不自律：没有截止日期的人生目标反而更危险",
+      "semanticHash": "f9e4a7f34c40315b7754badb0b376f5407d7995483d4b839ad978186e46145ac",
+      "sourceUrls": [
+        "https://www.ted.com/talks/tim_urban_inside_the_mind_of_a_master_procrastinator"
+      ]
+    },
+    "ted/08": {
+      "title": "“力量姿势”能否改变成败仍有争议，但姿态会影响感受与互动",
+      "semanticHash": "565bfa8c09a4305325473a6b2ac1d6427d6aab40170d5e06e7e8cddeaaa9a9db",
+      "sourceUrls": [
+        "https://www.ted.com/talks/amy_cuddy_your_body_language_may_shape_who_you_are"
+      ]
+    },
+    "ted/09": {
+      "title": "脆弱不是毫无边界地暴露自己，而是愿意承担真实连接的风险",
+      "semanticHash": "d01b50376b5d6d924804f98c096ab968d2854327218a7ff79e5afcc95d7d34ae",
+      "sourceUrls": [
+        "https://www.ted.com/talks/brene_brown_the_power_of_vulnerability"
+      ]
+    },
+    "ted/10": {
+      "title": "真正能激发行动的表达，往往先回答“为什么”，再说明做什么",
+      "semanticHash": "b14ffb79de2620786d5d9a4398ae4d88ae0c1b482eb19c62b0d442f387549b6b",
+      "sourceUrls": [
+        "https://www.ted.com/talks/simon_sinek_how_great_leaders_inspire_action"
+      ]
+    }
+  }
+}
