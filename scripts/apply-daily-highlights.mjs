@@ -63,7 +63,9 @@ for (const entry of entries) {
   const extractedSourceDate = extractSourcePublishedOn(html);
   const sourcePublishedOn = hasSourceDateMetadata(html)
     ? extractedSourceDate
-    : existing?.sourcePublishedOn ?? null;
+    : entry.changeType === "new"
+      ? null
+      : existing?.sourcePublishedOn ?? null;
   if (entry.changeType === "new") {
     nextLedger.articles[entry.target] = {
       title: record.title,

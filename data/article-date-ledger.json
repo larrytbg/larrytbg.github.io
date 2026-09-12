@@ -88,10 +88,10 @@
       "evidence": "daily-audit"
     },
     "daily/02": {
-      "title": "NASA钱德拉望远镜发现异常低能X射线天体群",
-      "publishedOn": "2026-09-10",
+      "title": "跨境山地灾害预警要让制度时钟跑在灾害前面",
+      "publishedOn": "2026-09-13",
       "updatedOn": null,
-      "sourcePublishedOn": "2026-09-09",
+      "sourcePublishedOn": "2026-09-12",
       "evidence": "daily-audit"
     },
     "daily/03": {
@@ -164,10 +164,10 @@
       "evidence": "daily-audit"
     },
     "finance/02": {
-      "title": "美国财政部制裁涉网络诈骗的跨国犯罪组织Xinbi Guarantee",
-      "publishedOn": "2026-09-10",
+      "title": "全球顺差与逆差背后是储蓄和投资选择，而不只是贸易竞争力",
+      "publishedOn": "2026-09-13",
       "updatedOn": null,
-      "sourcePublishedOn": "2026-09-09",
+      "sourcePublishedOn": null,
       "evidence": "daily-audit"
     },
     "finance/03": {
@@ -321,12 +321,11 @@
       "evidence": "daily-audit"
     },
     "health/02": {
-      "title": "把柔性电极固定在脑组织上：小鼠80周记录离临床脑机接口还有多远",
-      "publishedOn": "2026-08-16",
-      "updatedOn": "2026-08-28",
-      "sourcePublishedOn": "2026-08-27",
-      "evidence": "git-current-title-first-seen",
-      "commit": "533ae0551f03e6546cc62b87904bcf180e53f980"
+      "title": "青少年心理健康诊断上升要区分真实恶化、识别改善与诊断扩张",
+      "publishedOn": "2026-09-13",
+      "updatedOn": null,
+      "sourcePublishedOn": "2026-09-12",
+      "evidence": "daily-audit"
     },
     "health/03": {
       "title": "急性间质性肾炎的空间图谱：炎症信号与预测相互作用不等于新疗法",
@@ -637,12 +636,11 @@
       "evidence": "daily-audit"
     },
     "papers/02": {
-      "title": "把水泥卷成“千层酥”：层状结构同时追求韧性与隔热",
-      "publishedOn": "2026-08-16",
-      "updatedOn": "2026-08-28",
-      "sourcePublishedOn": "2026-08-27",
-      "evidence": "git-current-title-first-seen",
-      "commit": "533ae0551f03e6546cc62b87904bcf180e53f980"
+      "title": "概率框架在分子模拟中找到区分高低密度非晶冰的局部结构变量",
+      "publishedOn": "2026-09-13",
+      "updatedOn": null,
+      "sourcePublishedOn": "2026-09-12",
+      "evidence": "daily-audit"
     },
     "papers/03": {
       "title": "用潮汐重力给火星内部做断层扫描：南半球地幔可能藏着热异常",
@@ -716,12 +714,11 @@
       "commit": "23adeaf6a1e140d99387e185df77829cfda55737"
     },
     "philosophy/02": {
-      "title": "实用主义如何把信念放回行动与后果中检验",
-      "publishedOn": "2026-08-10",
-      "updatedOn": "2026-08-25",
-      "sourcePublishedOn": null,
-      "evidence": "git-current-title-first-seen",
-      "commit": "23adeaf6a1e140d99387e185df77829cfda55737"
+      "title": "把大模型潜在人格当作安全构造，不等于承认模型具有人的自我",
+      "publishedOn": "2026-09-13",
+      "updatedOn": null,
+      "sourcePublishedOn": "2026-09-12",
+      "evidence": "daily-audit"
     },
     "philosophy/03": {
       "title": "科学实在论争论的是理论与世界的关系",

@@ -1,0 +1,142 @@
+{
+  "date": "2026-09-13",
+  "sourceCutoff": "2026-09-13 07:23（北京时间）",
+  "totalArticles": 110,
+  "substantivelyUpdated": 5,
+  "updateRate": 0.0455,
+  "target": "quality-first, no padding",
+  "targetMet": true,
+  "scope": {
+    "daily": 1,
+    "finance": 1,
+    "health": 1,
+    "papers": 1,
+    "ted": 0,
+    "philosophy": 1
+  },
+  "sourceScan": {
+    "candidates": 3,
+    "readyFromWorker": 1,
+    "hold": 2,
+    "workerReadyRejected": 1,
+    "workerHoldPromoted": 1,
+    "controllerExpanded": true,
+    "selected": 5,
+    "note": "工作任务READY项超出24小时时窗；一项HOLD与前一日重复；非晶冰论文在总控补核摘要后采用，另补充4项A级来源。"
+  },
+  "freshness": {
+    "within24Hours": 4,
+    "currentIssueWithoutExactDay": 1,
+    "note": "金融资料为IMF 2026年9月最新一期，原页无日级日期，公开页不猜日期。"
+  },
+  "tedScan": {
+    "scanned": true,
+    "newItems": 0,
+    "updated": 0,
+    "note": "TED官网候选只标注月份，无法证明过去24小时新增；TEDx活动页不是已发布演讲，未用旧稿补数。"
+  },
+  "rotation": {
+    "column": "philosophy",
+    "updated": 1,
+    "note": "哲学轮换栏目用于训练技术构造、经验假设与意识本体论主张的概念区分。"
+  },
+  "draftSummary": {
+    "workerRounds": 2,
+    "workerResult": "first delivery missing; second failed quality gate",
+    "controllerTakeover": true,
+    "note": "总控依据已核验证据完成逐篇非模板化终稿。"
+  },
+  "reviewSummary": {
+    "pass": 5,
+    "revisedAndPassed": 0,
+    "rejected": 0,
+    "reworkRounds": 0
+  },
+  "articles": [
+    {
+      "target": "daily/02",
+      "changeType": "new",
+      "changeSummary": "新增并核准每日资讯资料：文章于2026年9月12日发表，类型为Editorial。",
+      "title": "跨境山地灾害预警要让制度时钟跑在灾害前面",
+      "sourceDate": "2026-09-12",
+      "sourceVerification": {
+        "ok": true,
+        "checkedAt": "2026-09-13 07:23（北京时间）",
+        "sources": [
+          {
+            "name": "npj Natural Hazards",
+            "url": "https://www.nature.com/articles/s44304-026-00271-y"
+          }
+        ]
+      }
+    },
+    {
+      "target": "finance/02",
+      "changeType": "new",
+      "changeSummary": "新增并核准金融资料：IMF《Finance & Development》将文章标注为2026年9月刊，并注明作者为IMF研究部副处长Manasa Patnam。",
+      "title": "全球顺差与逆差背后是储蓄和投资选择，而不只是贸易竞争力",
+      "sourceDate": null,
+      "sourceVerification": {
+        "ok": true,
+        "checkedAt": "2026-09-13 07:23（北京时间）",
+        "sources": [
+          {
+            "name": "IMF Finance & Development",
+            "url": "https://www.imf.org/en/publications/fandd/issues/2026/09/back-to-basics-a-world-seeking-balance-manasa-patnam"
+          }
+        ]
+      }
+    },
+    {
+      "target": "health/02",
+      "changeType": "new",
+      "changeSummary": "新增并核准身体健康资料：文章于2026年9月12日发表，类型为Expert Review。",
+      "title": "青少年心理健康诊断上升要区分真实恶化、识别改善与诊断扩张",
+      "sourceDate": "2026-09-12",
+      "sourceVerification": {
+        "ok": true,
+        "checkedAt": "2026-09-13 07:23（北京时间）",
+        "sources": [
+          {
+            "name": "Molecular Psychiatry",
+            "url": "https://www.nature.com/articles/s41380-026-03884-x"
+          }
+        ]
+      }
+    },
+    {
+      "target": "papers/02",
+      "changeType": "new",
+      "changeSummary": "新增并核准论文研究资料：论文于2026年9月12日开放获取发表。",
+      "title": "概率框架在分子模拟中找到区分高低密度非晶冰的局部结构变量",
+      "sourceDate": "2026-09-12",
+      "sourceVerification": {
+        "ok": true,
+        "checkedAt": "2026-09-13 07:23（北京时间）",
+        "sources": [
+          {
+            "name": "Nature Communications",
+            "url": "https://www.nature.com/articles/s41467-026-77279-5"
+          }
+        ]
+      }
+    },
+    {
+      "target": "philosophy/02",
+      "changeType": "new",
+      "changeSummary": "新增并核准哲学资料：文章于2026年9月12日开放获取发表，类型为Perspective。",
+      "title": "把大模型潜在人格当作安全构造，不等于承认模型具有人的自我",
+      "sourceDate": "2026-09-12",
+      "sourceVerification": {
+        "ok": true,
+        "checkedAt": "2026-09-13 07:23（北京时间）",
+        "sources": [
+          {
+            "name": "npj Artificial Intelligence",
+            "url": "https://www.nature.com/articles/s44387-026-00154-7"
+          }
+        ]
+      }
+    }
+  ]
+}
