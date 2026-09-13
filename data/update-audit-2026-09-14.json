@@ -1,0 +1,142 @@
+{
+  "date": "2026-09-14",
+  "sourceCutoff": "2026-09-14 07:26（北京时间）",
+  "totalArticles": 110,
+  "substantivelyUpdated": 5,
+  "updateRate": 0.0455,
+  "target": "quality-first, no padding",
+  "targetMet": true,
+  "scope": {
+    "daily": 1,
+    "finance": 1,
+    "health": 1,
+    "papers": 1,
+    "ted": 0,
+    "financial-literacy": 1
+  },
+  "sourceScan": {
+    "candidates": 0,
+    "readyFromWorker": 0,
+    "hold": 0,
+    "workerReadyRejected": 0,
+    "workerHoldPromoted": 0,
+    "controllerExpanded": true,
+    "selected": 5,
+    "note": "来源扫描任务在严格24小时时窗内未交付候选；总控扩大检索范围并回到5个A级原始出版页核验后采用。"
+  },
+  "freshness": {
+    "within24Hours": 5,
+    "currentIssueWithoutExactDay": 0,
+    "note": "5篇均来自2026年9月13日发布的原始期刊页面，并在北京时间9月14日更新窗口内核准。"
+  },
+  "tedScan": {
+    "scanned": true,
+    "newItems": 0,
+    "updated": 0,
+    "note": "TED官网候选缺少可核准的日级发布日期，无法证明过去24小时真实新增；未用旧演讲补数。"
+  },
+  "rotation": {
+    "column": "financial-literacy",
+    "updated": 1,
+    "note": "财务学习轮换栏目用于训练代理指标、短期与长期估计以及个人适用边界的区分。"
+  },
+  "draftSummary": {
+    "workerRounds": 2,
+    "workerResult": "both deliveries failed structure and duplicate-paragraph quality gates",
+    "controllerTakeover": true,
+    "note": "总控依据已核验证据完成逐篇非模板化终稿；两轮工作稿均未进入网站。"
+  },
+  "reviewSummary": {
+    "pass": 5,
+    "revisedAndPassed": 0,
+    "rejected": 0,
+    "reworkRounds": 0
+  },
+  "articles": [
+    {
+      "target": "daily/03",
+      "changeType": "new",
+      "changeSummary": "新增并核准每日资讯资料：研究把标题改写建模为受控生成问题，目标是在明确的语义忠实约束下增强特定吸引力属性。",
+      "title": "让标题更吸引人不等于制造标题党：双重引导模型尝试同时守住忠实度",
+      "sourceDate": "2026-09-13",
+      "sourceVerification": {
+        "ok": true,
+        "checkedAt": "2026-09-14 07:26（北京时间）",
+        "sources": [
+          {
+            "name": "Scientific Reports",
+            "url": "https://www.nature.com/articles/s41598-026-71420-6"
+          }
+        ]
+      }
+    },
+    {
+      "target": "finance/03",
+      "changeType": "new",
+      "changeSummary": "新增并核准金融资料：研究在统一框架中比较岭回归、Lasso、随机森林、Bagging和梯度提升五类机器学习方法。",
+      "title": "金融预测没有万能算法：模型表现取决于市场结构与数据关系",
+      "sourceDate": "2026-09-13",
+      "sourceVerification": {
+        "ok": true,
+        "checkedAt": "2026-09-14 07:26（北京时间）",
+        "sources": [
+          {
+            "name": "Scientific Reports",
+            "url": "https://www.nature.com/articles/s41598-026-71418-0"
+          }
+        ]
+      }
+    },
+    {
+      "target": "health/03",
+      "changeType": "new",
+      "changeSummary": "新增并核准身体健康资料：研究使用TriNetX美国协作网络，对接受手术的2型糖尿病成人开展全国性倾向评分匹配队列分析，共形成279250对匹配样本。",
+      "title": "大型匹配队列发现术前GLP-1受体激动剂暴露与较低的持续阿片处方相关",
+      "sourceDate": "2026-09-13",
+      "sourceVerification": {
+        "ok": true,
+        "checkedAt": "2026-09-14 07:26（北京时间）",
+        "sources": [
+          {
+            "name": "Scientific Reports",
+            "url": "https://www.nature.com/articles/s41598-026-71924-1"
+          }
+        ]
+      }
+    },
+    {
+      "target": "papers/03",
+      "changeType": "new",
+      "changeSummary": "新增并核准论文研究资料：研究对象是加拿大努纳武特埃尔斯米尔岛Arklio冰川的冰面至冰川前缘时间序列。",
+      "title": "加拿大高北极冰川退缩序列显示细菌与真菌群落以不同节奏接替",
+      "sourceDate": "2026-09-13",
+      "sourceVerification": {
+        "ok": true,
+        "checkedAt": "2026-09-14 07:26（北京时间）",
+        "sources": [
+          {
+            "name": "Scientific Reports",
+            "url": "https://www.nature.com/articles/s41598-026-71128-7"
+          }
+        ]
+      }
+    },
+    {
+      "target": "financial-literacy/01",
+      "changeType": "new",
+      "changeSummary": "新增并核准财务学习资料：研究使用世界发展指标中乌干达1986至2022年的37年年度数据。",
+      "title": "金融包容不能只看信贷规模：乌干达长期数据呈现短期与长期方向差异",
+      "sourceDate": "2026-09-13",
+      "sourceVerification": {
+        "ok": true,
+        "checkedAt": "2026-09-14 07:26（北京时间）",
+        "sources": [
+          {
+            "name": "Discover Sustainability",
+            "url": "https://link.springer.com/article/10.1007/s43621-026-04717-1"
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -95,10 +95,10 @@
       "evidence": "daily-audit"
     },
     "daily/03": {
-      "title": "NASA介绍卫星如何在厄尔尼诺期间辅助飓风研究",
-      "publishedOn": "2026-09-10",
+      "title": "让标题更吸引人不等于制造标题党：双重引导模型尝试同时守住忠实度",
+      "publishedOn": "2026-09-14",
       "updatedOn": null,
-      "sourcePublishedOn": "2026-09-09",
+      "sourcePublishedOn": "2026-09-13",
       "evidence": "daily-audit"
     },
     "daily/04": {
@@ -171,12 +171,11 @@
       "evidence": "daily-audit"
     },
     "finance/03": {
-      "title": "ECB七月会议的真正信号：维持利率不变，但能源与通胀风险仍偏上行",
-      "publishedOn": "2026-08-11",
-      "updatedOn": "2026-08-28",
-      "sourcePublishedOn": "2026-08-27",
-      "evidence": "git-current-title-first-seen",
-      "commit": "b21a9ea0086e259d00428b9ffb435441c30926d3"
+      "title": "金融预测没有万能算法：模型表现取决于市场结构与数据关系",
+      "publishedOn": "2026-09-14",
+      "updatedOn": null,
+      "sourcePublishedOn": "2026-09-13",
+      "evidence": "daily-audit"
     },
     "finance/04": {
       "title": "国际收支表为何要区分经常账户和金融账户",
@@ -234,12 +233,11 @@
       "evidence": "daily-audit"
     },
     "financial-literacy/01": {
-      "title": "复利不是保证收益：先看利率、时间、费用与波动",
-      "publishedOn": "2026-08-15",
-      "updatedOn": "2026-08-27",
-      "sourcePublishedOn": null,
-      "evidence": "git-current-title-first-seen",
-      "commit": "dbc88f54526d34276eb8d546b64cd265136e1a3f"
+      "title": "金融包容不能只看信贷规模：乌干达长期数据呈现短期与长期方向差异",
+      "publishedOn": "2026-09-14",
+      "updatedOn": null,
+      "sourcePublishedOn": "2026-09-13",
+      "evidence": "daily-audit"
     },
     "financial-literacy/02": {
       "title": "信用分不是唯一数字：不同模型、产品和报告会给出不同结果",
@@ -328,12 +326,11 @@
       "evidence": "daily-audit"
     },
     "health/03": {
-      "title": "急性间质性肾炎的空间图谱：炎症信号与预测相互作用不等于新疗法",
-      "publishedOn": "2026-08-10",
-      "updatedOn": "2026-08-28",
-      "sourcePublishedOn": "2026-08-27",
-      "evidence": "git-current-title-first-seen",
-      "commit": "23adeaf6a1e140d99387e185df77829cfda55737"
+      "title": "大型匹配队列发现术前GLP-1受体激动剂暴露与较低的持续阿片处方相关",
+      "publishedOn": "2026-09-14",
+      "updatedOn": null,
+      "sourcePublishedOn": "2026-09-13",
+      "evidence": "daily-audit"
     },
     "health/04": {
       "title": "WHO更新刚果（金）本迪布焦埃博拉建议：核心仍是监测、追踪与安全照护",
@@ -643,12 +640,11 @@
       "evidence": "daily-audit"
     },
     "papers/03": {
-      "title": "用潮汐重力给火星内部做断层扫描：南半球地幔可能藏着热异常",
-      "publishedOn": "2026-08-16",
-      "updatedOn": "2026-08-28",
-      "sourcePublishedOn": "2026-08-26",
-      "evidence": "git-current-title-first-seen",
-      "commit": "533ae0551f03e6546cc62b87904bcf180e53f980"
+      "title": "加拿大高北极冰川退缩序列显示细菌与真菌群落以不同节奏接替",
+      "publishedOn": "2026-09-14",
+      "updatedOn": null,
+      "sourcePublishedOn": "2026-09-13",
+      "evidence": "daily-audit"
     },
     "papers/04": {
       "title": "DNA存储逼近密度上限：1.66比特每碱基背后仍有合成与读取成本",
