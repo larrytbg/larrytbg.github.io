@@ -1,0 +1,142 @@
+{
+  "date": "2026-09-15",
+  "sourceCutoff": "2026-09-15 07:27（北京时间）",
+  "totalArticles": 110,
+  "substantivelyUpdated": 5,
+  "updateRate": 0.0455,
+  "target": "quality-first, no padding",
+  "targetMet": true,
+  "scope": {
+    "daily": 1,
+    "finance": 1,
+    "health": 1,
+    "papers": 1,
+    "ted": 0,
+    "management": 1
+  },
+  "sourceScan": {
+    "candidates": 1,
+    "readyFromWorker": 0,
+    "hold": 1,
+    "workerReadyRejected": 0,
+    "workerHoldPromoted": 0,
+    "controllerExpanded": true,
+    "selected": 5,
+    "note": "来源扫描任务交付1条HOLD候选，因官方页面缺少可核准的日级发布日期未采用；总控扩大检索并回到5个A级原始出版页核验后采用。"
+  },
+  "freshness": {
+    "within24Hours": 5,
+    "currentIssueWithoutExactDay": 0,
+    "note": "5篇均来自2026年9月14日发布的原始期刊页面，并在北京时间9月15日更新窗口内核准。"
+  },
+  "tedScan": {
+    "scanned": true,
+    "newItems": 0,
+    "updated": 0,
+    "note": "TED官网候选缺少可核准的日级发布日期，无法证明过去24小时真实新增；未用旧演讲补数。"
+  },
+  "rotation": {
+    "column": "management",
+    "updated": 1,
+    "note": "职场管理学轮换栏目用于训练对问卷感知、样本边界与绩效因果之间的区分。"
+  },
+  "draftSummary": {
+    "workerRounds": 2,
+    "workerResult": "both deliveries failed structure and duplicate-paragraph quality gates",
+    "controllerTakeover": true,
+    "note": "总控依据已核验证据完成逐篇非模板化终稿；两轮工作稿均未进入网站。"
+  },
+  "reviewSummary": {
+    "pass": 5,
+    "revisedAndPassed": 0,
+    "rejected": 0,
+    "reworkRounds": 0
+  },
+  "articles": [
+    {
+      "target": "daily/04",
+      "changeType": "new",
+      "changeSummary": "新增并核准每日资讯资料：研究以博茨瓦纳、斯威士兰、莱索托、莫桑比克、纳米比亚、南非和津巴布韦七国的经验与情景条件构建空间主体模型。",
+      "title": "气候适应不能只给预报：南部非洲牧场模型显示风险缓冲要与信息配套",
+      "sourceDate": "2026-09-14",
+      "sourceVerification": {
+        "ok": true,
+        "checkedAt": "2026-09-15 07:27（北京时间）",
+        "sources": [
+          {
+            "name": "Nature Sustainability",
+            "url": "https://www.nature.com/articles/s41893-026-01938-0"
+          }
+        ]
+      }
+    },
+    {
+      "target": "finance/04",
+      "changeType": "new",
+      "changeSummary": "新增并核准金融资料：研究使用中国乡村振兴调查微观数据，分别构建合同链和数字链参与深度指标。",
+      "title": "合同链与数字链协同和农户正规信贷相关，但组织参与不等于因果保证",
+      "sourceDate": "2026-09-14",
+      "sourceVerification": {
+        "ok": true,
+        "checkedAt": "2026-09-15 07:27（北京时间）",
+        "sources": [
+          {
+            "name": "Humanities and Social Sciences Communications",
+            "url": "https://www.nature.com/articles/s41599-026-09015-9"
+          }
+        ]
+      }
+    },
+    {
+      "target": "health/04",
+      "changeType": "new",
+      "changeSummary": "新增并核准身体健康资料：研究在三名严重瘫痪、长期植入高密度皮层脑电阵列的参与者中分析多效应器神经信号。",
+      "title": "一枚皮层植入物同时解码说话与手势：三人研究仍是侵入式概念验证",
+      "sourceDate": "2026-09-14",
+      "sourceVerification": {
+        "ok": true,
+        "checkedAt": "2026-09-15 07:27（北京时间）",
+        "sources": [
+          {
+            "name": "Nature Neuroscience",
+            "url": "https://www.nature.com/articles/s41593-026-02446-2"
+          }
+        ]
+      }
+    },
+    {
+      "target": "papers/04",
+      "changeType": "new",
+      "changeSummary": "新增并核准论文研究资料：研究在挪威沿岸用真实海上风电场录音进行22小时瓶式孵育实验，设置高噪声106 dB、中噪声94 dB和环境对照80 dB三个声压水平。",
+      "title": "22小时近自然实验发现海上风电低频噪声改变浮游植物生长，长期生态效应仍未知",
+      "sourceDate": "2026-09-14",
+      "sourceVerification": {
+        "ok": true,
+        "checkedAt": "2026-09-15 07:27（北京时间）",
+        "sources": [
+          {
+            "name": "Scientific Reports",
+            "url": "https://www.nature.com/articles/s41598-026-71531-0"
+          }
+        ]
+      }
+    },
+    {
+      "target": "management/04",
+      "changeType": "new",
+      "changeSummary": "新增并核准职场管理学资料：研究以阿曼基础教育学校202名女教师为便利样本，调查她们对校长领导方式的看法。",
+      "title": "阿曼202名女教师问卷显示变革型领导评价较高，但感知相关不能代替绩效因果",
+      "sourceDate": "2026-09-14",
+      "sourceVerification": {
+        "ok": true,
+        "checkedAt": "2026-09-15 07:27（北京时间）",
+        "sources": [
+          {
+            "name": "Humanities and Social Sciences Communications",
+            "url": "https://www.nature.com/articles/s41599-026-08871-9"
+          }
+        ]
+      }
+    }
+  ]
+}

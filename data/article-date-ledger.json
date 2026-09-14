@@ -102,12 +102,11 @@
       "evidence": "daily-audit"
     },
     "daily/04": {
-      "title": "Google 汇总2026年7月AI产品和研究更新",
-      "publishedOn": "2026-08-16",
-      "updatedOn": "2026-08-25",
-      "sourcePublishedOn": "2026-08-04",
-      "evidence": "git-current-title-first-seen",
-      "commit": "533ae0551f03e6546cc62b87904bcf180e53f980"
+      "title": "气候适应不能只给预报：南部非洲牧场模型显示风险缓冲要与信息配套",
+      "publishedOn": "2026-09-15",
+      "updatedOn": null,
+      "sourcePublishedOn": "2026-09-14",
+      "evidence": "daily-audit"
     },
     "daily/05": {
       "title": "FDA 就生成式AI医疗器械监管方法征求反馈",
@@ -178,12 +177,11 @@
       "evidence": "daily-audit"
     },
     "finance/04": {
-      "title": "国际收支表为何要区分经常账户和金融账户",
-      "publishedOn": "2026-08-11",
-      "updatedOn": "2026-08-25",
-      "sourcePublishedOn": null,
-      "evidence": "git-current-title-first-seen",
-      "commit": "b21a9ea0086e259d00428b9ffb435441c30926d3"
+      "title": "合同链与数字链协同和农户正规信贷相关，但组织参与不等于因果保证",
+      "publishedOn": "2026-09-15",
+      "updatedOn": null,
+      "sourcePublishedOn": "2026-09-14",
+      "evidence": "daily-audit"
     },
     "finance/05": {
       "title": "收益率曲线反映预期，但不能单独预测衰退",
@@ -333,12 +331,11 @@
       "evidence": "daily-audit"
     },
     "health/04": {
-      "title": "WHO更新刚果（金）本迪布焦埃博拉建议：核心仍是监测、追踪与安全照护",
-      "publishedOn": "2026-08-10",
-      "updatedOn": "2026-08-27",
-      "sourcePublishedOn": "2026-08-24",
-      "evidence": "git-current-title-first-seen",
-      "commit": "23adeaf6a1e140d99387e185df77829cfda55737"
+      "title": "一枚皮层植入物同时解码说话与手势：三人研究仍是侵入式概念验证",
+      "publishedOn": "2026-09-15",
+      "updatedOn": null,
+      "sourcePublishedOn": "2026-09-14",
+      "evidence": "daily-audit"
     },
     "health/05": {
       "title": "WHO数字健康战略为何强调治理、可及性与证据",
@@ -570,12 +567,11 @@
       "commit": "23adeaf6a1e140d99387e185df77829cfda55737"
     },
     "management/04": {
-      "title": "设计文档如何记录取舍和决策依据",
-      "publishedOn": "2026-08-10",
-      "updatedOn": "2026-08-25",
-      "sourcePublishedOn": null,
-      "evidence": "git-current-title-first-seen",
-      "commit": "23adeaf6a1e140d99387e185df77829cfda55737"
+      "title": "阿曼202名女教师问卷显示变革型领导评价较高，但感知相关不能代替绩效因果",
+      "publishedOn": "2026-09-15",
+      "updatedOn": null,
+      "sourcePublishedOn": "2026-09-14",
+      "evidence": "daily-audit"
     },
     "management/05": {
       "title": "管理反馈应从人格评价转向可观察行为",
@@ -647,12 +643,11 @@
       "evidence": "daily-audit"
     },
     "papers/04": {
-      "title": "DNA存储逼近密度上限：1.66比特每碱基背后仍有合成与读取成本",
-      "publishedOn": "2026-08-16",
-      "updatedOn": "2026-08-28",
-      "sourcePublishedOn": "2026-08-27",
-      "evidence": "git-current-title-first-seen",
-      "commit": "533ae0551f03e6546cc62b87904bcf180e53f980"
+      "title": "22小时近自然实验发现海上风电低频噪声改变浮游植物生长，长期生态效应仍未知",
+      "publishedOn": "2026-09-15",
+      "updatedOn": null,
+      "sourcePublishedOn": "2026-09-14",
+      "evidence": "daily-audit"
     },
     "papers/05": {
       "title": "月球南极或有微生物短期存活区：存活不等于生长，更不是发现月球生命",
